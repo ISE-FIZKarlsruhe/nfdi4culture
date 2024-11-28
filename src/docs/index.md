@@ -1,16 +1,11 @@
-A Linked Data publishing platform for semantic web professionals in a hurry.
-Make compelling queries and documentation of your RDF data, using an open-source, simple platform.
+This is where we test ideas and do development work on the [knowledge graph of the NFDI4Culture consortium](https://nfdi4culture.de/resources/knowledge-graph.html).
 
-## [TL;DR](https://en.wikipedia.org/wiki/TL;DR)
+This is the feeding ground for what eventually ends up in the [Culture Knowledge Graph Kitchen](https://gitlab.rlp.net/adwmainz/nfdi4culture/knowledge-graph/culture-kg-kitchen/)
 
-Similar to LODView, LODE, YASGUI and a triplestore, but in Python with modern web standards.
+## Information Graph
 
-## Quickstart
+The Information Graph (IG) is the general information about the consortium, based on the [LOD extension](https://github.com/digicademy/lod) for TYPO3 developed by the [Digital Academy in Mainz](https://www.adwmainz.de/digitalitaet/digitale-akademie.html).
 
-You have some RDF documents in a folder on your disk somewhere, and you have Docker installed, then from the folder that contains your .nt or .ttl files, run:
+## Research Data Graph
 
-```shell
-docker run --rm -it \
-  -v $(pwd):/data -e DATA_LOAD_PATHS=/data \
-  -p 8000:8000 ghcr.io/epoz/shmarql
-```
+The Research Data Graph (RDG) is the bulk research data as contributed by the [various datafeeds](https://nfdi4culture.de/go/sparql-data-portals) from the consortium participants.

@@ -1,6 +1,6 @@
-site_name: Shmarql
-site_url: https://shmarql.com/
-repo_url: https://github.com/epoz/shmarql
+site_name: NFDI4Culture
+site_url: https://nfdi.fiz-karlsruhe.de/4culture/
+repo_url: https://github.com/ISE-FIZKarlsruhe/nfdi4culture
 theme:
   name: material
   custom_dir: docs/overrides
@@ -9,8 +9,6 @@ theme:
     accent: pink
   features:
     - content.code.copy
-    - navigation.instant
-    - navigation.instant.progress
     - toc.follow
     - navigation.top
     - header.autohide
@@ -36,7 +34,13 @@ markdown_extensions:
 
 nav:
   - Introduction: index.md
-  - Advanced Searching: fizzysearch.md
-  - Configuration:
-    - With existing websites: proxy.md
-    - Using other triplestores: endpoints.md
+  - Sample Applications: rdg.md
+  - Sample Queries: queries.md
+  - Tools:
+    - Hydra Scraper: hydra.md
+    - OAI-Harvesting: oai.md
+  - Data Sources:
+    - Misc: datasources.md
+    - DDB: ddb.md
+    - Factgrid: factgrid.md
+  - LIDO: lido.md

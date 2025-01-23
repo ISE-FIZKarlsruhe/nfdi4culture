@@ -4,7 +4,7 @@ This is the feeding ground for what eventually ends up in the [Culture Knowledge
 
 ## Information Graph
 
-The Information Graph (IG) is the general information about the consortium, based on the [LOD extension](https://github.com/digicademy/lod) for TYPO3 developed by the [Digital Academy in Mainz](https://www.adwmainz.de/digitalitaet/digitale-akademie.html).
+The Information Graph (IG) contains the general information about the consortium, based on the [LOD extension](https://github.com/digicademy/lod) for TYPO3 developed by the [Digital Academy in Mainz](https://www.adwmainz.de/digitalitaet/digitale-akademie.html).
 
 ## Research Data Graph
 

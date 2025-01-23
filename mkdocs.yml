@@ -1,0 +1,18 @@
+site_name: NFDI4Culture
+site_url: https://nfdi.fiz-karlsruhe.de/4culture/
+repo_url: https://github.com/ISE-FIZKarlsruhe/nfdi4culture
+theme:
+  name: material
+  custom_dir: docs/overrides
+nav:
+  - Introduction: index.md
+  - Sample Applications: rdg.md
+  - Sample Queries: queries.md
+  - Tools:
+    - Hydra Scraper: hydra.md
+    - OAI-Harvesting: oai.md
+  - Data Sources:
+    - Misc: datasources.md
+    - DDB: ddb.md
+    - Factgrid: factgrid.md
+  - LIDO: lido.md

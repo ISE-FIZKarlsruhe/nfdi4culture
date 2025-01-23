@@ -8,4 +8,4 @@ The Information Graph (IG) is the general information about the consortium, base
 
 ## Research Data Graph
 
-The Research Data Graph (RDG) is the bulk research data as contributed by the [various datafeeds](https://nfdi4culture.de/go/sparql-data-portals) from the consortium participants.
+The Research Data Graph (RDG) is the bulk research data as contributed by the [various datafeeds](https://nfdi4culture.de/go/sparql-data-portals) from the consortium participants that functions as an index of culture research data. 

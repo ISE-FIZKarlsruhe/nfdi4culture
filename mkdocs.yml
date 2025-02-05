@@ -6,13 +6,13 @@ theme:
   custom_dir: docs/overrides
 nav:
   - Introduction: index.md
+  - Ontology: /4culture/ontology/
   - Sample Applications: rdg.md
   - Sample Queries: queries.md
   - Tools:
-    - Hydra Scraper: hydra.md
-    - OAI-Harvesting: oai.md
+      - Hydra Scraper: hydra.md
+      - OAI-Harvesting: oai.md
   - Data Sources:
-    - Misc: datasources.md
-    - DDB: ddb.md
-    - Factgrid: factgrid.md
-  - LIDO: lido.md
+      - Misc: datasources.md
+      - DDB: ddb.md
+      - Factgrid: factgrid.md

@@ -10,8 +10,8 @@ FROM ghcr.io/epoz/shmarql:latest
 
 COPY data /data
 COPY docs /src/docs
-COPY mkdocs.yml /src/mkdocs.yml
-RUN mkdocs build
+COPY mkdocs.yml a.yml
+RUN python -m shmarql docs_build -f a.yml
 
 RUN mkdir /src/site/ontology
 COPY --from=widoco /public /src/site/ontology

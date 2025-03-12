@@ -1,0 +1,8 @@
+cls
+http://purl.obolibrary.org/obo/CTO_0000000
+http://purl.org/dc/terms/description
+http://purl.org/dc/terms/license
+http://purl.org/dc/terms/title
+term
+http://www.geneontology.org/formats/oboInOwl#SubsetProperty
+http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty

@@ -1,0 +1,5 @@
+Level	Rule Name	Subject	Property	Value
+WARN	annotation_whitespace	http://purl.obolibrary.org/obo/cto.owl	description	"The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.
+"
+WARN	missing_definition	root node	IAO:0000115	
+INFO	missing_superclass	root node	rdfs:subClassOf	

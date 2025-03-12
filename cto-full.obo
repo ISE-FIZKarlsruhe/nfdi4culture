@@ -1,0 +1,14 @@
+format-version: 1.2
+data-version: cto/releases/2025-03-12/cto-full.owl
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+ontology: cto/cto-full
+property_value: dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.\n" xsd:string
+property_value: dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
+property_value: dcterms:title "NFDI4Culture Ontology (CTO)" xsd:string
+property_value: owl:versionInfo "2025-03-12" xsd:string
+
+[Term]
+id: CTO:0000000
+name: root node
+

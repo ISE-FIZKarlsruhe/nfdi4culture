@@ -1,24 +1,23 @@
-
-Prefix(:=<http://purl.obolibrary.org/obo/cto.owl#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(:=<https://nfdi4culture.de/ontology#>)
+Prefix(cto:=<https://nfdi4culture.de/ontology#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(mo:=<http://purl.org/ontology/mo/>)
+Prefix(n4c:=<https://nfdi4culture.de/id/>)
+Prefix(schema:=<http://schema.org/>)
+Prefix(nfdicore:=<https://nfdi.fiz-karlsruhe.de/ontology/>)
 
+Ontology(<https://nfdi4culture.de/ontology/cto-edit.owl>
+Import(<https://nfdi.fiz-karlsruhe.de/ontology/3.0.0>)
 
-Ontology(<http://purl.obolibrary.org/obo/cto.owl>
-
-
-
-
-Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.
-")
+Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
-
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CTO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
@@ -37,10 +36,12 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/CTO_0000000> (root node)
-
+# Class: CTO_0000000 (root node)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CTO_0000000> "root node"@en)
 
+# Class: CTO_0000001 (Example Cultural Entity)
+Declaration(Class(cto:CTO_0000001))
+AnnotationAssertion(rdfs:label cto:CTO_0000001 "Example Cultural Entity")
+SubClassOf(cto:CTO_0000001 nfdicore:NFDI_0000001)
 
 )
-

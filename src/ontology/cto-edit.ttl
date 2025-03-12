@@ -1,0 +1,19 @@
+@prefix : <https://nfdi4culture.de/ontology/cto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cto: <https://nfdi4culture.de/ontology/cto#> .
+@prefix nfdicore: <https://nfdi.fiz-karlsruhe.de/ontology/> .
+
+<http://nfdi4culture.de/ontology/cto> a owl:Ontology ;
+    rdfs:label "NFDI4Culture Ontology (CTO)"@en ;
+    owl:versionInfo "2.2.0" ;
+    owl:imports <nfdicore_import.owl> .
+
+# Start building your ontology below
+# Example class using NFDIcore:
+cto:CTO_0000001 a owl:Class ;
+    rdfs:label "Example Cultural Entity" ;
+    rdfs:subClassOf nfdicore:NFDI_0000001 .
+
+    

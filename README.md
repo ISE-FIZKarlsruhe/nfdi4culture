@@ -2,10 +2,7 @@
 ![Build Status](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/actions/workflows/qc.yml/badge.svg)
 # NFDI4Culture Ontology (CTO)
 
-Description: The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.
-
-
-More information can be found at http://obofoundry.org/ontology/cto
+Description: The CTO ontology represents research data of the NFDI4Culture community and builds upon the NFDIcore ontology.
 
 ## Versions
 
@@ -13,9 +10,7 @@ More information can be found at http://obofoundry.org/ontology/cto
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/cto.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+[https://nfdi4culture.de/ontology/](https://nfdi4culture.de/ontology/)
 
 ### Editors' version
 

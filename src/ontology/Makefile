@@ -21,7 +21,7 @@ CONFIG_HASH=                f11278f80bf234294313c7b7cef9b019d98dbb1dd9c19e90f803
 OBOBASE=                    http://purl.obolibrary.org/obo
 URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        cto
-ONTBASE=                    http://purl.obolibrary.org/obo/cto
+ONTBASE=                    https://nfdi4culture.de/ontology
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false

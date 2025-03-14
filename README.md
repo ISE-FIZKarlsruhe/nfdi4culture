@@ -1,5 +1,6 @@
 
 ![Build Status](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/actions/workflows/qc.yml/badge.svg)
+
 # NFDI4Culture Ontology (CTO)
 
 Description: The CTO ontology represents research data of the NFDI4Culture community and builds upon the NFDIcore ontology.

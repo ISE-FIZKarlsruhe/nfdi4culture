@@ -45,9 +45,9 @@ Note: our ODK file should only have one `import_group` which can contain multipl
 1. Add an import statement to your `src/ontology/cto-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing import declaration and renaming it to the new ontology import, for example as follows:
     ```
     ...
-    Ontology(<https://nfdi4culture.de/ontology/cto/cto.owl>
-    Import(<https://nfdi4culture.de/ontology/cto/cto/imports/ro_import.owl>)
-    Import(<https://nfdi4culture.de/ontology/cto/cto/imports/go_import.owl>)
+    Ontology(<https://nfdi4culture.de/ontology/cto.owl>
+    Import(<https://nfdi4culture.de/ontology/cto/imports/ro_import.owl>)
+    Import(<https://nfdi4culture.de/ontology/cto/imports/go_import.owl>)
     ...
     ```
 2. Add your imports redirect to your catalog file `src/ontology/catalog-v001.xml`, for example:
@@ -68,7 +68,7 @@ Import(<http://purl.obolibrary.org/obo/cto/imports/go_import.owl>)
 in your editors file (the ontology) and
 
 ```
-<uri name="https://nfdi4culture.de/ontology/cto/cto/imports/go_import.owl" uri="imports/go_import.owl"/>
+<uri name="https://nfdi4culture.de/ontology/cto/imports/go_import.owl" uri="imports/go_import.owl"/>
 ```
 
 in your catalog, tools like `robot` or Protégé will recognize the statement

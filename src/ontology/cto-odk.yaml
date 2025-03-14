@@ -2,7 +2,7 @@ id: cto
 title: "NFDI4Culture Ontology (CTO)"
 github_org: ISE-FIZKarlsruhe
 repo: nfdi4culture
-base_uri: https://nfdi4culture.de/ontology/cto#
+uribase: https://nfdi4culture.de/ontology
 description: >
   The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.
 license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -12,18 +12,20 @@ import_group:
     - id: nfdicore
       mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/heads/main/nfdicore.ttl
       module_type: mirror
-
+    - id: schema
+      mirror_from:  "https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl"
+      module_type: custom
+    #  module_type: slme
+    #  module_type_slme: SUBSET
+    #  slme_individuals: exclude
 release_artefacts:
-  - base
+#  - base
   - full
-  - simple
+#  - simple
 
 export_formats:
   - owl
-  - ttl
-
-ontology_purl: https://nfdi4culture.de/ontology/cto.owl
-versioned_ontology_purl: https://nfdi4culture.de/ontology/releases/$VERSION/cto.owl
+#  - ttl
 
 
 robot_java_args: '-Xmx4G'
@@ -38,15 +40,6 @@ robot_report:
   report_on:
     - edit
 
-id_ranges:
-  - id: CTO
-    range: 0000001-0999999
-    type: all
-
-prefixes:
-  nfdicore: https://nfdi.fiz-karlsruhe.de/ontology/
-  cto: https://nfdi4culture.de/ontology/cto#
-
-ci:
-  - github_actions
+#ci:
+#  - github_actions
 

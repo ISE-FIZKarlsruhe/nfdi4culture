@@ -46,6 +46,7 @@
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000029>		
 <http://purl.obolibrary.org/obo/IAO_0000304>	"A textual entity that describes a figure"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010022>		
+<https://nfdi4culture.de/ontology/CTO_0001001>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000223>		
@@ -61,12 +62,12 @@
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010033>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010021>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000230>		
+<https://schema.org/ImageObject>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000121>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000145>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000024>		
 <http://edamontology.org/format_3956>		
-<https://nfdi4culture.de/ontology/cto#CTO_0000000>		
 <http://purl.obolibrary.org/obo/BFO_0000030>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001004>		
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001016>		
@@ -75,7 +76,6 @@
 <http://purl.obolibrary.org/obo/BFO_0000009>		
 <http://purl.obolibrary.org/obo/IAO_0000007>	"A directive information entity that describes an action the bearer will take."@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000023>		
-<https://nfdi4culture.de/ontology/cto#CTO_0000001>		
 <http://purl.obolibrary.org/obo/BFO_0000203>		
 <http://purl.obolibrary.org/obo/IAO_0020020>	"An information content entity that is a collection of other information content entities that has been created to identify or annotate things in a specified domain, and where the intention of its creators is that the collection has a one-to-one correspondence with those things."@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001015>		

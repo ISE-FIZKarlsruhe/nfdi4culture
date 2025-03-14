@@ -3,6 +3,6 @@ WARN	missing_definition	root node	IAO:0000115
 WARN	missing_definition	description	IAO:0000115	
 WARN	missing_definition	license	IAO:0000115	
 WARN	missing_definition	title	IAO:0000115	
-WARN	missing_definition	root	IAO:0000115	
-WARN	missing_definition	Example Cultural Entity	IAO:0000115	
-INFO	missing_superclass	root	rdfs:subClassOf	
+WARN	missing_definition	DataFeedElement	IAO:0000115	
+WARN	multiple_labels	DataFeedElement	rdfs:label	DataFeedElement@de
+WARN	multiple_labels	DataFeedElement	rdfs:label	DataFeedElement@en

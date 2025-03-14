@@ -6,4 +6,5 @@ https://creativecommons.org/publicdomain/zero/1.0/
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001
 https://nfdi4culture.de/ontology/CTO_0001001
 https://nfdi4culture.de/ontology/cto-edit.owl
+https://schema.org/ImageObject
 term

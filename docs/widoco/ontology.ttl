@@ -1,17 +1,17 @@
-@prefix : <https://nfdi4culture.de/ontology/cto.owl#> .
+@prefix : <https://nfdi4culture.de/ontology/cto/cto.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://nfdi4culture.de/ontology/cto.owl#> .
+@base <https://nfdi4culture.de/ontology/cto/cto.owl#> .
 
-<https://nfdi4culture.de/ontology/cto.owl> rdf:type owl:Ontology ;
-                                            owl:versionIRI <https://nfdi4culture.de/ontology/releases/2025-03-14/cto.owl> ;
-                                            <http://purl.org/dc/terms/description> "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology." ;
-                                            <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> ;
-                                            <http://purl.org/dc/terms/title> "NFDI4Culture Ontology (CTO)" ;
-                                            owl:versionInfo "2025-03-14" .
+<https://nfdi4culture.de/ontology/cto/cto.owl> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://nfdi4culture.de/ontology/cto/cto/releases/2025-03-14/cto.owl> ;
+                                                <http://purl.org/dc/terms/description> "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology." ;
+                                                <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> ;
+                                                <http://purl.org/dc/terms/title> "NFDI4Culture Ontology (CTO)" ;
+                                                owl:versionInfo "2025-03-14" .
 
 #################################################################
 #    Annotation properties

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                c34eacd5ce95bdaf8eea520bcfed292fbcf0aa25315f440078f5ec47768c8d2b
+CONFIG_HASH=                7599c1a9798126741bfdfc005e3dc0f3b4f6778e781202f81ed75b7f89b8a343
 
 
 # ----------------------------------------
@@ -19,9 +19,9 @@ CONFIG_HASH=                c34eacd5ce95bdaf8eea520bcfed292fbcf0aa25315f440078f5
 # these can be overwritten on the command line
 
 OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    https://nfdi4culture.de/ontology/cto
+URIBASE=                    https://nfdi4culture.de/ontology
 ONT=                        cto
-ONTBASE=                    https://nfdi4culture.de/ontology/cto/cto
+ONTBASE=                    https://nfdi4culture.de/ontology/cto
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
@@ -58,9 +58,9 @@ OTHER_SRC =
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
-FORMATS = $(sort  owl ttl owl)
+FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full $(ONT)-simple )
+RELEASE_ARTEFACTS = $(sort $(ONT)-full )
 
 ifeq ($(ODK_DEBUG),yes)
 ODK_DEBUG_FILE = debug.log
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  nfdicore
+IMPORTS =  nfdicore schema
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -337,13 +337,6 @@ $(PRESEED): $(SRCMERGED)
 	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 
-SIMPLESEED=$(TMPDIR)/simple_seed.txt
-
-$(SIMPLESEED): $(SRCMERGED) $(ONTOLOGYTERMS)
-	$(ROBOT) query -f csv -i $< --query ../sparql/simple-seed.sparql $@.tmp &&\
-	cat $@.tmp $(ONTOLOGYTERMS) | sort | uniq >  $@ &&\
-	echo "http://www.geneontology.org/formats/oboInOwl#SubsetProperty" >> $@ &&\
-	echo "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty" >> $@
 
 
 ALLSEED = $(PRESEED) \
@@ -382,6 +375,10 @@ $(IMPORTDIR)/nfdicore_import.owl: $(MIRRORDIR)/nfdicore.owl $(IMPORTDIR)/nfdicor
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
     $(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: schema
+
+$(IMPORTDIR)/schema_import.owl: $(MIRRORDIR)/schema.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in cto.Makefile!" && false
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -421,6 +418,13 @@ mirror-nfdicore: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/heads/main/nfdicore.ttl -o $(TMPDIR)/$@.owl
 
 
+## ONTOLOGY: schema
+.PHONY: mirror-schema
+.PRECIOUS: $(MIRRORDIR)/schema.owl
+mirror-schema: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl -o $(TMPDIR)/$@.owl
+
+
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 	if [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
 		cp $(TMPDIR)/mirror-$*.owl $@; fi; fi
@@ -445,9 +449,6 @@ $(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
 .PRECIOUS: $(SUBSETDIR)/%.owl
 
 
-$(SUBSETDIR)/%.ttl: $(SUBSETDIR)/%.owl
-	$(ROBOT) convert --input $< --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
-
 
 # ---------------------------------------------
 # Sparql queries: Table exports / Query Reports
@@ -467,15 +468,6 @@ endif
 # ----------------------------------------
 
 
-$(ONT)-base.ttl: $(ONT)-base.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
-$(ONT)-full.ttl: $(ONT)-full.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
-$(ONT)-simple.ttl: $(ONT)-simple.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
 # ----------------------------------------
 # Release artefacts: main release artefacts
 # ----------------------------------------
@@ -484,9 +476,6 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT).ttl: $(ONT).owl
-	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
@@ -501,36 +490,12 @@ ROBOT_RELEASE_IMPORT_MODE=$(ROBOT) merge --input $<
 # ROBOT pipeline that removes imports, then merges components. This is for release artefacts that start from "base"
 ROBOT_RELEASE_IMPORT_MODE_BASE=$(ROBOT) remove --input $< --select imports --trim false merge $(patsubst %, -i %, $(OTHER_SRC)) 
 
-# base: A version of the ontology that does not include any externally imported axioms.
-$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
-	$(ROBOT_RELEASE_IMPORT_MODE) \
-	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural --annotate-inferred-axioms False \
-	relax \
-	reduce -r ELK \
-	remove --base-iri $(URIBASE)/CTO --axioms external --preserve-structure false --trim false \
-	$(SHARED_ROBOT_COMMANDS) \
-	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
-		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
 # Full: The full artefacts with imports merged, reasoned.
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
-		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
-# foo-simple: (edit->reason,relax,reduce,drop imports, drop every axiom which contains an entity outside the "namespaces of interest")
-# drop every axiom: filter --term-file keep_terms.txt --trim true
-#	remove --select imports --trim false
-$(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
-	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural --annotate-inferred-axioms False \
-		relax \
-		remove --axioms equivalent \
-		relax \
-		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
-		reduce -r ELK \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 # ----------------------------------------
 # Debugging Tools

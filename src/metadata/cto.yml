@@ -1,7 +1,6 @@
-# PURL configuration for http://purl.obolibrary.org/obo/cto
 
 idspace: CTO
-base_url: /obo/cto
+base_url: https://nfdi4culture.de/ontology
 
 products:
 - cto.owl: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi4culture/main/cto.owl
@@ -9,7 +8,7 @@ products:
 
 term_browser: ontobee
 example_terms:
-- CTO_0000000
+- CTO_0000001
 
 entries:
 

@@ -11,12 +11,12 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 
-Ontology: <http://purl.obolibrary.org/obo/cto/cto-idranges.owl>
+Ontology: <https://nfdi4culture.de/ontology/cto-idranges.owl>
 
 
 Annotations: 
     idsfor: "CTO",
-    idprefix: "https://nfdi4culture.de/ontology#CTO_",
+    idprefix: "https://nfdi4culture.de/ontology/CTO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:

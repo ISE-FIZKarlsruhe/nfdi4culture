@@ -1,0 +1,29 @@
+Prefix(:=<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-14/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-03-14")
+
+Declaration(Class(<https://schema.org/ImageObject>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>))
+Declaration(Datatype(xsd:date))
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://schema.org/ImageObject> (ImageObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "An image file."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ImageObject> <https://schema.org/ImageObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
+
+
+)

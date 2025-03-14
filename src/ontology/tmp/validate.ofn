@@ -1,4 +1,4 @@
-Prefix(:=<https://nfdi4culture.de/ontology/cto/cto.owl#>)
+Prefix(:=<https://nfdi4culture.de/ontology/cto.owl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(mo:=<http://purl.org/ontology/mo/>)
 Prefix(n4c:=<https://nfdi4culture.de/id/>)
@@ -22,8 +22,8 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Prefix(edamontology:=<http://edamontology.org/>)
 
 
-Ontology(<https://nfdi4culture.de/ontology/cto/cto.owl>
-<https://nfdi4culture.de/ontology/cto/cto/releases/2025-03-14/cto.owl>
+Ontology(<https://nfdi4culture.de/ontology/cto.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-14/cto.owl>
 Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
@@ -240,8 +240,8 @@ Declaration(Class(nfdicore:NFDI_0010038))
 Declaration(Class(nfdicore:NFDI_0010039))
 Declaration(Class(nfdicore:NFDI_0010040))
 Declaration(Class(nfdicore:NFDI_0010041))
-Declaration(Class(<https://nfdi4culture.de/ontology/cto#CTO_0000000>))
-Declaration(Class(<https://nfdi4culture.de/ontology/cto#CTO_0000001>))
+Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001001>))
+Declaration(Class(<https://schema.org/ImageObject>))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -3695,15 +3695,19 @@ AnnotationAssertion(rdfs:comment nfdicore:NFDI_0010041 "A software script is sof
 AnnotationAssertion(rdfs:label nfdicore:NFDI_0010041 "software script"@en)
 SubClassOf(nfdicore:NFDI_0010041 nfdicore:NFDI_0000198)
 
-# Class: <https://nfdi4culture.de/ontology/cto#CTO_0000000> (root)
+# Class: <https://nfdi4culture.de/ontology/CTO_0001001> (DataFeedElement)
 
-AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/cto#CTO_0000000> "root"@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001001> "A CTO DataFeedElement is an NFDI Resource that refers to an individual data point or entry within a larger data set."@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001001> "In CTO, the DataFeedElement serves to signify a membership within a particular resource or datafeed. Thus, entities of various types—such as of types nfdicore:Person, nfdicore:Place, cto:Item, or nfdicore:Event, etc. may acquire the additional designation of DatafeedElement if they are included in e.g. a dataset and are described within the graph."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001001> "DataFeedElement"@de)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001001> "DataFeedElement"@en)
+SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001001> nfdicore:NFDI_0000001)
 
-# Class: <https://nfdi4culture.de/ontology/cto#CTO_0000001> (Example Cultural Entity)
+# Class: <https://schema.org/ImageObject> (ImageObject)
 
-AnnotationAssertion(obo:IAO_0000118 <https://nfdi4culture.de/ontology/cto#CTO_0000001> "Example Cultural Entity"@de)
-AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/cto#CTO_0000001> "Example Cultural Entity"@en)
-SubClassOf(<https://nfdi4culture.de/ontology/cto#CTO_0000001> nfdicore:NFDI_0000001)
+AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "An image file."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ImageObject> <https://schema.org/ImageObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
 
 
 ############################

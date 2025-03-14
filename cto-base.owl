@@ -1,21 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cto/cto-base.owl#"
-     xml:base="http://purl.obolibrary.org/obo/cto/cto-base.owl"
-     xmlns:dce="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns="https://nfdi4culture.de/ontology/cto/cto/cto-base.owl#"
+     xml:base="https://nfdi4culture.de/ontology/cto/cto/cto-base.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mo="http://purl.org/ontology/mo/"
+     xmlns:n4c="https://nfdi4culture.de/id/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cto/cto-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cto/releases/2025-03-12/cto-base.owl"/>
-        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:description>The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.
-</dcterms:description>
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:nfdicore="https://nfdi.fiz-karlsruhe.de/ontology/">
+    <owl:Ontology rdf:about="https://nfdi4culture.de/ontology/cto/cto/cto-base.owl">
+        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/cto/releases/2025-03-14/cto-base.owl"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>NFDI4Culture Ontology (CTO)</dcterms:title>
-        <owl:versionInfo>2025-03-12</owl:versionInfo>
+        <owl:versionInfo>2025-03-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -52,25 +55,6 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CTO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CTO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 

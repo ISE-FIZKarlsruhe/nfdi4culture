@@ -1,7 +1,6 @@
-Prefix(:=<http://purl.obolibrary.org/obo/cto.owl#>)
+Prefix(:=<https://nfdi4culture.de/ontology/cto/cto.owl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(mo:=<http://purl.org/ontology/mo/>)
-Prefix(cto:=<https://nfdi4culture.de/ontology#>)
 Prefix(n4c:=<https://nfdi4culture.de/id/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -23,12 +22,12 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Prefix(edamontology:=<http://edamontology.org/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/cto.owl>
-<https://nfdi4culture.de/ontology/releases/2025-03-13/cto.owl>
+Ontology(<https://nfdi4culture.de/ontology/cto/cto.owl>
+<https://nfdi4culture.de/ontology/cto/cto/releases/2025-03-14/cto.owl>
 Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
-Annotation(owl:versionInfo "2025-03-13")
+Annotation(owl:versionInfo "2025-03-14")
 
 Declaration(Class(edamontology:format_2197))
 Declaration(Class(edamontology:format_2376))
@@ -77,7 +76,6 @@ Declaration(Class(obo:BFO_0000148))
 Declaration(Class(obo:BFO_0000182))
 Declaration(Class(obo:BFO_0000202))
 Declaration(Class(obo:BFO_0000203))
-Declaration(Class(obo:CTO_0000000))
 Declaration(Class(obo:IAO_0000005))
 Declaration(Class(obo:IAO_0000007))
 Declaration(Class(obo:IAO_0000025))
@@ -242,7 +240,8 @@ Declaration(Class(nfdicore:NFDI_0010038))
 Declaration(Class(nfdicore:NFDI_0010039))
 Declaration(Class(nfdicore:NFDI_0010040))
 Declaration(Class(nfdicore:NFDI_0010041))
-Declaration(Class(cto:CTO_0000001))
+Declaration(Class(<https://nfdi4culture.de/ontology/cto#CTO_0000000>))
+Declaration(Class(<https://nfdi4culture.de/ontology/cto#CTO_0000001>))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -2274,10 +2273,6 @@ AnnotationAssertion(skos:definition obo:BFO_0000203 "(Elucidation) A temporal in
 AnnotationAssertion(skos:example obo:BFO_0000203 "The millennium"@en)
 SubClassOf(obo:BFO_0000203 obo:BFO_0000148)
 
-# Class: obo:CTO_0000000 (root node)
-
-AnnotationAssertion(rdfs:label obo:CTO_0000000 "root node"@en)
-
 # Class: obo:IAO_0000005 (objective specification)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000005 "objective specification"@en)
@@ -3700,10 +3695,15 @@ AnnotationAssertion(rdfs:comment nfdicore:NFDI_0010041 "A software script is sof
 AnnotationAssertion(rdfs:label nfdicore:NFDI_0010041 "software script"@en)
 SubClassOf(nfdicore:NFDI_0010041 nfdicore:NFDI_0000198)
 
-# Class: cto:CTO_0000001 (Example Cultural Entity)
+# Class: <https://nfdi4culture.de/ontology/cto#CTO_0000000> (root)
 
-AnnotationAssertion(rdfs:label cto:CTO_0000001 "Example Cultural Entity")
-SubClassOf(cto:CTO_0000001 nfdicore:NFDI_0000001)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/cto#CTO_0000000> "root"@en)
+
+# Class: <https://nfdi4culture.de/ontology/cto#CTO_0000001> (Example Cultural Entity)
+
+AnnotationAssertion(obo:IAO_0000118 <https://nfdi4culture.de/ontology/cto#CTO_0000001> "Example Cultural Entity"@de)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/cto#CTO_0000001> "Example Cultural Entity"@en)
+SubClassOf(<https://nfdi4culture.de/ontology/cto#CTO_0000001> nfdicore:NFDI_0000001)
 
 
 ############################
@@ -3836,6 +3836,7 @@ DisjointClasses(obo:BFO_0000006 obo:BFO_0000029 obo:BFO_0000140)
 DisjointClasses(obo:BFO_0000008 obo:BFO_0000011 obo:BFO_0000015 obo:BFO_0000035)
 DisjointClasses(obo:BFO_0000009 obo:BFO_0000018 obo:BFO_0000026 obo:BFO_0000028)
 DisjointClasses(obo:BFO_0000142 obo:BFO_0000146 obo:BFO_0000147)
+AnnotationAssertion(rdfs:label obo:CTO_0000000 "root node"@en)
 AnnotationAssertion(rdfs:label n4c:E1925 "Harald Sack")
 AnnotationAssertion(rdfs:label n4c:E2415 "Tabea Tietz")
 AnnotationAssertion(rdfs:label n4c:E2416 "Oleksandra Bruns")

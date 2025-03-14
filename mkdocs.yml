@@ -7,12 +7,12 @@ theme:
 nav:
   - Introduction: index.md
   - Ontology: /4culture/ontology/
-  - Sample Applications: rdg.md
-  - Sample Queries: queries.md
-  - Tools:
-      - Hydra Scraper: hydra.md
-      - OAI-Harvesting: oai.md
-  - Data Sources:
-      - Misc: datasources.md
-      - DDB: ddb.md
-      - Factgrid: factgrid.md
+#  - Sample Applications: rdg.md
+#  - Sample Queries: queries.md
+#  - Tools:
+#      - Hydra Scraper: hydra.md
+#      - OAI-Harvesting: oai.md
+#  - Data Sources:
+#      - Misc: datasources.md
+#      - DDB: ddb.md
+#      - Factgrid: factgrid.md

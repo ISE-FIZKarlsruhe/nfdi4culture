@@ -1,4 +1,9 @@
-This is where we test ideas and do development work on the [knowledge graph of the NFDI4Culture consortium](https://nfdi4culture.de/resources/knowledge-graph.html).
+# NFDI4Culture Ontology (CTO)
+
+## Introduction
+
+The NFDI4Culture ontology (CTO) is a domain module and is developed compliant with the NFDIcore as a mid-level ontology and the Basic Formal Ontology 2020 as a foundational ontology. 
+This is where we document the ongoing development work on CTO and test ideas and do development work on the [knowledge graph of the NFDI4Culture consortium](https://nfdi4culture.de/resources/knowledge-graph.html)
 
 This is a feeding ground for what eventually ends up in the [Culture Knowledge Graph Kitchen](https://gitlab.rlp.net/adwmainz/nfdi4culture/knowledge-graph/culture-kg-kitchen/)
 

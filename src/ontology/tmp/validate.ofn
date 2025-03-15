@@ -23,11 +23,11 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-14/cto.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-15/cto.owl>
 Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
-Annotation(owl:versionInfo "2025-03-14")
+Annotation(owl:versionInfo "2025-03-15")
 
 Declaration(Class(edamontology:format_2197))
 Declaration(Class(edamontology:format_2376))
@@ -3706,8 +3706,10 @@ SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001001> nfdicore:NFDI_0000001)
 # Class: <https://schema.org/ImageObject> (ImageObject)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "An image file."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a DataFeedItem. It can have a license statement (string) and an image location."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ImageObject> <https://schema.org/ImageObject>)
 AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
+SubClassOf(<https://schema.org/ImageObject> obo:IAO_0000030)
 
 
 ############################

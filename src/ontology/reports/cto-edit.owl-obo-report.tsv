@@ -4,5 +4,6 @@ WARN	missing_definition	description	IAO:0000115
 WARN	missing_definition	license	IAO:0000115	
 WARN	missing_definition	title	IAO:0000115	
 WARN	missing_definition	DataFeedElement	IAO:0000115	
+WARN	missing_definition	ImageObject	IAO:0000115	
 WARN	multiple_labels	DataFeedElement	rdfs:label	DataFeedElement@de
 WARN	multiple_labels	DataFeedElement	rdfs:label	DataFeedElement@en

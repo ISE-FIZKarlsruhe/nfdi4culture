@@ -23,11 +23,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="https://nfdi4culture.de/ontology/cto/cto-full.owl">
-        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-14/cto-full.owl"/>
+        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-15/cto-full.owl"/>
         <dcterms:description>The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>NFDI4Culture Ontology (CTO)</dcterms:title>
-        <owl:versionInfo>2025-03-14</owl:versionInfo>
+        <owl:versionInfo>2025-03-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6182,7 +6182,9 @@ This class is useful in nfdicore to provide a unified and structured representat
     <!-- https://schema.org/ImageObject -->
 
     <owl:Class rdf:about="https://schema.org/ImageObject">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:comment xml:lang="en">An image file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a DataFeedItem. It can have a license statement (string) and an image location.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/ImageObject"/>
         <rdfs:label xml:lang="en">ImageObject</rdfs:label>
     </owl:Class>

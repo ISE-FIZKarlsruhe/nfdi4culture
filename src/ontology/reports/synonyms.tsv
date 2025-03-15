@@ -1,6 +1,4 @@
 ?cls	?pred	?val	?synType
-<https://nfdi4culture.de/ontology/CTO_0001001>	<http://www.w3.org/2000/01/rdf-schema#label>	"DataFeedElement"@en	
-<https://nfdi4culture.de/ontology/CTO_0001001>	<http://www.w3.org/2000/01/rdf-schema#label>	"DataFeedElement"@de	
 <http://purl.obolibrary.org/obo/IAO_8000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"editors ontology module"@en	
 <http://edamontology.org/format_3261>	<http://www.w3.org/2000/01/rdf-schema#label>	"RDF/XML"	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000114>	<http://www.w3.org/2000/01/rdf-schema#label>	"contact point role"@en	
@@ -36,14 +34,14 @@
 <http://purl.obolibrary.org/obo/IAO_0000030>	<http://www.w3.org/2000/01/rdf-schema#label>	"information content entity"	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"academic organization role"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001016>	<http://www.w3.org/2000/01/rdf-schema#label>	"RISM identifier"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"person"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001011>	<http://www.w3.org/2000/01/rdf-schema#label>	"GeoNames identifier"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001001>	<http://www.w3.org/2000/01/rdf-schema#label>	"citation"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000186>	<http://www.w3.org/2000/01/rdf-schema#label>	"programming language"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"person"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000014>	<http://www.w3.org/2000/01/rdf-schema#label>	"publishing process"@en	
-<http://purl.obolibrary.org/obo/BFO_0000035>	<http://www.w3.org/2000/01/rdf-schema#label>	"process boundary"@en	
 <http://purl.obolibrary.org/obo/IAO_0000608>	<http://www.w3.org/2000/01/rdf-schema#label>	"author information textual entity"@en	
 <http://purl.obolibrary.org/obo/BFO_0000040>	<http://www.w3.org/2000/01/rdf-schema#label>	"material entity"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001011>	<http://www.w3.org/2000/01/rdf-schema#label>	"GeoNames identifier"@en	
+<http://purl.obolibrary.org/obo/BFO_0000035>	<http://www.w3.org/2000/01/rdf-schema#label>	"process boundary"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000140>	<http://www.w3.org/2000/01/rdf-schema#label>	"software library"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139>	<http://www.w3.org/2000/01/rdf-schema#label>	"funding organization role"@en	
 <http://purl.obolibrary.org/obo/IAO_0000304>	<http://www.w3.org/2000/01/rdf-schema#label>	"caption"@en	
@@ -78,8 +76,8 @@
 <http://edamontology.org/format_3252>	<http://www.w3.org/2000/01/rdf-schema#label>	"OWL Functional Syntax"	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157>	<http://www.w3.org/2000/01/rdf-schema#label>	"electrical engineering"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000115>	<http://www.w3.org/2000/01/rdf-schema#label>	"contributing process"@en	
-<http://edamontology.org/format_3262>	<http://www.w3.org/2000/01/rdf-schema#label>	"OWL/XML"	
 <http://purl.obolibrary.org/obo/IAO_0000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"objective specification"@en	
+<http://edamontology.org/format_3262>	<http://www.w3.org/2000/01/rdf-schema#label>	"OWL/XML"	
 <http://purl.obolibrary.org/obo/BFO_0000147>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat point"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000009>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataset"@en	
 <http://purl.obolibrary.org/obo/IAO_0000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"action specification"@en	
@@ -104,14 +102,14 @@
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001021>	<http://www.w3.org/2000/01/rdf-schema#label>	"act of dissolution"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010041>	<http://www.w3.org/2000/01/rdf-schema#label>	"software script"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001017>	<http://www.w3.org/2000/01/rdf-schema#label>	"export format specification"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001002>	<http://www.w3.org/2000/01/rdf-schema#label>	"workflow specification"@en	
 <http://purl.obolibrary.org/obo/IAO_0000579>	<http://www.w3.org/2000/01/rdf-schema#label>	"centrally registered identifier registry"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"place"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"consortium member role"@en	
-<http://purl.obolibrary.org/obo/BFO_0000142>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat line"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"place"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"spokesperson role"@en	
+<http://purl.obolibrary.org/obo/BFO_0000142>	<http://www.w3.org/2000/01/rdf-schema#label>	"fiat line"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000214>	<http://www.w3.org/2000/01/rdf-schema#label>	"support service"@en	
 <http://purl.obolibrary.org/obo/BFO_0000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"one-dimensional temporal region"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001002>	<http://www.w3.org/2000/01/rdf-schema#label>	"workflow specification"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001014>	<http://www.w3.org/2000/01/rdf-schema#label>	"ISIL identifier"@en	
 <http://purl.obolibrary.org/obo/BFO_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"quality"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010027>	<http://www.w3.org/2000/01/rdf-schema#label>	"panel discussion"@en	
@@ -134,8 +132,8 @@
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010038>	<http://www.w3.org/2000/01/rdf-schema#label>	"data visualization process"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>	<http://www.w3.org/2000/01/rdf-schema#label>	"agent role"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010023>	<http://www.w3.org/2000/01/rdf-schema#label>	"course"@en	
-<http://purl.obolibrary.org/obo/IAO_0000300>	<http://www.w3.org/2000/01/rdf-schema#label>	"textual entity"@en	
 <http://purl.obolibrary.org/obo/BFO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"entity"@en	
+<http://purl.obolibrary.org/obo/IAO_0000300>	<http://www.w3.org/2000/01/rdf-schema#label>	"textual entity"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000023>	<http://www.w3.org/2000/01/rdf-schema#label>	"ontology"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010019>	<http://www.w3.org/2000/01/rdf-schema#label>	"workshop"@en	
 <http://edamontology.org/format_3253>	<http://www.w3.org/2000/01/rdf-schema#label>	"Manchester OWL Syntax"	
@@ -174,18 +172,18 @@
 <http://edamontology.org/format_3255>	<http://www.w3.org/2000/01/rdf-schema#label>	"Turtle"	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000230>	<http://www.w3.org/2000/01/rdf-schema#label>	"service provider role"@en	
 <http://purl.obolibrary.org/obo/BFO_0000029>	<http://www.w3.org/2000/01/rdf-schema#label>	"site"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000122>	<http://www.w3.org/2000/01/rdf-schema#label>	"data curation service"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010>	<http://www.w3.org/2000/01/rdf-schema#label>	"physic"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000122>	<http://www.w3.org/2000/01/rdf-schema#label>	"data curation service"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005>	<http://www.w3.org/2000/01/rdf-schema#label>	"medicine"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010029>	<http://www.w3.org/2000/01/rdf-schema#label>	"data producing process"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"NFDI resource"@en	
 <http://purl.obolibrary.org/obo/IAO_0000025>	<http://www.w3.org/2000/01/rdf-schema#label>	"programming language"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010039>	<http://www.w3.org/2000/01/rdf-schema#label>	"software method"@en	
 <http://edamontology.org/format_2376>	<http://www.w3.org/2000/01/rdf-schema#label>	"RDF format"	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010039>	<http://www.w3.org/2000/01/rdf-schema#label>	"software method"@en	
 <http://edamontology.org/format_3749>	<http://www.w3.org/2000/01/rdf-schema#label>	"JSON-LD"	
 <http://purl.obolibrary.org/obo/BFO_0000034>	<http://www.w3.org/2000/01/rdf-schema#label>	"function"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001010>	<http://www.w3.org/2000/01/rdf-schema#label>	"VIAF identifier"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010024>	<http://www.w3.org/2000/01/rdf-schema#label>	"summer school"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001010>	<http://www.w3.org/2000/01/rdf-schema#label>	"VIAF identifier"@en	
 <http://purl.obolibrary.org/obo/BFO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"continuant"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000026>	<http://www.w3.org/2000/01/rdf-schema#label>	"ontology release version"@en	
 <http://purl.obolibrary.org/obo/IAO_0000422>	<http://www.w3.org/2000/01/rdf-schema#label>	"postal address"@en	
@@ -196,8 +194,8 @@
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000231>	<http://www.w3.org/2000/01/rdf-schema#label>	"contributor"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000021>	<http://www.w3.org/2000/01/rdf-schema#label>	"workflow"@en	
 <http://purl.obolibrary.org/obo/IAO_0000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"data about an ontology part"@en	
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004>	<http://www.w3.org/2000/01/rdf-schema#label>	"biology"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000118>	<http://www.w3.org/2000/01/rdf-schema#label>	"contributor role"@en	
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004>	<http://www.w3.org/2000/01/rdf-schema#label>	"biology"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016>	<http://www.w3.org/2000/01/rdf-schema#label>	"materials science"@en	
 <http://purl.obolibrary.org/obo/BFO_0000182>	<http://www.w3.org/2000/01/rdf-schema#label>	"history"@en	
 <http://purl.obolibrary.org/obo/BFO_0000145>	<http://www.w3.org/2000/01/rdf-schema#label>	"relational quality"@en	
@@ -214,6 +212,8 @@
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000190>	<http://www.w3.org/2000/01/rdf-schema#label>	"publication"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000101>	<http://www.w3.org/2000/01/rdf-schema#label>	"service process"@en	
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000222>	<http://www.w3.org/2000/01/rdf-schema#label>	"web application software"@en	
+<https://nfdi4culture.de/ontology/CTO_0001001>	<http://www.w3.org/2000/01/rdf-schema#label>	"DataFeedElement"@en	
+<https://nfdi4culture.de/ontology/CTO_0001001>	<http://www.w3.org/2000/01/rdf-schema#label>	"DataFeedElement"@de	
 <https://schema.org/ImageObject>	<http://www.w3.org/2000/01/rdf-schema#label>	"ImageObject"@en	
 <http://edamontology.org/format_2376>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"RDF"	
 <http://edamontology.org/format_2376>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"Resource Description Framework"	

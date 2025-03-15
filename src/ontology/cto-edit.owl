@@ -56,6 +56,7 @@ SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001001> nfdicore:NFDI_0000001)
 # Class: <https://schema.org/ImageObject> (ImageObject)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a DataFeedItem. It can have a license statement (string) and an image location."@en)
+AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
 SubClassOf(<https://schema.org/ImageObject> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 

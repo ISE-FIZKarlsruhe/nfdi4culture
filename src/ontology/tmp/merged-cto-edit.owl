@@ -66,6 +66,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
     <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001 -->
 
     <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001"/>
@@ -80,6 +86,16 @@
         <rdfs:comment xml:lang="en">In CTO, the DataFeedElement serves to signify a membership within a particular resource or datafeed. Thus, entities of various types—such as of types nfdicore:Person, nfdicore:Place, cto:Item, or nfdicore:Event, etc. may acquire the additional designation of DatafeedElement if they are included in e.g. a dataset and are described within the graph.</rdfs:comment>
         <rdfs:label xml:lang="de">DataFeedElement</rdfs:label>
         <rdfs:label xml:lang="en">DataFeedElement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/ImageObject -->
+
+    <owl:Class rdf:about="https://schema.org/ImageObject">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a DataFeedItem. It can have a license statement (string) and an image location.</rdfs:comment>
+        <rdfs:label xml:lang="en">ImageObject</rdfs:label>
     </owl:Class>
     
 

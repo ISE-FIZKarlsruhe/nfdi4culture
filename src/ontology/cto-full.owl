@@ -23,11 +23,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="https://nfdi4culture.de/ontology/cto/cto-full.owl">
-        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-15/cto-full.owl"/>
+        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-26/cto-full.owl"/>
         <dcterms:description>The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>NFDI4Culture Ontology (CTO)</dcterms:title>
-        <owl:versionInfo>2025-03-15</owl:versionInfo>
+        <owl:versionInfo>2025-03-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2273,6 +2273,227 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- https://nfdi4culture.de/ontology/CTO_0001003 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+        <owl:inverseOf rdf:resource="https://schema.org/dataFeedElement"/>
+        <rdfs:label xml:lang="en">is data feed element of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001004 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001004">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226"/>
+        <rdfs:comment xml:lang="en">Determines the subject of an information content entity that is part of a DataFeed.</rdfs:comment>
+        <rdfs:label xml:lang="en">is item of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001006 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001006">
+        <rdfs:comment xml:lang="en">A property that relates a cto:SourceItem to a schema:DataFeed in which information about the source item is represented. The data feed contains one or more data feed elements that are about the given source item.</rdfs:comment>
+        <rdfs:label xml:lang="en">is referenced in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001008 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001008">
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001014"/>
+        <rdfs:label xml:lang="en">has related entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001009 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001009">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001008"/>
+        <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+        <rdfs:label xml:lang="en">has related person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001010 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001010">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001008"/>
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001018"/>
+        <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003"/>
+        <rdfs:label xml:lang="en">has related organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001011 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001011">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001008"/>
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001017"/>
+        <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005"/>
+        <rdfs:label xml:lang="en">has related location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001012 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001012">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001008"/>
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001016"/>
+        <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131"/>
+        <rdfs:label xml:lang="en">has related event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001013 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001013">
+        <owl:inverseOf rdf:resource="https://schema.org/associatedMedia"/>
+        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:label xml:lang="en">is associated media of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001014 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001014">
+        <rdfs:label xml:lang="en">is related entity of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001015 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001015">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001014"/>
+        <rdfs:label xml:lang="en">is related person of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001016 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001016">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001014"/>
+        <rdfs:label xml:lang="en">is related event of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001017 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001017">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001014"/>
+        <rdfs:label xml:lang="en">is related location of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001018 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001018">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001014"/>
+        <rdfs:label xml:lang="en">is related organization of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001019 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001019">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001008"/>
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001020"/>
+        <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">has related item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001020 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001020">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001014"/>
+        <rdfs:label xml:lang="en">is related item of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/associatedMedia -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/associatedMedia">
+        <rdfs:range rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:comment xml:lang="en">A media object that encodes this CreativeWork. This property is a synonym for encoding.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/associatedMedia"/>
+        <rdfs:label xml:lang="en">associatedMedia</rdfs:label>
+        <rdfs:label xml:lang="en">has associated media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/contentUrl -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/contentUrl">
+        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/dataFeedElement -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/dataFeedElement">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:domain rdf:resource="https://schema.org/DataFeed"/>
+        <rdfs:range rdf:resource="https://schema.org/DataFeedItem"/>
+        <rdfs:comment xml:lang="en">An item within a data feed. Data feeds may have many elements.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/dataFeedElement"/>
+        <rdfs:label xml:lang="en">dataFeedElement</rdfs:label>
+        <rdfs:label xml:lang="en">has data feed element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/item -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/item">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="https://schema.org/DataFeedItem"/>
+        <rdfs:range rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:comment xml:lang="en">An entity represented by an entry in a list or data feed (e.g. an &apos;artist&apos; in a list of &apos;artists&apos;).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/item"/>
+        <rdfs:label xml:lang="en">has item</rdfs:label>
+        <rdfs:label xml:lang="en">item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/license -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/license">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">A license document that applies to this content, typically indicated by URL.</rdfs:comment>
+        <rdfs:comment xml:lang="en">license</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/license"/>
+        <rdfs:label xml:lang="en">license</rdfs:label>
+        <skos:example xml:lang="en">license</skos:example>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2364,6 +2585,25 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">A relation between an information content entity and its specific url.</rdfs:comment>
         <rdfs:label xml:lang="en">has url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001007 -->
+
+    <owl:DatatypeProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001007">
+        <rdfs:comment xml:lang="en">A natural language text description of a license. This applies to media objects connected to source items in the NFDI4Culture research data graph.</rdfs:comment>
+        <rdfs:label xml:lang="en">has license statement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/contentUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/contentUrl">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008"/>
+        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -5790,6 +6030,420 @@ This class is useful in nfdicore to provide a unified and structured representat
     
 
 
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment>An information content entity that is part of a document.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000314</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">document part</rdfs:label>
+        <skos:example>An abstract, introduction, method or results section.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001030 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001030">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029"/>
+        <rdfs:comment>A part of a document that enumerates the authors of the document</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000321</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">author list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001031 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001031">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029"/>
+        <rdfs:comment>A part of a document that enumerates the contributors of the document</rdfs:comment>
+        <rdfs:label xml:lang="en">contributor list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001032 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001032">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029"/>
+        <rdfs:comment>A part of a document that enumerates the creators of the document</rdfs:comment>
+        <rdfs:label xml:lang="en">creator list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001033 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001033">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001029"/>
+        <rdfs:comment>A part of a document that has parts that are institution identifications associated with the authors of the document</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000322</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">institution list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001035 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:comment>A work package textual entity is a textual entity that describes a structured unit of work within a project, outlining specific tasks, objectives, deliverables, and assigned responsibilities to achieve defined project outcomes.</rdfs:comment>
+        <rdfs:label xml:lang="en">work package textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001036 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:comment>A comment textual entity is a textual entity that provides supplimentary information, feedback, opinions, clarifications, or annotations related to a specific subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">comment textual entity</rdfs:label>
+        <skos:example>peer review comments on journal articles, user feedback on digital repositories, inline annotations in collaborative documents, explanatory remarks in software code documentation</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001037 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <obo:IAO_0000118>DOI</obo:IAO_0000118>
+        <rdfs:comment>A Digital Object Identifier (DOI) is a centrally registered identifier that provides a unique, persistent reference to digital objects such as publications, datasets, and software, ensuring reliable access and citation.</rdfs:comment>
+        <rdfs:label xml:lang="en">digital object identifier</rdfs:label>
+        <skos:example>10.1016/j.compind.2023.104016</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001038 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001038">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003"/>
+        <rdfs:comment>A Consortium Partner is an organization that actively collaborates within a consortium, contributing expertise, resources, or infrastructure to support shared research, development, or innovation goals.</rdfs:comment>
+        <rdfs:label xml:lang="en">consortium partner</rdfs:label>
+        <skos:example>universities, research institutions, industry partners, and funding agencies collaborating in NFDI MatWerk, Horizon Europe projects, and other large-scale research initiatives</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001039 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001039">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000006"/>
+        <obo:IAO_0000118 xml:lang="en">National Research Data Infrastructure</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="de">Nationale Forschungsdateninfrastruktur</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.dfg.de/en/research-funding/funding-initiative/nfdi</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.nfdi.de/</obo:IAO_0000119>
+        <rdfs:comment>An NFDI Consortium is a collaborative organizational entity within the German National Research Data Infrastructure (NFDI) initiative, responsible for the development, management, and coordination of research data infrastructures in specific scientific domains.</rdfs:comment>
+        <rdfs:comment>The National Research Data Infrastructure (NFDI) is intended to sytematically manage scientifich and research data, provide long-term data storage, backup and accessibility, and network the data (inter-)nationally. The German Research Foundation (DFG) and the Joint Science Conference (GWK) are working together to establish and fund the NFDI, on the basis of the administrative agreement concluded by the Federal Government and the federal states on November 26, 2018. The NFDI is designed as a nationwide network, which is built gradually and cooperatively by the respective communities. The goal is to provide a reliable and sustainable service portfolio that covers generic and disciplinary requirements of research data management in Germany. The NFDI is developed step by step and science-oriented with services available to researchers from vaious disciplines, institutions, and federal states.</rdfs:comment>
+        <rdfs:label xml:lang="en">nfdi consortium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000015"/>
+        <rdfs:comment>An academic title is an identifier that denotes an individual’s academic rank, qualification, or honorary designation within educational and research institutions.</rdfs:comment>
+        <rdfs:label xml:lang="en">academic title</rdfs:label>
+        <skos:example>Professor, Associate Professor, Dr., PhD, Dr. Ing.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000015"/>
+        <rdfs:comment>An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000646</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">postal code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001042 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001042">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041"/>
+        <rdfs:comment>A postal code that is used in the United States for the purpose of sorting and delivering mail, and that denotes some postal delivery route or some aggregate of postal delivery routes.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000648</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">zone improvement plan code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001043 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001043">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000018"/>
+        <rdfs:comment>Av event that brings together individuals or groups for structured discussions, decision-making, planning, or coordination of research, educational, or institutional activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">meeting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001044 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001044">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198"/>
+        <rdfs:comment>Data Analysis Software is a subclass of Software designed to process, visualize, and interpret structured and unstructured data using statistical, machine learning, and computational techniques.</rdfs:comment>
+        <rdfs:label xml:lang="en">data analysis software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001045 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001045">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198"/>
+        <rdfs:comment>An Electronic Lab Notebook (ELN) is a subclass of Software that provides a digital platform for recording, managing, and sharing experimental procedures, observations, and research data in scientific workflows.</rdfs:comment>
+        <rdfs:label xml:lang="en">electronic lab notebook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001046 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001046">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198"/>
+        <rdfs:comment>Image Processing Software is a subclass of Software that enables the manipulation, enhancement, analysis, and visualization of images obtained from experimental, computational, or simulation-based sources.</rdfs:comment>
+        <rdfs:label xml:lang="en">image processing software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001047 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001047">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198"/>
+        <rdfs:comment>An Operating System (OS) is a software system that manages computer hardware and software resources and provides common services for computer programs. It acts as an intermediary between users and the computer hardware, enabling the execution of application programs.</rdfs:comment>
+        <rdfs:label xml:lang="en">operating system</rdfs:label>
+        <skos:editorialNote>Concerning the content of ‘Software’ datasheet and its related knowledge graph, the ‘Operating System’ class wase created to respond to competency questions like what operating systems are compatible with a specific software.</skos:editorialNote>
+        <skos:example>Windows, Linux, MacOS</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001048 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001048">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198"/>
+        <rdfs:comment>Simulation Software is a subclass of Software that facilitates the modeling and numerical simulation of physical, chemical, or computational systems to study behaviors, interactions, and performance under different conditions</rdfs:comment>
+        <rdfs:label xml:lang="en">simulation software</rdfs:label>
+        <skos:example>Examples include COMSOL Multiphysics, LAMMPS, Quantum ESPRESSO, and ANSYS.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001049 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001049">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198"/>
+        <rdfs:comment>Workflow Management Software is a subclass of Software that provides tools for designing, automating, executing, and monitoring scientific or computational workflows in research and engineering domains.</rdfs:comment>
+        <rdfs:label xml:lang="en">workflow management software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An event implementation specification is a type of Directive Information Entity that provides formal guidelines, constraints, and details on how an event should be executed. It specifies the mode of implementation, including logistical, technical, and procedural aspects required to carry out an event successfully.</rdfs:comment>
+        <rdfs:label xml:lang="en">event implementation specification</rdfs:label>
+        <skos:editorialNote>HBN: Concerning the content of ‘Event’ datasheets and its related knowledge graph, the ‘Event Implementation Specification’ class and its instances were created to respond to competency questions like what are the implementation formats of a given event.</skos:editorialNote>
+        <skos:example>Specifications for organizing conferences, training workshops, and academic seminars in different formats such as virtual, in-person, or hybrid settings.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>A funding specification is a directive information entity that provides structured guidelines, policies, and requirements for securing, managing, and allocating financial resources for various activities, projects, or organizations.</rdfs:comment>
+        <rdfs:label xml:lang="en">funding specification</rdfs:label>
+        <skos:editorialNote>HBN: Concerning the content of ‘Service’ datasheets and its related knowledge graph, the ‘Funding Specification’ class and its instances were created to respond to competency questions like what funding models exist for a given service.</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>An information access specification is a directive information entity that defines the policies, conditions, and mechanisms governing the accessibility of digital or physical information resources for users or organizations.</rdfs:comment>
+        <rdfs:label xml:lang="en">information access specification</rdfs:label>
+        <skos:editorialNote>HBN: Concerning the content of ‘Publication’ datasheet and its related knowledge graph, the ‘Information Access Specification’ class and its instances were created to respond to competency questions like: what access policies apply to a specific publication document, which resources are available under open access, etc.</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001054 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001054">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>A Metadata Specification is a detailed document that describes metadata structures, guidelines, and usage policies for standardization and adoption.</rdfs:comment>
+        <rdfs:label xml:lang="en">metadata specification</rdfs:label>
+        <skos:example>metadata schema and standards</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>A status specification is a directive information entity that defines the current state, progress, or condition of an entity, process, or project based on predefined criteria and operational guidelines.</rdfs:comment>
+        <rdfs:label xml:lang="en">status specification</rdfs:label>
+        <skos:editorialNote>HBN: Concerning the content of ‘Service’ and &apos;International collabrations&apos; datasheets and their related knowledge graphs, the ‘Status Specification’ class and its instances were created to respond to competency questions like: what is the current status of a service or collaboration project, which collabrations are in an active state, etc.</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001057 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001057">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>A role inherent in an agent that is realized when collaborating in planning, managing, and executing an event, project, or initiative alongside one or more primary organizers.</rdfs:comment>
+        <rdfs:label xml:lang="en">co organizer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>A role inherent in an agent that is realized when shareing the role of representing an organization, group, or initiative, typically communicating its views, policies, or findings to the public.</rdfs:comment>
+        <rdfs:label xml:lang="en">co spokesperson role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001059 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001059">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>A role inherent in an agent that is realized when engageing in cooperative work with another individual or organization toward a shared goal, such as research, development, or business initiatives.</rdfs:comment>
+        <rdfs:label xml:lang="en">collaboration partner role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001060 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001060">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>A role inherent in an agent that is realized when being responsible for producing goods, components, or materials through industrial or commercial processes.</rdfs:comment>
+        <rdfs:label xml:lang="en">manufacturer role</rdfs:label>
+        <skos:example>Siemens as a manufacturer of industrial automation equipment or Intel as a manufacturer of semiconductor chips</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001061 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001061">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>A role inherent in an agent that is realized when being responsible for planning, managing, and executing an event, project, or structured activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">organizer role</rdfs:label>
+        <skos:example>event management firms organizing scientific symposiums or non-profit organizations coordinating community outreach programs</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>A role inherent in an agent that is realized when delivers presentations, lectures, or speeches at events, conferences, or public gatherings.</rdfs:comment>
+        <rdfs:label xml:lang="en">speaker role</rdfs:label>
+        <skos:example>invited speakers at scientific symposiums, keynote presenters at technology expos, and guest lecturers at universities</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <obo:IAO_0000119>Russell, S., &amp; Norvig, P. (2020). Artificial Intelligence: A Modern Approach. Pearson.</obo:IAO_0000119>
+        <rdfs:comment>Artificial Intelligence (AI) is a sub-discipline of Computer Science that focuses on creating systems capable of performing tasks that require human-like intelligence, such as learning, reasoning, and problem-solving.</rdfs:comment>
+        <rdfs:label xml:lang="en">artificial intelligence</rdfs:label>
+        <skos:example>Deep learning for image recognition, reinforcement learning in robotics, and natural language processing fall under Artificial Intelligence.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <rdfs:comment>Theoretical Computer Science is a sub-discipline of Computer Science that focuses on mathematical models of computation, computational complexity, and algorithmic problem-solving</rdfs:comment>
+        <rdfs:label xml:lang="en">theoretical computer science</rdfs:label>
+        <skos:example>Studies on Turing machines, complexity classes (P vs NP), and formal languages belong to Theoretical Computer Science.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <rdfs:comment>Software Engineering is a sub-discipline of Computer Science that applies engineering principles to the design, development, testing, and maintenance of software systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">software engineering</rdfs:label>
+        <skos:example>Agile software development, DevOps practices, and software architecture design fall under Software Engineering.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <obo:IAO_0000119>Provost, F., &amp; Fawcett, T. (2013). Data Science for Business. O&apos;Reilly Media.</obo:IAO_0000119>
+        <rdfs:comment>Data Science is a sub-discipline of Computer Science that integrates statistical methods, machine learning, and data processing techniques to extract insights and knowledge from structured and unstructured data.</rdfs:comment>
+        <rdfs:label xml:lang="en">data science</rdfs:label>
+        <skos:example>Predictive analytics, big data visualization, and recommendation systems are part of Data Science.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <obo:IAO_0000119>Stallings, W. (2020). Network Security Essentials. Pearson.</obo:IAO_0000119>
+        <rdfs:comment>Cybersecurity is a sub-discipline of Computer Science that focuses on protecting computer systems, networks, and data from cyber threats, vulnerabilities, and unauthorized access.</rdfs:comment>
+        <rdfs:label xml:lang="en">cybersecurity</rdfs:label>
+        <skos:example>Encryption techniques, intrusion detection systems, and ethical hacking studies belong to Cybersecurity.</skos:example>
+    </owl:Class>
+    
+
+
     <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001 -->
 
     <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001">
@@ -6179,14 +6833,88 @@ This class is useful in nfdicore to provide a unified and structured representat
     
 
 
+    <!-- https://nfdi4culture.de/ontology/CTO_0001002 -->
+
+    <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:comment xml:lang="en">Lyrics is an information content entity that consists of a structured sequence of linguistic expressions intended to be performed as part of a musical composition, typically corresponding to the vocal component of a song.</rdfs:comment>
+        <rdfs:label xml:lang="en">lyrics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001005 -->
+
+    <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:comment xml:lang="en">A bfo:entity that serves as the source of information represented in a data feed. It is an entity about which a data feed element conveys information. Each source item is identifiable by a unique URI within the context of the feed.</rdfs:comment>
+        <rdfs:label xml:lang="en">source item</rdfs:label>
+        <skos:example xml:lang="en">&lt;https://corpusvitrearum.de/id/F5414&gt; is a source item within the data feed Corpus Vitrearum Germany.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/AudioObject -->
+
+    <owl:Class rdf:about="https://schema.org/AudioObject">
+        <rdfs:subClassOf rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:comment xml:lang="en">An audio file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the context of the Culture Ontology (CTO), an audio object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an audio file location.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/AudioObject"/>
+        <rdfs:label xml:lang="en">Audio Object</rdfs:label>
+        <rdfs:label xml:lang="en">AudioObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/DataFeed -->
+
+    <owl:Class rdf:about="https://schema.org/DataFeed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">A schema:DataFeed is an information content entity that is composed of one or more schema:DataFeedElements, each of which is also an information content entity. In the context of NFDI4Culture, a DataFeed is created in the NFDI4Culture portal manually.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A single feed providing structured information about one or more entities or topics.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/DataFeed"/>
+        <rdfs:label xml:lang="en">DataFeed</rdfs:label>
+        <skos:example xml:lang="en">In NFDI4Culture &lt;https://nfdi4culture.de/id/E4229&gt; is the DataFeed for Corpus Vitrearum and &lt;https://nfdi4culture.de/id/E3590&gt; is the DataFeed for Linked Stage Graph.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/DataFeedItem -->
+
+    <owl:Class rdf:about="https://schema.org/DataFeedItem">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">A DataFeedItem is an information content entity that represents a discrete unit of information within a data feed. It does not embody the entity itself but refers to or describes it, enabling the aggregation or distribution of content in a feed-based system. In NFDI4Culture instances of DataFeedItem are permanent ARK-IDs, created on the foundation of the DataFeed it is a part of.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A single item within a larger data feed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/DataFeedItem"/>
+        <rdfs:label xml:lang="en">Data Feed Item</rdfs:label>
+        <rdfs:label xml:lang="en">DataFeedItem</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/ImageObject -->
 
     <owl:Class rdf:about="https://schema.org/ImageObject">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MediaObject"/>
         <rdfs:comment xml:lang="en">An image file.</rdfs:comment>
-        <rdfs:comment xml:lang="en">In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a DataFeedItem. It can have a license statement (string) and an image location.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an image location.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/ImageObject"/>
+        <rdfs:label xml:lang="en">Image Object</rdfs:label>
         <rdfs:label xml:lang="en">ImageObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/MediaObject -->
+
+    <owl:Class rdf:about="https://schema.org/MediaObject">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject&apos;s).</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the context of the Culture Ontology (CTO), a media object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and a file location. In the NFDI4Culture Research Data Graph, a instance of a media object is usually an ARK-ID.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:label xml:lang="en">Media Object</rdfs:label>
+        <rdfs:label xml:lang="en">MediaObject</rdfs:label>
     </owl:Class>
     
 
@@ -6394,6 +7122,256 @@ This class is useful in nfdicore to provide a unified and structured representat
     
 
 
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Active Status is a status specification that indicates an entity, process, or project is currently operational, ongoing, or in execution.</rdfs:comment>
+        <rdfs:label xml:lang="en">active status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Cancelled Status is a status specification that indicates an entity, process, or project has been terminated before reaching completion due to internal or external factors.</rdfs:comment>
+        <rdfs:label xml:lang="en">cancelled status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Doctor (PhD or equivalent academic doctorate)</rdfs:comment>
+        <rdfs:label xml:lang="en">Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Doctor of Engineering (German doctorate in engineering).</rdfs:comment>
+        <rdfs:label xml:lang="en">Dr.-Ing.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Finished Status is a status specification that indicates an entity, process, or project has successfully reached its intended goal and is considered complete.</rdfs:comment>
+        <rdfs:label xml:lang="en">finished status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050"/>
+        <rdfs:comment>Hybrid Implementation is an event implementation specification that defines the organization of an event that integrates both physical (on-site) and virtual (online) participation modes</rdfs:comment>
+        <rdfs:label xml:lang="en">hybrid implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Internal Access is an information access specification that defines policies and mechanisms restricting access to information exclusively within an organization, institution, or research group.</rdfs:comment>
+        <rdfs:label xml:lang="en">internal access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Master of Science (graduate degree in science/engineering).</rdfs:comment>
+        <rdfs:label xml:lang="en">M.Sc.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050"/>
+        <rdfs:comment>On-Site Implementation is an event implementation specification that defines the organization of an event that occurs exclusively at a physical location with in-person attendance.</rdfs:comment>
+        <rdfs:label xml:lang="en">on site implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050"/>
+        <rdfs:comment>Online Implementation is an event implementation specification that defines the organization of an event conducted entirely through virtual platforms, enabling remote participation via digital communication technologies.</rdfs:comment>
+        <rdfs:label xml:lang="en">online implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Open Access is an information access specification that defines policies allowing unrestricted public access to information resources, ensuring free availability without subscription or payment barriers.</rdfs:comment>
+        <rdfs:label xml:lang="en">open access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051"/>
+        <rdfs:comment>Organizational Funding is a funding specification that defines the financial structures, budgets, and resource allocation strategies for sustaining the operations of an organization or institution.</rdfs:comment>
+        <rdfs:label xml:lang="en">organizational funding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Paused Status is a status specification that indicates an entity, process, or project is temporarily halted but may resume at a later stage.</rdfs:comment>
+        <rdfs:label xml:lang="en">paused status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Paywall Access is an information access specification that defines policies requiring users to purchase, subscribe, or obtain institutional licenses to access digital or physical information resources.</rdfs:comment>
+        <rdfs:label xml:lang="en">paywall access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Privatdozent (Dr. with habilitation, qualified to teach at a university)</rdfs:comment>
+        <rdfs:label xml:lang="en">PD. Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Privatdozent with Habilitation (higher academic qualification in Germany)</rdfs:comment>
+        <rdfs:label xml:lang="en">PD. Dr. habil.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Planning Status is a status specification that indicates an entity, process, or project is in a preparatory or strategic development phase before execution.</rdfs:comment>
+        <rdfs:label xml:lang="en">planning status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Professor (academic title for a senior faculty member).</rdfs:comment>
+        <rdfs:label xml:lang="en">Prof.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Professor with a doctorate.</rdfs:comment>
+        <rdfs:label xml:lang="en">Prof. Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Professor with a doctorate in engineering.</rdfs:comment>
+        <rdfs:label xml:lang="en">Prof. Dr.-Ing.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051"/>
+        <rdfs:comment>Project Funding is a funding specification that defines the financial mechanisms, grants, and investment strategies used to support specific research, development, or innovation projects.</rdfs:comment>
+        <rdfs:label xml:lang="en">project funding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Restricted Access is an information access specification that defines policies limiting access to specific users, organizations, or groups based on predefined criteria such as confidentiality, security, or legal regulations.</rdfs:comment>
+        <rdfs:label xml:lang="en">restricted access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051"/>
+        <rdfs:comment>Self-Funding is a funding specification that defines the use of personal, internal, or independently generated financial resources to support activities, projects, or organizations without relying on external funding sources.</rdfs:comment>
+        <rdfs:label xml:lang="en">self funding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Test Phase Status is a status specification that indicates an entity, process, or project is undergoing testing, evaluation, or validation before finalization.</rdfs:comment>
+        <rdfs:label xml:lang="en">test phase status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment xml:lang="en">Two Doctor degrees (PhD or equivalent academic doctorate)</rdfs:comment>
+        <rdfs:label xml:lang="en">Dr. Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -6422,6 +7400,12 @@ This class is useful in nfdicore to provide a unified and structured representat
     </rdf:Description>
     <rdf:Description rdf:about="https://orcid.org/0000-0002-3092-0532">
         <rdfs:label>Hossein Beygi Nasrabadi</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/contentUrl">
+        <rdfs:comment xml:lang="en">Actual bytes of the media object, for example the image file or video file.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/contentUrl"/>
+        <rdfs:label xml:lang="en">contentURL</rdfs:label>
+        <rdfs:label xml:lang="en">contentUrl</rdfs:label>
     </rdf:Description>
     
 

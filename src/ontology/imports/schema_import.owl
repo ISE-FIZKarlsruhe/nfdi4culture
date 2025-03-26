@@ -7,23 +7,95 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-15/imports/schema_import.owl>
-Annotation(owl:versionInfo "2025-03-15")
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-26/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-03-26")
 
+Declaration(Class(<https://schema.org/AudioObject>))
+Declaration(Class(<https://schema.org/DataFeed>))
+Declaration(Class(<https://schema.org/DataFeedItem>))
 Declaration(Class(<https://schema.org/ImageObject>))
+Declaration(Class(<https://schema.org/MediaObject>))
+Declaration(ObjectProperty(<https://schema.org/associatedMedia>))
+Declaration(ObjectProperty(<https://schema.org/contentUrl>))
+Declaration(ObjectProperty(<https://schema.org/dataFeedElement>))
+Declaration(ObjectProperty(<https://schema.org/item>))
+Declaration(ObjectProperty(<https://schema.org/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>))
 Declaration(Datatype(xsd:date))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://schema.org/associatedMedia> (associatedMedia)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/associatedMedia> "A media object that encodes this CreativeWork. This property is a synonym for encoding."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/associatedMedia> <https://schema.org/associatedMedia>)
+AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "associatedMedia"@en)
+
+# Object Property: <https://schema.org/contentUrl> (contentUrl)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/contentUrl> "Actual bytes of the media object, for example the image file or video file."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/contentUrl> <https://schema.org/contentUrl>)
+AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentUrl"@en)
+ObjectPropertyDomain(<https://schema.org/contentUrl> <https://schema.org/MediaObject>)
+
+# Object Property: <https://schema.org/dataFeedElement> (dataFeedElement)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/dataFeedElement> "An item within a data feed. Data feeds may have many elements."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/dataFeedElement> <https://schema.org/dataFeedElement>)
+AnnotationAssertion(rdfs:label <https://schema.org/dataFeedElement> "dataFeedElement"@en)
+ObjectPropertyDomain(<https://schema.org/dataFeedElement> <https://schema.org/DataFeed>)
+
+# Object Property: <https://schema.org/item> (item)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/item> "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/item> <https://schema.org/item>)
+AnnotationAssertion(rdfs:label <https://schema.org/item> "item"@en)
+
+# Object Property: <https://schema.org/license> (license)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/license> "A license document that applies to this content, typically indicated by URL."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/license> <https://schema.org/license>)
+AnnotationAssertion(rdfs:label <https://schema.org/license> "license"@en)
+
 
 
 ############################
 #   Classes
 ############################
 
+# Class: <https://schema.org/AudioObject> (AudioObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/AudioObject> "An audio file."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/AudioObject> <https://schema.org/AudioObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/AudioObject> "AudioObject"@en)
+SubClassOf(<https://schema.org/AudioObject> <https://schema.org/MediaObject>)
+
+# Class: <https://schema.org/DataFeed> (DataFeed)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/DataFeed> "A single feed providing structured information about one or more entities or topics."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/DataFeed> <https://schema.org/DataFeed>)
+AnnotationAssertion(rdfs:label <https://schema.org/DataFeed> "DataFeed"@en)
+
+# Class: <https://schema.org/DataFeedItem> (DataFeedItem)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/DataFeedItem> "A single item within a larger data feed."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/DataFeedItem> <https://schema.org/DataFeedItem>)
+AnnotationAssertion(rdfs:label <https://schema.org/DataFeedItem> "DataFeedItem"@en)
+
 # Class: <https://schema.org/ImageObject> (ImageObject)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "An image file."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ImageObject> <https://schema.org/ImageObject>)
 AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
+SubClassOf(<https://schema.org/ImageObject> <https://schema.org/MediaObject>)
+
+# Class: <https://schema.org/MediaObject> (MediaObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/MediaObject> <https://schema.org/MediaObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "MediaObject"@en)
 
 
 )

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+
+  
+  
+  <uri name="https://nfdi4culture.de/ontology/cto/imports/nfdicore_import.owl" uri="imports/nfdicore_import.owl"/>
+  
+  <uri name="https://nfdi4culture.de/ontology/cto/imports/schema_import.owl" uri="imports/schema_import.owl"/>
+  
+  
+
+
+  
+
+</group>
+</catalog>

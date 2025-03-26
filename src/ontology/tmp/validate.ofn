@@ -23,11 +23,11 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-15/cto.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-26/cto.owl>
 Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
-Annotation(owl:versionInfo "2025-03-15")
+Annotation(owl:versionInfo "2025-03-26")
 
 Declaration(Class(edamontology:format_2197))
 Declaration(Class(edamontology:format_2376))
@@ -204,6 +204,42 @@ Declaration(Class(nfdicore:NFDI_0001020))
 Declaration(Class(nfdicore:NFDI_0001021))
 Declaration(Class(nfdicore:NFDI_0001022))
 Declaration(Class(nfdicore:NFDI_0001026))
+Declaration(Class(nfdicore:NFDI_0001029))
+Declaration(Class(nfdicore:NFDI_0001030))
+Declaration(Class(nfdicore:NFDI_0001031))
+Declaration(Class(nfdicore:NFDI_0001032))
+Declaration(Class(nfdicore:NFDI_0001033))
+Declaration(Class(nfdicore:NFDI_0001035))
+Declaration(Class(nfdicore:NFDI_0001036))
+Declaration(Class(nfdicore:NFDI_0001037))
+Declaration(Class(nfdicore:NFDI_0001038))
+Declaration(Class(nfdicore:NFDI_0001039))
+Declaration(Class(nfdicore:NFDI_0001040))
+Declaration(Class(nfdicore:NFDI_0001041))
+Declaration(Class(nfdicore:NFDI_0001042))
+Declaration(Class(nfdicore:NFDI_0001043))
+Declaration(Class(nfdicore:NFDI_0001044))
+Declaration(Class(nfdicore:NFDI_0001045))
+Declaration(Class(nfdicore:NFDI_0001046))
+Declaration(Class(nfdicore:NFDI_0001047))
+Declaration(Class(nfdicore:NFDI_0001048))
+Declaration(Class(nfdicore:NFDI_0001049))
+Declaration(Class(nfdicore:NFDI_0001050))
+Declaration(Class(nfdicore:NFDI_0001051))
+Declaration(Class(nfdicore:NFDI_0001052))
+Declaration(Class(nfdicore:NFDI_0001054))
+Declaration(Class(nfdicore:NFDI_0001056))
+Declaration(Class(nfdicore:NFDI_0001057))
+Declaration(Class(nfdicore:NFDI_0001058))
+Declaration(Class(nfdicore:NFDI_0001059))
+Declaration(Class(nfdicore:NFDI_0001060))
+Declaration(Class(nfdicore:NFDI_0001061))
+Declaration(Class(nfdicore:NFDI_0001062))
+Declaration(Class(nfdicore:NFDI_0001063))
+Declaration(Class(nfdicore:NFDI_0001064))
+Declaration(Class(nfdicore:NFDI_0001065))
+Declaration(Class(nfdicore:NFDI_0001066))
+Declaration(Class(nfdicore:NFDI_0001067))
 Declaration(Class(nfdicore:NFDI_0010001))
 Declaration(Class(nfdicore:NFDI_0010002))
 Declaration(Class(nfdicore:NFDI_0010004))
@@ -241,7 +277,13 @@ Declaration(Class(nfdicore:NFDI_0010039))
 Declaration(Class(nfdicore:NFDI_0010040))
 Declaration(Class(nfdicore:NFDI_0010041))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001001>))
+Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001002>))
+Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001005>))
+Declaration(Class(<https://schema.org/AudioObject>))
+Declaration(Class(<https://schema.org/DataFeed>))
+Declaration(Class(<https://schema.org/DataFeedItem>))
 Declaration(Class(<https://schema.org/ImageObject>))
+Declaration(Class(<https://schema.org/MediaObject>))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -337,6 +379,27 @@ Declaration(ObjectProperty(nfdicore:NFDI_0001023))
 Declaration(ObjectProperty(nfdicore:NFDI_0001024))
 Declaration(ObjectProperty(nfdicore:NFDI_0001027))
 Declaration(ObjectProperty(nfdicore:NFDI_0001028))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001003>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001004>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001006>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001008>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001009>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001010>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001011>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001012>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001013>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001014>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001015>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001016>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001017>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001018>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001019>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001020>))
+Declaration(ObjectProperty(<https://schema.org/associatedMedia>))
+Declaration(ObjectProperty(<https://schema.org/contentUrl>))
+Declaration(ObjectProperty(<https://schema.org/dataFeedElement>))
+Declaration(ObjectProperty(<https://schema.org/item>))
+Declaration(ObjectProperty(<https://schema.org/license>))
 Declaration(DataProperty(nfdicore:NFDI_0000105))
 Declaration(DataProperty(nfdicore:NFDI_0000127))
 Declaration(DataProperty(nfdicore:NFDI_0000128))
@@ -344,6 +407,8 @@ Declaration(DataProperty(nfdicore:NFDI_0000135))
 Declaration(DataProperty(nfdicore:NFDI_0000136))
 Declaration(DataProperty(nfdicore:NFDI_0001007))
 Declaration(DataProperty(nfdicore:NFDI_0001008))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
+Declaration(DataProperty(<https://schema.org/contentUrl>))
 Declaration(NamedIndividual(obo:IAO_0000002))
 Declaration(NamedIndividual(obo:IAO_0000103))
 Declaration(NamedIndividual(obo:IAO_0000120))
@@ -362,6 +427,31 @@ Declaration(NamedIndividual(obo:IAO_0000421))
 Declaration(NamedIndividual(obo:IAO_0000423))
 Declaration(NamedIndividual(obo:IAO_0000428))
 Declaration(NamedIndividual(obo:OMO_0001000))
+Declaration(NamedIndividual(nfdicore:NFDI_0001070))
+Declaration(NamedIndividual(nfdicore:NFDI_0001071))
+Declaration(NamedIndividual(nfdicore:NFDI_0001072))
+Declaration(NamedIndividual(nfdicore:NFDI_0001073))
+Declaration(NamedIndividual(nfdicore:NFDI_0001074))
+Declaration(NamedIndividual(nfdicore:NFDI_0001075))
+Declaration(NamedIndividual(nfdicore:NFDI_0001076))
+Declaration(NamedIndividual(nfdicore:NFDI_0001077))
+Declaration(NamedIndividual(nfdicore:NFDI_0001078))
+Declaration(NamedIndividual(nfdicore:NFDI_0001079))
+Declaration(NamedIndividual(nfdicore:NFDI_0001080))
+Declaration(NamedIndividual(nfdicore:NFDI_0001081))
+Declaration(NamedIndividual(nfdicore:NFDI_0001082))
+Declaration(NamedIndividual(nfdicore:NFDI_0001083))
+Declaration(NamedIndividual(nfdicore:NFDI_0001084))
+Declaration(NamedIndividual(nfdicore:NFDI_0001085))
+Declaration(NamedIndividual(nfdicore:NFDI_0001086))
+Declaration(NamedIndividual(nfdicore:NFDI_0001087))
+Declaration(NamedIndividual(nfdicore:NFDI_0001088))
+Declaration(NamedIndividual(nfdicore:NFDI_0001089))
+Declaration(NamedIndividual(nfdicore:NFDI_0001090))
+Declaration(NamedIndividual(nfdicore:NFDI_0001091))
+Declaration(NamedIndividual(nfdicore:NFDI_0001092))
+Declaration(NamedIndividual(nfdicore:NFDI_0001093))
+Declaration(NamedIndividual(nfdicore:NFDI_0001094))
 Declaration(AnnotationProperty(edamontology:created_in))
 Declaration(AnnotationProperty(edamontology:documentation))
 Declaration(AnnotationProperty(edamontology:file_extension))
@@ -1619,6 +1709,147 @@ AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001028 "inverse of property \"ha
 AnnotationAssertion(rdfs:label nfdicore:NFDI_0001028 "creator of"@de)
 SubObjectPropertyOf(nfdicore:NFDI_0001028 nfdicore:NFDI_0000241)
 
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001003> (is data feed element of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001003> "is data feed element of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001003> obo:BFO_0000176)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001003> <https://schema.org/dataFeedElement>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001004> (is item of)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001004> "Determines the subject of an information content entity that is part of a DataFeed."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001004> "is item of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001004> nfdicore:NFDI_0000226)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001006> (is referenced in)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001006> "A property that relates a cto:SourceItem to a schema:DataFeed in which information about the source item is represented. The data feed contains one or more data feed elements that are about the given source item."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001006> "is referenced in"@en)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001008> (has related entity)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001008> "has related entity"@en)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001008> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001009> (has related person)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001009> "has related person"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001009> <https://nfdi4culture.de/ontology/CTO_0001008>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001009> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001009> nfdicore:NFDI_0000004)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001010> (has related organization)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001010> "has related organization"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001010> <https://nfdi4culture.de/ontology/CTO_0001008>)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001010> <https://nfdi4culture.de/ontology/CTO_0001018>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001010> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001010> nfdicore:NFDI_0000003)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001011> (has related location)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001011> "has related location"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001011> <https://nfdi4culture.de/ontology/CTO_0001008>)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001011> <https://nfdi4culture.de/ontology/CTO_0001017>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001011> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001011> nfdicore:NFDI_0000005)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001012> (has related event)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001012> "has related event"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001012> <https://nfdi4culture.de/ontology/CTO_0001008>)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001012> <https://nfdi4culture.de/ontology/CTO_0001016>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001012> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001012> nfdicore:NFDI_0000131)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001013> (is associated media of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001013> "is associated media of"@en)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001013> <https://schema.org/associatedMedia>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001013> <https://schema.org/MediaObject>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001014> (is related entity of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001014> "is related entity of"@en)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001015> (is related person of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001015> "is related person of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001015> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001016> (is related event of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001016> "is related event of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001016> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001017> (is related location of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001017> "is related location of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001017> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001018> (is related organization of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001018> "is related organization of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001018> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001019> (has related item)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001019> "has related item"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001019> <https://nfdi4culture.de/ontology/CTO_0001008>)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001019> <https://nfdi4culture.de/ontology/CTO_0001020>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001019> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001019> obo:IAO_0000030)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001020> (is related item of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001020> "is related item of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001020> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+# Object Property: <https://schema.org/associatedMedia> (has associated media)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/associatedMedia> "A media object that encodes this CreativeWork. This property is a synonym for encoding."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/associatedMedia> <https://schema.org/associatedMedia>)
+AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "associatedMedia"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
+ObjectPropertyRange(<https://schema.org/associatedMedia> <https://schema.org/MediaObject>)
+
+# Object Property: <https://schema.org/contentUrl> (contentURL)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/contentUrl> "Actual bytes of the media object, for example the image file or video file."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/contentUrl> <https://schema.org/contentUrl>)
+AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentURL"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentUrl"@en)
+ObjectPropertyDomain(<https://schema.org/contentUrl> <https://schema.org/MediaObject>)
+
+# Object Property: <https://schema.org/dataFeedElement> (has data feed element)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/dataFeedElement> "An item within a data feed. Data feeds may have many elements."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/dataFeedElement> <https://schema.org/dataFeedElement>)
+AnnotationAssertion(rdfs:label <https://schema.org/dataFeedElement> "dataFeedElement"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/dataFeedElement> "has data feed element"@en)
+SubObjectPropertyOf(<https://schema.org/dataFeedElement> obo:BFO_0000178)
+ObjectPropertyDomain(<https://schema.org/dataFeedElement> <https://schema.org/DataFeed>)
+ObjectPropertyRange(<https://schema.org/dataFeedElement> <https://schema.org/DataFeedItem>)
+
+# Object Property: <https://schema.org/item> (item)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/item> "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/item> <https://schema.org/item>)
+AnnotationAssertion(rdfs:label <https://schema.org/item> "has item"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/item> "item"@en)
+SubObjectPropertyOf(<https://schema.org/item> obo:IAO_0000136)
+ObjectPropertyDomain(<https://schema.org/item> <https://schema.org/DataFeedItem>)
+ObjectPropertyRange(<https://schema.org/item> <https://nfdi4culture.de/ontology/CTO_0001005>)
+
+# Object Property: <https://schema.org/license> (license)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/license> "A license document that applies to this content, typically indicated by URL."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/license> "license"@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/license> <https://schema.org/license>)
+AnnotationAssertion(rdfs:label <https://schema.org/license> "license"@en)
+AnnotationAssertion(skos:example <https://schema.org/license> "license"@en)
+ObjectPropertyDomain(<https://schema.org/license> obo:IAO_0000030)
+
 
 ############################
 #   Data Properties
@@ -1679,6 +1910,16 @@ AnnotationAssertion(rdfs:label nfdicore:NFDI_0001007 "has value"@en)
 AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001008 "A relation between an information content entity and its specific url."@en)
 AnnotationAssertion(rdfs:label nfdicore:NFDI_0001008 "has url"@en)
 DataPropertyRange(nfdicore:NFDI_0001008 xsd:anyURI)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001007> (has license statement)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001007> "A natural language text description of a license. This applies to media objects connected to source items in the NFDI4Culture research data graph."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001007> "has license statement"@en)
+
+# Data Property: <https://schema.org/contentUrl> (contentURL)
+
+SubDataPropertyOf(<https://schema.org/contentUrl> nfdicore:NFDI_0001008)
+DataPropertyRange(<https://schema.org/contentUrl> xsd:anyURI)
 
 
 
@@ -3462,6 +3703,261 @@ AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001026 "A role inherent in an ag
 AnnotationAssertion(rdfs:label nfdicore:NFDI_0001026 "creator role"@en)
 SubClassOf(nfdicore:NFDI_0001026 nfdicore:NFDI_0000229)
 
+# Class: nfdicore:NFDI_0001029 (document part)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001029 "An information content entity that is part of a document.")
+AnnotationAssertion(rdfs:isDefinedBy nfdicore:NFDI_0001029 "http://purl.obolibrary.org/obo/IAO_0000314")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001029 "document part"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001029 "An abstract, introduction, method or results section.")
+SubClassOf(nfdicore:NFDI_0001029 obo:IAO_0000030)
+
+# Class: nfdicore:NFDI_0001030 (author list)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001030 "A part of a document that enumerates the authors of the document")
+AnnotationAssertion(rdfs:isDefinedBy nfdicore:NFDI_0001030 "http://purl.obolibrary.org/obo/IAO_0000321")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001030 "author list"@en)
+SubClassOf(nfdicore:NFDI_0001030 nfdicore:NFDI_0001029)
+
+# Class: nfdicore:NFDI_0001031 (contributor list)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001031 "A part of a document that enumerates the contributors of the document")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001031 "contributor list"@en)
+SubClassOf(nfdicore:NFDI_0001031 nfdicore:NFDI_0001029)
+
+# Class: nfdicore:NFDI_0001032 (creator list)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001032 "A part of a document that enumerates the creators of the document")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001032 "creator list"@en)
+SubClassOf(nfdicore:NFDI_0001032 nfdicore:NFDI_0001029)
+
+# Class: nfdicore:NFDI_0001033 (institution list)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001033 "A part of a document that has parts that are institution identifications associated with the authors of the document")
+AnnotationAssertion(rdfs:isDefinedBy nfdicore:NFDI_0001033 "http://purl.obolibrary.org/obo/IAO_0000322")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001033 "institution list"@en)
+SubClassOf(nfdicore:NFDI_0001033 nfdicore:NFDI_0001029)
+
+# Class: nfdicore:NFDI_0001035 (work package textual entity)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001035 "A work package textual entity is a textual entity that describes a structured unit of work within a project, outlining specific tasks, objectives, deliverables, and assigned responsibilities to achieve defined project outcomes.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001035 "work package textual entity"@en)
+SubClassOf(nfdicore:NFDI_0001035 obo:IAO_0000300)
+
+# Class: nfdicore:NFDI_0001036 (comment textual entity)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001036 "A comment textual entity is a textual entity that provides supplimentary information, feedback, opinions, clarifications, or annotations related to a specific subject.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001036 "comment textual entity"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001036 "peer review comments on journal articles, user feedback on digital repositories, inline annotations in collaborative documents, explanatory remarks in software code documentation")
+SubClassOf(nfdicore:NFDI_0001036 obo:IAO_0000300)
+
+# Class: nfdicore:NFDI_0001037 (digital object identifier)
+
+AnnotationAssertion(obo:IAO_0000118 nfdicore:NFDI_0001037 "DOI")
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001037 "A Digital Object Identifier (DOI) is a centrally registered identifier that provides a unique, persistent reference to digital objects such as publications, datasets, and software, ensuring reliable access and citation.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001037 "digital object identifier"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001037 "10.1016/j.compind.2023.104016")
+SubClassOf(nfdicore:NFDI_0001037 obo:IAO_0000578)
+
+# Class: nfdicore:NFDI_0001038 (consortium partner)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001038 "A Consortium Partner is an organization that actively collaborates within a consortium, contributing expertise, resources, or infrastructure to support shared research, development, or innovation goals.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001038 "consortium partner"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001038 "universities, research institutions, industry partners, and funding agencies collaborating in NFDI MatWerk, Horizon Europe projects, and other large-scale research initiatives")
+SubClassOf(nfdicore:NFDI_0001038 nfdicore:NFDI_0000003)
+
+# Class: nfdicore:NFDI_0001039 (nfdi consortium)
+
+AnnotationAssertion(obo:IAO_0000118 nfdicore:NFDI_0001039 "National Research Data Infrastructure"@en)
+AnnotationAssertion(obo:IAO_0000118 nfdicore:NFDI_0001039 "Nationale Forschungsdateninfrastruktur"@de)
+AnnotationAssertion(obo:IAO_0000119 nfdicore:NFDI_0001039 "https://www.dfg.de/en/research-funding/funding-initiative/nfdi")
+AnnotationAssertion(obo:IAO_0000119 nfdicore:NFDI_0001039 "https://www.nfdi.de/")
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001039 "An NFDI Consortium is a collaborative organizational entity within the German National Research Data Infrastructure (NFDI) initiative, responsible for the development, management, and coordination of research data infrastructures in specific scientific domains.")
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001039 "The National Research Data Infrastructure (NFDI) is intended to sytematically manage scientifich and research data, provide long-term data storage, backup and accessibility, and network the data (inter-)nationally. The German Research Foundation (DFG) and the Joint Science Conference (GWK) are working together to establish and fund the NFDI, on the basis of the administrative agreement concluded by the Federal Government and the federal states on November 26, 2018. The NFDI is designed as a nationwide network, which is built gradually and cooperatively by the respective communities. The goal is to provide a reliable and sustainable service portfolio that covers generic and disciplinary requirements of research data management in Germany. The NFDI is developed step by step and science-oriented with services available to researchers from vaious disciplines, institutions, and federal states.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001039 "nfdi consortium"@en)
+SubClassOf(nfdicore:NFDI_0001039 nfdicore:NFDI_0000006)
+
+# Class: nfdicore:NFDI_0001040 (academic title)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001040 "An academic title is an identifier that denotes an individual’s academic rank, qualification, or honorary designation within educational and research institutions.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001040 "academic title"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001040 "Professor, Associate Professor, Dr., PhD, Dr. Ing.")
+SubClassOf(nfdicore:NFDI_0001040 nfdicore:NFDI_0000015)
+
+# Class: nfdicore:NFDI_0001041 (postal code)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001041 "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail.")
+AnnotationAssertion(rdfs:isDefinedBy nfdicore:NFDI_0001041 "http://purl.obolibrary.org/obo/IAO_0000646")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001041 "postal code"@en)
+SubClassOf(nfdicore:NFDI_0001041 nfdicore:NFDI_0000015)
+
+# Class: nfdicore:NFDI_0001042 (zone improvement plan code)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001042 "A postal code that is used in the United States for the purpose of sorting and delivering mail, and that denotes some postal delivery route or some aggregate of postal delivery routes.")
+AnnotationAssertion(rdfs:isDefinedBy nfdicore:NFDI_0001042 "http://purl.obolibrary.org/obo/IAO_0000648")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001042 "zone improvement plan code"@en)
+SubClassOf(nfdicore:NFDI_0001042 nfdicore:NFDI_0001041)
+
+# Class: nfdicore:NFDI_0001043 (meeting)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001043 "Av event that brings together individuals or groups for structured discussions, decision-making, planning, or coordination of research, educational, or institutional activities.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001043 "meeting"@en)
+SubClassOf(nfdicore:NFDI_0001043 nfdicore:NFDI_0000018)
+
+# Class: nfdicore:NFDI_0001044 (data analysis software)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001044 "Data Analysis Software is a subclass of Software designed to process, visualize, and interpret structured and unstructured data using statistical, machine learning, and computational techniques.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001044 "data analysis software"@en)
+SubClassOf(nfdicore:NFDI_0001044 nfdicore:NFDI_0000198)
+
+# Class: nfdicore:NFDI_0001045 (electronic lab notebook)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001045 "An Electronic Lab Notebook (ELN) is a subclass of Software that provides a digital platform for recording, managing, and sharing experimental procedures, observations, and research data in scientific workflows.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001045 "electronic lab notebook"@en)
+SubClassOf(nfdicore:NFDI_0001045 nfdicore:NFDI_0000198)
+
+# Class: nfdicore:NFDI_0001046 (image processing software)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001046 "Image Processing Software is a subclass of Software that enables the manipulation, enhancement, analysis, and visualization of images obtained from experimental, computational, or simulation-based sources.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001046 "image processing software"@en)
+SubClassOf(nfdicore:NFDI_0001046 nfdicore:NFDI_0000198)
+
+# Class: nfdicore:NFDI_0001047 (operating system)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001047 "An Operating System (OS) is a software system that manages computer hardware and software resources and provides common services for computer programs. It acts as an intermediary between users and the computer hardware, enabling the execution of application programs.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001047 "operating system"@en)
+AnnotationAssertion(skos:editorialNote nfdicore:NFDI_0001047 "Concerning the content of ‘Software’ datasheet and its related knowledge graph, the ‘Operating System’ class wase created to respond to competency questions like what operating systems are compatible with a specific software.")
+AnnotationAssertion(skos:example nfdicore:NFDI_0001047 "Windows, Linux, MacOS")
+SubClassOf(nfdicore:NFDI_0001047 nfdicore:NFDI_0000198)
+
+# Class: nfdicore:NFDI_0001048 (simulation software)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001048 "Simulation Software is a subclass of Software that facilitates the modeling and numerical simulation of physical, chemical, or computational systems to study behaviors, interactions, and performance under different conditions")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001048 "simulation software"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001048 "Examples include COMSOL Multiphysics, LAMMPS, Quantum ESPRESSO, and ANSYS.")
+SubClassOf(nfdicore:NFDI_0001048 nfdicore:NFDI_0000198)
+
+# Class: nfdicore:NFDI_0001049 (workflow management software)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001049 "Workflow Management Software is a subclass of Software that provides tools for designing, automating, executing, and monitoring scientific or computational workflows in research and engineering domains.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001049 "workflow management software"@en)
+SubClassOf(nfdicore:NFDI_0001049 nfdicore:NFDI_0000198)
+
+# Class: nfdicore:NFDI_0001050 (event implementation specification)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001050 "An event implementation specification is a type of Directive Information Entity that provides formal guidelines, constraints, and details on how an event should be executed. It specifies the mode of implementation, including logistical, technical, and procedural aspects required to carry out an event successfully.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001050 "event implementation specification"@en)
+AnnotationAssertion(skos:editorialNote nfdicore:NFDI_0001050 "HBN: Concerning the content of ‘Event’ datasheets and its related knowledge graph, the ‘Event Implementation Specification’ class and its instances were created to respond to competency questions like what are the implementation formats of a given event.")
+AnnotationAssertion(skos:example nfdicore:NFDI_0001050 "Specifications for organizing conferences, training workshops, and academic seminars in different formats such as virtual, in-person, or hybrid settings.")
+EquivalentClasses(nfdicore:NFDI_0001050 ObjectIntersectionOf(nfdicore:NFDI_0000203 ObjectSomeValuesFrom(obo:IAO_0000219 nfdicore:NFDI_0000131)))
+SubClassOf(nfdicore:NFDI_0001050 obo:IAO_0000030)
+SubClassOf(nfdicore:NFDI_0001050 nfdicore:NFDI_0000203)
+SubClassOf(nfdicore:NFDI_0001050 ObjectSomeValuesFrom(obo:IAO_0000219 nfdicore:NFDI_0000131))
+
+# Class: nfdicore:NFDI_0001051 (funding specification)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001051 "A funding specification is a directive information entity that provides structured guidelines, policies, and requirements for securing, managing, and allocating financial resources for various activities, projects, or organizations.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001051 "funding specification"@en)
+AnnotationAssertion(skos:editorialNote nfdicore:NFDI_0001051 "HBN: Concerning the content of ‘Service’ datasheets and its related knowledge graph, the ‘Funding Specification’ class and its instances were created to respond to competency questions like what funding models exist for a given service.")
+SubClassOf(nfdicore:NFDI_0001051 nfdicore:NFDI_0000203)
+
+# Class: nfdicore:NFDI_0001052 (information access specification)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001052 "An information access specification is a directive information entity that defines the policies, conditions, and mechanisms governing the accessibility of digital or physical information resources for users or organizations.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001052 "information access specification"@en)
+AnnotationAssertion(skos:editorialNote nfdicore:NFDI_0001052 "HBN: Concerning the content of ‘Publication’ datasheet and its related knowledge graph, the ‘Information Access Specification’ class and its instances were created to respond to competency questions like: what access policies apply to a specific publication document, which resources are available under open access, etc.")
+SubClassOf(nfdicore:NFDI_0001052 nfdicore:NFDI_0000203)
+
+# Class: nfdicore:NFDI_0001054 (metadata specification)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001054 "A Metadata Specification is a detailed document that describes metadata structures, guidelines, and usage policies for standardization and adoption.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001054 "metadata specification"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001054 "metadata schema and standards")
+SubClassOf(nfdicore:NFDI_0001054 nfdicore:NFDI_0000203)
+
+# Class: nfdicore:NFDI_0001056 (status specification)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001056 "A status specification is a directive information entity that defines the current state, progress, or condition of an entity, process, or project based on predefined criteria and operational guidelines.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001056 "status specification"@en)
+AnnotationAssertion(skos:editorialNote nfdicore:NFDI_0001056 "HBN: Concerning the content of ‘Service’ and 'International collabrations' datasheets and their related knowledge graphs, the ‘Status Specification’ class and its instances were created to respond to competency questions like: what is the current status of a service or collaboration project, which collabrations are in an active state, etc.")
+SubClassOf(nfdicore:NFDI_0001056 nfdicore:NFDI_0000203)
+
+# Class: nfdicore:NFDI_0001057 (co organizer role)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001057 "A role inherent in an agent that is realized when collaborating in planning, managing, and executing an event, project, or initiative alongside one or more primary organizers.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001057 "co organizer role"@en)
+SubClassOf(nfdicore:NFDI_0001057 nfdicore:NFDI_0000229)
+
+# Class: nfdicore:NFDI_0001058 (co spokesperson role)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001058 "A role inherent in an agent that is realized when shareing the role of representing an organization, group, or initiative, typically communicating its views, policies, or findings to the public.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001058 "co spokesperson role"@en)
+SubClassOf(nfdicore:NFDI_0001058 nfdicore:NFDI_0000229)
+
+# Class: nfdicore:NFDI_0001059 (collaboration partner role)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001059 "A role inherent in an agent that is realized when engageing in cooperative work with another individual or organization toward a shared goal, such as research, development, or business initiatives.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001059 "collaboration partner role"@en)
+SubClassOf(nfdicore:NFDI_0001059 nfdicore:NFDI_0000229)
+
+# Class: nfdicore:NFDI_0001060 (manufacturer role)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001060 "A role inherent in an agent that is realized when being responsible for producing goods, components, or materials through industrial or commercial processes.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001060 "manufacturer role"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001060 "Siemens as a manufacturer of industrial automation equipment or Intel as a manufacturer of semiconductor chips")
+SubClassOf(nfdicore:NFDI_0001060 nfdicore:NFDI_0000229)
+
+# Class: nfdicore:NFDI_0001061 (organizer role)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001061 "A role inherent in an agent that is realized when being responsible for planning, managing, and executing an event, project, or structured activity.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001061 "organizer role"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001061 "event management firms organizing scientific symposiums or non-profit organizations coordinating community outreach programs")
+SubClassOf(nfdicore:NFDI_0001061 nfdicore:NFDI_0000229)
+
+# Class: nfdicore:NFDI_0001062 (speaker role)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001062 "A role inherent in an agent that is realized when delivers presentations, lectures, or speeches at events, conferences, or public gatherings.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001062 "speaker role"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001062 "invited speakers at scientific symposiums, keynote presenters at technology expos, and guest lecturers at universities")
+SubClassOf(nfdicore:NFDI_0001062 nfdicore:NFDI_0000229)
+
+# Class: nfdicore:NFDI_0001063 (artificial intelligence)
+
+AnnotationAssertion(obo:IAO_0000119 nfdicore:NFDI_0001063 "Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach. Pearson.")
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001063 "Artificial Intelligence (AI) is a sub-discipline of Computer Science that focuses on creating systems capable of performing tasks that require human-like intelligence, such as learning, reasoning, and problem-solving.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001063 "artificial intelligence"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001063 "Deep learning for image recognition, reinforcement learning in robotics, and natural language processing fall under Artificial Intelligence.")
+SubClassOf(nfdicore:NFDI_0001063 nfdicore:NFDI_0010017)
+
+# Class: nfdicore:NFDI_0001064 (theoretical computer science)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001064 "Theoretical Computer Science is a sub-discipline of Computer Science that focuses on mathematical models of computation, computational complexity, and algorithmic problem-solving")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001064 "theoretical computer science"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001064 "Studies on Turing machines, complexity classes (P vs NP), and formal languages belong to Theoretical Computer Science.")
+SubClassOf(nfdicore:NFDI_0001064 nfdicore:NFDI_0010017)
+
+# Class: nfdicore:NFDI_0001065 (software engineering)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001065 "Software Engineering is a sub-discipline of Computer Science that applies engineering principles to the design, development, testing, and maintenance of software systems.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001065 "software engineering"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001065 "Agile software development, DevOps practices, and software architecture design fall under Software Engineering.")
+SubClassOf(nfdicore:NFDI_0001065 nfdicore:NFDI_0010017)
+
+# Class: nfdicore:NFDI_0001066 (data science)
+
+AnnotationAssertion(obo:IAO_0000119 nfdicore:NFDI_0001066 "Provost, F., & Fawcett, T. (2013). Data Science for Business. O'Reilly Media.")
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001066 "Data Science is a sub-discipline of Computer Science that integrates statistical methods, machine learning, and data processing techniques to extract insights and knowledge from structured and unstructured data.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001066 "data science"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001066 "Predictive analytics, big data visualization, and recommendation systems are part of Data Science.")
+SubClassOf(nfdicore:NFDI_0001066 nfdicore:NFDI_0010017)
+
+# Class: nfdicore:NFDI_0001067 (cybersecurity)
+
+AnnotationAssertion(obo:IAO_0000119 nfdicore:NFDI_0001067 "Stallings, W. (2020). Network Security Essentials. Pearson.")
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001067 "Cybersecurity is a sub-discipline of Computer Science that focuses on protecting computer systems, networks, and data from cyber threats, vulnerabilities, and unauthorized access.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001067 "cybersecurity"@en)
+AnnotationAssertion(skos:example nfdicore:NFDI_0001067 "Encryption techniques, intrusion detection systems, and ethical hacking studies belong to Cybersecurity.")
+SubClassOf(nfdicore:NFDI_0001067 nfdicore:NFDI_0010017)
+
 # Class: nfdicore:NFDI_0010001 (humanity)
 
 AnnotationAssertion(rdfs:comment nfdicore:NFDI_0010001 "An academic discipline focused on human culture, thought, and creativity, encompassing disciplines like literature, philosophy, and the arts."@en)
@@ -3703,13 +4199,63 @@ AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001001> "D
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001001> "DataFeedElement"@en)
 SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001001> nfdicore:NFDI_0000001)
 
-# Class: <https://schema.org/ImageObject> (ImageObject)
+# Class: <https://nfdi4culture.de/ontology/CTO_0001002> (lyrics)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001002> "Lyrics is an information content entity that consists of a structured sequence of linguistic expressions intended to be performed as part of a musical composition, typically corresponding to the vocal component of a song."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001002> "lyrics"@en)
+SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001002> obo:IAO_0000300)
+
+# Class: <https://nfdi4culture.de/ontology/CTO_0001005> (source item)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001005> "A bfo:entity that serves as the source of information represented in a data feed. It is an entity about which a data feed element conveys information. Each source item is identifiable by a unique URI within the context of the feed."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001005> "source item"@en)
+AnnotationAssertion(skos:example <https://nfdi4culture.de/ontology/CTO_0001005> "<https://corpusvitrearum.de/id/F5414> is a source item within the data feed Corpus Vitrearum Germany."@en)
+SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001005> obo:BFO_0000001)
+
+# Class: <https://schema.org/AudioObject> (AudioObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/AudioObject> "An audio file."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/AudioObject> "In the context of the Culture Ontology (CTO), an audio object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an audio file location."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/AudioObject> <https://schema.org/AudioObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/AudioObject> "Audio Object"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/AudioObject> "AudioObject"@en)
+SubClassOf(<https://schema.org/AudioObject> <https://schema.org/MediaObject>)
+
+# Class: <https://schema.org/DataFeed> (DataFeed)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/DataFeed> "A schema:DataFeed is an information content entity that is composed of one or more schema:DataFeedElements, each of which is also an information content entity. In the context of NFDI4Culture, a DataFeed is created in the NFDI4Culture portal manually."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/DataFeed> "A single feed providing structured information about one or more entities or topics."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/DataFeed> <https://schema.org/DataFeed>)
+AnnotationAssertion(rdfs:label <https://schema.org/DataFeed> "DataFeed"@en)
+AnnotationAssertion(skos:example <https://schema.org/DataFeed> "In NFDI4Culture <https://nfdi4culture.de/id/E4229> is the DataFeed for Corpus Vitrearum and <https://nfdi4culture.de/id/E3590> is the DataFeed for Linked Stage Graph."@en)
+SubClassOf(<https://schema.org/DataFeed> obo:IAO_0000030)
+
+# Class: <https://schema.org/DataFeedItem> (Data Feed Item)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/DataFeedItem> "A DataFeedItem is an information content entity that represents a discrete unit of information within a data feed. It does not embody the entity itself but refers to or describes it, enabling the aggregation or distribution of content in a feed-based system. In NFDI4Culture instances of DataFeedItem are permanent ARK-IDs, created on the foundation of the DataFeed it is a part of."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/DataFeedItem> "A single item within a larger data feed."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/DataFeedItem> <https://schema.org/DataFeedItem>)
+AnnotationAssertion(rdfs:label <https://schema.org/DataFeedItem> "Data Feed Item"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/DataFeedItem> "DataFeedItem"@en)
+SubClassOf(<https://schema.org/DataFeedItem> obo:IAO_0000030)
+
+# Class: <https://schema.org/ImageObject> (Image Object)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "An image file."@en)
-AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a DataFeedItem. It can have a license statement (string) and an image location."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an image location."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ImageObject> <https://schema.org/ImageObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "Image Object"@en)
 AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
-SubClassOf(<https://schema.org/ImageObject> obo:IAO_0000030)
+SubClassOf(<https://schema.org/ImageObject> <https://schema.org/MediaObject>)
+
+# Class: <https://schema.org/MediaObject> (Media Object)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's)."@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "In the context of the Culture Ontology (CTO), a media object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and a file location. In the NFDI4Culture Research Data Graph, a instance of a media object is usually an ARK-ID."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/MediaObject> <https://schema.org/MediaObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "Media Object"@en)
+AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "MediaObject"@en)
+SubClassOf(<https://schema.org/MediaObject> obo:IAO_0000030)
 
 
 ############################
@@ -3835,6 +4381,156 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMO_0001000 <http://orcid.org/0000-0001-
 AnnotationAssertion(obo:IAO_0000233 obo:OMO_0001000 "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(obo:IAO_0000234 obo:OMO_0001000 "https://orcid.org/0000-0001-5208-3432")
 AnnotationAssertion(rdfs:label obo:OMO_0001000 "out of scope")
+
+# Individual: nfdicore:NFDI_0001070 (active status)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001070 "Active Status is a status specification that indicates an entity, process, or project is currently operational, ongoing, or in execution.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001070 "active status"@en)
+ClassAssertion(nfdicore:NFDI_0001056 nfdicore:NFDI_0001070)
+
+# Individual: nfdicore:NFDI_0001071 (cancelled status)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001071 "Cancelled Status is a status specification that indicates an entity, process, or project has been terminated before reaching completion due to internal or external factors.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001071 "cancelled status"@en)
+ClassAssertion(nfdicore:NFDI_0001056 nfdicore:NFDI_0001071)
+
+# Individual: nfdicore:NFDI_0001072 (Dr.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001072 "Doctor (PhD or equivalent academic doctorate)")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001072 "Dr."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001072)
+
+# Individual: nfdicore:NFDI_0001073 (Dr.-Ing.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001073 "Doctor of Engineering (German doctorate in engineering).")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001073 "Dr.-Ing."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001073)
+
+# Individual: nfdicore:NFDI_0001074 (finished status)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001074 "Finished Status is a status specification that indicates an entity, process, or project has successfully reached its intended goal and is considered complete.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001074 "finished status"@en)
+ClassAssertion(nfdicore:NFDI_0001056 nfdicore:NFDI_0001074)
+
+# Individual: nfdicore:NFDI_0001075 (hybrid implementation)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001075 "Hybrid Implementation is an event implementation specification that defines the organization of an event that integrates both physical (on-site) and virtual (online) participation modes")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001075 "hybrid implementation"@en)
+ClassAssertion(nfdicore:NFDI_0001050 nfdicore:NFDI_0001075)
+
+# Individual: nfdicore:NFDI_0001076 (internal access)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001076 "Internal Access is an information access specification that defines policies and mechanisms restricting access to information exclusively within an organization, institution, or research group.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001076 "internal access"@en)
+ClassAssertion(nfdicore:NFDI_0001052 nfdicore:NFDI_0001076)
+
+# Individual: nfdicore:NFDI_0001077 (M.Sc.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001077 "Master of Science (graduate degree in science/engineering).")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001077 "M.Sc."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001077)
+
+# Individual: nfdicore:NFDI_0001078 (on site implementation)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001078 "On-Site Implementation is an event implementation specification that defines the organization of an event that occurs exclusively at a physical location with in-person attendance.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001078 "on site implementation"@en)
+ClassAssertion(nfdicore:NFDI_0001050 nfdicore:NFDI_0001078)
+
+# Individual: nfdicore:NFDI_0001079 (online implementation)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001079 "Online Implementation is an event implementation specification that defines the organization of an event conducted entirely through virtual platforms, enabling remote participation via digital communication technologies.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001079 "online implementation"@en)
+ClassAssertion(nfdicore:NFDI_0001050 nfdicore:NFDI_0001079)
+
+# Individual: nfdicore:NFDI_0001080 (open access)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001080 "Open Access is an information access specification that defines policies allowing unrestricted public access to information resources, ensuring free availability without subscription or payment barriers.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001080 "open access"@en)
+ClassAssertion(nfdicore:NFDI_0001052 nfdicore:NFDI_0001080)
+
+# Individual: nfdicore:NFDI_0001081 (organizational funding)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001081 "Organizational Funding is a funding specification that defines the financial structures, budgets, and resource allocation strategies for sustaining the operations of an organization or institution.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001081 "organizational funding"@en)
+ClassAssertion(nfdicore:NFDI_0001051 nfdicore:NFDI_0001081)
+
+# Individual: nfdicore:NFDI_0001082 (paused status)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001082 "Paused Status is a status specification that indicates an entity, process, or project is temporarily halted but may resume at a later stage.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001082 "paused status"@en)
+ClassAssertion(nfdicore:NFDI_0001056 nfdicore:NFDI_0001082)
+
+# Individual: nfdicore:NFDI_0001083 (paywall access)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001083 "Paywall Access is an information access specification that defines policies requiring users to purchase, subscribe, or obtain institutional licenses to access digital or physical information resources.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001083 "paywall access"@en)
+ClassAssertion(nfdicore:NFDI_0001052 nfdicore:NFDI_0001083)
+
+# Individual: nfdicore:NFDI_0001084 (PD. Dr.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001084 "Privatdozent (Dr. with habilitation, qualified to teach at a university)")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001084 "PD. Dr."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001084)
+
+# Individual: nfdicore:NFDI_0001085 (PD. Dr. habil.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001085 "Privatdozent with Habilitation (higher academic qualification in Germany)")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001085 "PD. Dr. habil."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001085)
+
+# Individual: nfdicore:NFDI_0001086 (planning status)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001086 "Planning Status is a status specification that indicates an entity, process, or project is in a preparatory or strategic development phase before execution.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001086 "planning status"@en)
+ClassAssertion(nfdicore:NFDI_0001056 nfdicore:NFDI_0001086)
+
+# Individual: nfdicore:NFDI_0001087 (Prof.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001087 "Professor (academic title for a senior faculty member).")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001087 "Prof."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001087)
+
+# Individual: nfdicore:NFDI_0001088 (Prof. Dr.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001088 "Professor with a doctorate.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001088 "Prof. Dr."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001088)
+
+# Individual: nfdicore:NFDI_0001089 (Prof. Dr.-Ing.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001089 "Professor with a doctorate in engineering.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001089 "Prof. Dr.-Ing."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001089)
+
+# Individual: nfdicore:NFDI_0001090 (project funding)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001090 "Project Funding is a funding specification that defines the financial mechanisms, grants, and investment strategies used to support specific research, development, or innovation projects.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001090 "project funding"@en)
+ClassAssertion(nfdicore:NFDI_0001051 nfdicore:NFDI_0001090)
+
+# Individual: nfdicore:NFDI_0001091 (restricted access)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001091 "Restricted Access is an information access specification that defines policies limiting access to specific users, organizations, or groups based on predefined criteria such as confidentiality, security, or legal regulations.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001091 "restricted access"@en)
+ClassAssertion(nfdicore:NFDI_0001052 nfdicore:NFDI_0001091)
+
+# Individual: nfdicore:NFDI_0001092 (self funding)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001092 "Self-Funding is a funding specification that defines the use of personal, internal, or independently generated financial resources to support activities, projects, or organizations without relying on external funding sources.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001092 "self funding"@en)
+ClassAssertion(nfdicore:NFDI_0001051 nfdicore:NFDI_0001092)
+
+# Individual: nfdicore:NFDI_0001093 (test phase status)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001093 "Test Phase Status is a status specification that indicates an entity, process, or project is undergoing testing, evaluation, or validation before finalization.")
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001093 "test phase status"@en)
+ClassAssertion(nfdicore:NFDI_0001056 nfdicore:NFDI_0001093)
+
+# Individual: nfdicore:NFDI_0001094 (Dr. Dr.)
+
+AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001094 "Two Doctor degrees (PhD or equivalent academic doctorate)"@en)
+AnnotationAssertion(rdfs:label nfdicore:NFDI_0001094 "Dr. Dr."@en)
+ClassAssertion(nfdicore:NFDI_0001040 nfdicore:NFDI_0001094)
 
 
 DisjointClasses(obo:BFO_0000004 obo:BFO_0000020 obo:BFO_0000031)

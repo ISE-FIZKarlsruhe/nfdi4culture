@@ -1,1 +1,12 @@
+https://schema.org/DataFeedItem
+https://schema.org/DataFeed
+https://schema.org/dataFeedElement
+https://schema.org/item
 https://schema.org/ImageObject
+https://schema.org/MediaObject
+https://schema.org/AudioObject
+https://schema.org/license
+https://schema.org/dateCreated
+https://schema.org/dateModified
+https://schema.org/contentUrl
+https://schema.org/associatedMedia 

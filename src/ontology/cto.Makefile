@@ -18,4 +18,3 @@ $(IMPORTDIR)/schema_import.owl: $(MIRRORDIR)/schema.owl $(IMPORTDIR)/schema_term
 		extract -T $(IMPORTDIR)/schema_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method SUBSET \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
-

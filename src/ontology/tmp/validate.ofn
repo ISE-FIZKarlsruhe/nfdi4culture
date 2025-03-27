@@ -23,11 +23,11 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-26/cto.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-27/cto.owl>
 Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
-Annotation(owl:versionInfo "2025-03-26")
+Annotation(owl:versionInfo "2025-03-27")
 
 Declaration(Class(edamontology:format_2197))
 Declaration(Class(edamontology:format_2376))
@@ -396,7 +396,6 @@ Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001018>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001019>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001020>))
 Declaration(ObjectProperty(<https://schema.org/associatedMedia>))
-Declaration(ObjectProperty(<https://schema.org/contentUrl>))
 Declaration(ObjectProperty(<https://schema.org/dataFeedElement>))
 Declaration(ObjectProperty(<https://schema.org/item>))
 Declaration(ObjectProperty(<https://schema.org/license>))
@@ -408,7 +407,7 @@ Declaration(DataProperty(nfdicore:NFDI_0000136))
 Declaration(DataProperty(nfdicore:NFDI_0001007))
 Declaration(DataProperty(nfdicore:NFDI_0001008))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
-Declaration(DataProperty(<https://schema.org/contentUrl>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001021>))
 Declaration(NamedIndividual(obo:IAO_0000002))
 Declaration(NamedIndividual(obo:IAO_0000103))
 Declaration(NamedIndividual(obo:IAO_0000120))
@@ -1813,14 +1812,6 @@ AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "associatedM
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
 ObjectPropertyRange(<https://schema.org/associatedMedia> <https://schema.org/MediaObject>)
 
-# Object Property: <https://schema.org/contentUrl> (contentURL)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/contentUrl> "Actual bytes of the media object, for example the image file or video file."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/contentUrl> <https://schema.org/contentUrl>)
-AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentURL"@en)
-AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentUrl"@en)
-ObjectPropertyDomain(<https://schema.org/contentUrl> <https://schema.org/MediaObject>)
-
 # Object Property: <https://schema.org/dataFeedElement> (has data feed element)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/dataFeedElement> "An item within a data feed. Data feeds may have many elements."@en)
@@ -1916,10 +1907,12 @@ DataPropertyRange(nfdicore:NFDI_0001008 xsd:anyURI)
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001007> "A natural language text description of a license. This applies to media objects connected to source items in the NFDI4Culture research data graph."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001007> "has license statement"@en)
 
-# Data Property: <https://schema.org/contentUrl> (contentURL)
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001021> (has content url)
 
-SubDataPropertyOf(<https://schema.org/contentUrl> nfdicore:NFDI_0001008)
-DataPropertyRange(<https://schema.org/contentUrl> xsd:anyURI)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001021> "The location of a media object that is associated with a cto:source item."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001021> "has content url"@en)
+AnnotationAssertion(skos:example <https://nfdi4culture.de/ontology/CTO_0001021> "cto:source item <https://slod.fiz-karlsruhe.de/labw-2-2599048> has an image with the location <https://slod.fiz-karlsruhe.de/images/slod/2-2599048-4.jpg>"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001021> nfdicore:NFDI_0001008)
 
 
 

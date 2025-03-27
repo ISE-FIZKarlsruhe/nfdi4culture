@@ -324,14 +324,13 @@
     
 
 
-    <!-- https://schema.org/contentUrl -->
+    <!-- https://nfdi4culture.de/ontology/CTO_0001021 -->
 
-    <owl:DatatypeProperty rdf:about="https://schema.org/contentUrl">
+    <owl:DatatypeProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001021">
         <rdfs:subPropertyOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008"/>
-        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">Actual bytes of the media object, for example the image file or video file.</rdfs:comment>
-        <rdfs:label xml:lang="en">contentURL</rdfs:label>
+        <rdfs:comment xml:lang="en">The location of a media object that is associated with a cto:source item.</rdfs:comment>
+        <rdfs:label xml:lang="en">has content url</rdfs:label>
+        <skos:example xml:lang="en">cto:source item &lt;https://slod.fiz-karlsruhe.de/labw-2-2599048&gt; has an image with the location &lt;https://slod.fiz-karlsruhe.de/images/slod/2-2599048-4.jpg&gt;</skos:example>
     </owl:DatatypeProperty>
     
 

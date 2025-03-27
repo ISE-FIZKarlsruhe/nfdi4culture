@@ -39,7 +39,7 @@ Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001018>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001019>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001020>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
-Declaration(DataProperty(<https://schema.org/contentUrl>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001021>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -160,18 +160,18 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001019> <http://purl.
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001020> "is related item of"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001020> <https://nfdi4culture.de/ontology/CTO_0001014>)
 
-# Object Property: <https://schema.org/associatedMedia> (associatedMedia)
+# Object Property: <https://schema.org/associatedMedia> (has associated media)
 
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
 ObjectPropertyRange(<https://schema.org/associatedMedia> <https://schema.org/MediaObject>)
 
-# Object Property: <https://schema.org/dataFeedElement> (dataFeedElement)
+# Object Property: <https://schema.org/dataFeedElement> (has data feed element)
 
 AnnotationAssertion(rdfs:label <https://schema.org/dataFeedElement> "has data feed element"@en)
 SubObjectPropertyOf(<https://schema.org/dataFeedElement> <http://purl.obolibrary.org/obo/BFO_0000178>)
 ObjectPropertyRange(<https://schema.org/dataFeedElement> <https://schema.org/DataFeedItem>)
 
-# Object Property: <https://schema.org/item> (item)
+# Object Property: <https://schema.org/item> (has item)
 
 AnnotationAssertion(rdfs:label <https://schema.org/item> "has item"@en)
 SubObjectPropertyOf(<https://schema.org/item> <http://purl.obolibrary.org/obo/IAO_0000136>)
@@ -195,13 +195,12 @@ ObjectPropertyDomain(<https://schema.org/license> <http://purl.obolibrary.org/ob
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001007> "A natural language text description of a license. This applies to media objects connected to source items in the NFDI4Culture research data graph."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001007> "has license statement"@en)
 
-# Data Property: <https://schema.org/contentUrl> (contentUrl)
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001021> (has content url)
 
-AnnotationAssertion(rdfs:comment <https://schema.org/contentUrl> "Actual bytes of the media object, for example the image file or video file."@en)
-AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentURL"@en)
-SubDataPropertyOf(<https://schema.org/contentUrl> nfdicore:NFDI_0001008)
-DataPropertyDomain(<https://schema.org/contentUrl> <https://schema.org/MediaObject>)
-DataPropertyRange(<https://schema.org/contentUrl> xsd:anyURI)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001021> "The location of a media object that is associated with a cto:source item."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001021> "has content url"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001021> "cto:source item <https://slod.fiz-karlsruhe.de/labw-2-2599048> has an image with the location <https://slod.fiz-karlsruhe.de/images/slod/2-2599048-4.jpg>"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001021> nfdicore:NFDI_0001008)
 
 
 
@@ -237,19 +236,19 @@ AnnotationAssertion(rdfs:label <https://schema.org/DataFeed> "DataFeed"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://schema.org/DataFeed> "In NFDI4Culture <https://nfdi4culture.de/id/E4229> is the DataFeed for Corpus Vitrearum and <https://nfdi4culture.de/id/E3590> is the DataFeed for Linked Stage Graph."@en)
 SubClassOf(<https://schema.org/DataFeed> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <https://schema.org/DataFeedItem> (DataFeedItem)
+# Class: <https://schema.org/DataFeedItem> (Data Feed Item)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/DataFeedItem> "A DataFeedItem is an information content entity that represents a discrete unit of information within a data feed. It does not embody the entity itself but refers to or describes it, enabling the aggregation or distribution of content in a feed-based system. In NFDI4Culture instances of DataFeedItem are permanent ARK-IDs, created on the foundation of the DataFeed it is a part of."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/DataFeedItem> "Data Feed Item"@en)
 SubClassOf(<https://schema.org/DataFeedItem> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <https://schema.org/ImageObject> (ImageObject)
+# Class: <https://schema.org/ImageObject> (Image Object)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an image location."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "Image Object"@en)
 SubClassOf(<https://schema.org/ImageObject> <https://schema.org/MediaObject>)
 
-# Class: <https://schema.org/MediaObject> (MediaObject)
+# Class: <https://schema.org/MediaObject> (Media Object)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "In the context of the Culture Ontology (CTO), a media object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and a file location. In the NFDI4Culture Research Data Graph, a instance of a media object is usually an ARK-ID."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "Media Object"@en)

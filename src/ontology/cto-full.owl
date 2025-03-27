@@ -23,11 +23,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="https://nfdi4culture.de/ontology/cto/cto-full.owl">
-        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-26/cto-full.owl"/>
+        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-27/cto-full.owl"/>
         <dcterms:description>The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>NFDI4Culture Ontology (CTO)</dcterms:title>
-        <owl:versionInfo>2025-03-26</owl:versionInfo>
+        <owl:versionInfo>2025-03-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2445,14 +2445,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- https://schema.org/contentUrl -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/contentUrl">
-        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://schema.org/dataFeedElement -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/dataFeedElement">
@@ -2598,12 +2590,13 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- https://schema.org/contentUrl -->
+    <!-- https://nfdi4culture.de/ontology/CTO_0001021 -->
 
-    <owl:DatatypeProperty rdf:about="https://schema.org/contentUrl">
+    <owl:DatatypeProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001021">
         <rdfs:subPropertyOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008"/>
-        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">The location of a media object that is associated with a cto:source item.</rdfs:comment>
+        <rdfs:label xml:lang="en">has content url</rdfs:label>
+        <skos:example xml:lang="en">cto:source item &lt;https://slod.fiz-karlsruhe.de/labw-2-2599048&gt; has an image with the location &lt;https://slod.fiz-karlsruhe.de/images/slod/2-2599048-4.jpg&gt;</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -7400,12 +7393,6 @@ This class is useful in nfdicore to provide a unified and structured representat
     </rdf:Description>
     <rdf:Description rdf:about="https://orcid.org/0000-0002-3092-0532">
         <rdfs:label>Hossein Beygi Nasrabadi</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://schema.org/contentUrl">
-        <rdfs:comment xml:lang="en">Actual bytes of the media object, for example the image file or video file.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/contentUrl"/>
-        <rdfs:label xml:lang="en">contentURL</rdfs:label>
-        <rdfs:label xml:lang="en">contentUrl</rdfs:label>
     </rdf:Description>
     
 

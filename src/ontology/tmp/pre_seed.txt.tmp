@@ -4,11 +4,10 @@ http://purl.obolibrary.org/obo/IAO_0000030
 https://nfdi4culture.de/ontology/CTO_0001014
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001
 https://schema.org/MediaObject
-http://www.w3.org/2001/XMLSchema#anyURI
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008
 https://nfdi4culture.de/ontology/CTO_0001005
 https://schema.org/DataFeedItem
 http://purl.obolibrary.org/obo/IAO_0000136
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008
 https://nfdi4culture.de/ontology/CTO_0001020
 https://nfdi4culture.de/ontology/CTO_0001008
 https://schema.org/associatedMedia
@@ -31,9 +30,9 @@ http://purl.org/dc/terms/license
 https://nfdi4culture.de/ontology/CTO_0001007
 http://purl.obolibrary.org/obo/CTO_0000000
 https://nfdi4culture.de/ontology/CTO_0001001
-https://schema.org/contentUrl
 https://schema.org/item
 http://purl.org/dc/terms/title
+https://nfdi4culture.de/ontology/CTO_0001021
 https://nfdi4culture.de/ontology/CTO_0001006
 https://schema.org/DataFeed
 https://nfdi4culture.de/ontology/CTO_0001019

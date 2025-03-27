@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-26/imports/schema_import.owl>
-Annotation(owl:versionInfo "2025-03-26")
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-27/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-03-27")
 
 Declaration(Class(<https://schema.org/AudioObject>))
 Declaration(Class(<https://schema.org/DataFeed>))
@@ -16,7 +16,6 @@ Declaration(Class(<https://schema.org/DataFeedItem>))
 Declaration(Class(<https://schema.org/ImageObject>))
 Declaration(Class(<https://schema.org/MediaObject>))
 Declaration(ObjectProperty(<https://schema.org/associatedMedia>))
-Declaration(ObjectProperty(<https://schema.org/contentUrl>))
 Declaration(ObjectProperty(<https://schema.org/dataFeedElement>))
 Declaration(ObjectProperty(<https://schema.org/item>))
 Declaration(ObjectProperty(<https://schema.org/license>))
@@ -32,13 +31,6 @@ Declaration(Datatype(xsd:date))
 AnnotationAssertion(rdfs:comment <https://schema.org/associatedMedia> "A media object that encodes this CreativeWork. This property is a synonym for encoding."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/associatedMedia> <https://schema.org/associatedMedia>)
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "associatedMedia"@en)
-
-# Object Property: <https://schema.org/contentUrl> (contentUrl)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/contentUrl> "Actual bytes of the media object, for example the image file or video file."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/contentUrl> <https://schema.org/contentUrl>)
-AnnotationAssertion(rdfs:label <https://schema.org/contentUrl> "contentUrl"@en)
-ObjectPropertyDomain(<https://schema.org/contentUrl> <https://schema.org/MediaObject>)
 
 # Object Property: <https://schema.org/dataFeedElement> (dataFeedElement)
 

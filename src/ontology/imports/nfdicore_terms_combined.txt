@@ -9,7 +9,6 @@ http://purl.obolibrary.org/obo/IAO_0000300
 http://purl.org/dc/terms/description
 http://purl.org/dc/terms/license
 http://purl.org/dc/terms/title
-http://www.w3.org/2001/XMLSchema#anyURI
 http://www.w3.org/2004/02/skos/core#example
 https://creativecommons.org/publicdomain/zero/1.0/
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001
@@ -39,6 +38,7 @@ https://nfdi4culture.de/ontology/CTO_0001017
 https://nfdi4culture.de/ontology/CTO_0001018
 https://nfdi4culture.de/ontology/CTO_0001019
 https://nfdi4culture.de/ontology/CTO_0001020
+https://nfdi4culture.de/ontology/CTO_0001021
 https://nfdi4culture.de/ontology/cto-edit.owl
 https://schema.org/AudioObject
 https://schema.org/DataFeed
@@ -46,7 +46,6 @@ https://schema.org/DataFeedItem
 https://schema.org/ImageObject
 https://schema.org/MediaObject
 https://schema.org/associatedMedia
-https://schema.org/contentUrl
 https://schema.org/dataFeedElement
 https://schema.org/item
 https://schema.org/license

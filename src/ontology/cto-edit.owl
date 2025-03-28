@@ -13,7 +13,6 @@ Prefix(nfdicore:=<https://nfdi.fiz-karlsruhe.de/ontology/>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto-edit.owl>
-Import(<https://nfdi4culture.de/ontology/cto/imports/dcterms_import.owl>)
 Import(<https://nfdi4culture.de/ontology/cto/imports/nfdicore_import.owl>)
 Import(<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl>)
 Import(<https://nfdi4culture.de/ontology/cto/imports/skos_import.owl>)
@@ -21,7 +20,6 @@ Annotation(dcterms:description "The CTO ontology models cultural heritage resear
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
 
-Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001001>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001002>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001005>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001024>))
@@ -48,12 +46,19 @@ Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001020>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001025>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001026>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001028>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001049>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001000>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001021>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001022>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001023>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001034>))
+Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001043>))
+Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001044>))
+Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001045>))
+Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001046>))
+Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001047>))
+Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001048>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -177,12 +182,13 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001019> <http://purl.
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001020> "is related item of"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001020> <https://nfdi4culture.de/ontology/CTO_0001014>)
 
-# Object Property: <https://nfdi4culture.de/ontology/CTO_0001025> (is about real thing)
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001025> (is about real world entity)
 
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001025> "A provider URI (cto:source item) is about a real world entity, e.g. an instance of schema:Book or nfdicore:Event."@en)
-AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001025> "is about real thing"@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001025> "A provider URI (cto:source item) is about a real world entity, e.g. an instance of schema:Book, schema:Sculpture or nfdicore:Event."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001025> "is about real world entity"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001025> <http://purl.obolibrary.org/obo/IAO_0000136>)
 ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001025> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001025> ObjectUnionOf(nfdicore:NFDI_0000004 nfdicore:NFDI_0000131 <https://schema.org/Book> <https://schema.org/LandmarksOrHistoricalBuildings> <https://schema.org/Sculpture> <https://schema.org/SheetMusic> <https://schema.org/TheaterEvent>))
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001026> (has external classifier)
 
@@ -198,13 +204,20 @@ AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001028> "i
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001028> <http://purl.obolibrary.org/obo/IAO_0000219>)
 ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001028> <https://nfdi4culture.de/ontology/CTO_0001027>)
 
-# Object Property: <https://schema.org/associatedMedia> (has associated media)
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001049> (has data concept)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001049> "has data concept"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001049> <http://purl.obolibrary.org/obo/IAO_0000136>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001049> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001049> <http://www.w3.org/2004/02/skos/core#Concept>)
+
+# Object Property: <https://schema.org/associatedMedia> (associatedMedia)
 
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
 ObjectPropertyDomain(<https://schema.org/associatedMedia> <https://nfdi4culture.de/ontology/CTO_0001005>)
 ObjectPropertyRange(<https://schema.org/associatedMedia> <https://schema.org/MediaObject>)
 
-# Object Property: <https://schema.org/dataFeedElement> (has data feed element)
+# Object Property: <https://schema.org/dataFeedElement> (dataFeedElement)
 
 AnnotationAssertion(rdfs:label <https://schema.org/dataFeedElement> "has data feed element"@en)
 SubObjectPropertyOf(<https://schema.org/dataFeedElement> <http://purl.obolibrary.org/obo/BFO_0000178>)
@@ -274,14 +287,6 @@ DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001023> <https://nfdi4
 #   Classes
 ############################
 
-# Class: <https://nfdi4culture.de/ontology/CTO_0001001> (DataFeedElement)
-
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001001> "A CTO DataFeedElement is an NFDI Resource that refers to an individual data point or entry within a larger data set."@en)
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001001> "In CTO, the DataFeedElement serves to signify a membership within a particular resource or datafeed. Thus, entities of various types—such as of types nfdicore:Person, nfdicore:Place, cto:Item, or nfdicore:Event, etc. may acquire the additional designation of DatafeedElement if they are included in e.g. a dataset and are described within the graph."@en)
-AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001001> "DataFeedElement"@de)
-AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001001> "DataFeedElement"@en)
-SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001001> nfdicore:NFDI_0000001)
-
 # Class: <https://nfdi4culture.de/ontology/CTO_0001002> (lyrics)
 
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001002> "Lyrics is an information content entity that consists of a structured sequence of linguistic expressions intended to be performed as part of a musical composition, typically corresponding to the vocal component of a song."@en)
@@ -305,7 +310,7 @@ SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001024> nfdicore:NFDI_0000015)
 
 # Class: <https://nfdi4culture.de/ontology/CTO_0001027> (classifier)
 
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001027> "Classifiers provide standardized categories or terms that support consistent annotation, indexing, or semantic referencing of entities in a domain, e.g. Iconclass, A&AT, RISM."@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001027> "An information content entity. Classifiers provide standardized categories or terms that support consistent annotation, indexing, or semantic referencing of entities in a domain, e.g. Iconclass, A&AT, RISM."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001027> "classifier"@en)
 SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001027> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
@@ -327,6 +332,12 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001031> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001031> "RISM classifier"@en)
 SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001031> <https://nfdi4culture.de/ontology/CTO_0001027>)
 
+# Class: <https://schema.org/Book> (Book)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Book> "A book is a a physical object and a material entity consisting of a set of bound pages, typically composed of paper or similar materials, that contains written, printed, or illustrated content intended for reading, study, or reference."@en)
+AnnotationAssertion(rdfs:label <https://schema.org/Book> "Book"@en)
+SubClassOf(<https://schema.org/Book> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
 # Class: <https://schema.org/DataFeed> (DataFeed)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/DataFeed> "A schema:DataFeed is an information content entity that is composed of one or more schema:DataFeedElements, each of which is also an information content entity. In the context of NFDI4Culture, a DataFeed is created in the NFDI4Culture portal manually."@en)
@@ -334,33 +345,88 @@ AnnotationAssertion(rdfs:label <https://schema.org/DataFeed> "DataFeed"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://schema.org/DataFeed> "In NFDI4Culture <https://nfdi4culture.de/id/E4229> is the DataFeed for Corpus Vitrearum and <https://nfdi4culture.de/id/E3590> is the DataFeed for Linked Stage Graph."@en)
 SubClassOf(<https://schema.org/DataFeed> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <https://schema.org/DataFeedItem> (Data Feed Item)
+# Class: <https://schema.org/DataFeedItem> (DataFeedItem)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/DataFeedItem> "A DataFeedItem is an information content entity that represents a discrete unit of information within a data feed. It does not embody the entity itself but refers to or describes it, enabling the aggregation or distribution of content in a feed-based system. In NFDI4Culture instances of DataFeedItem are permanent ARK-IDs, created on the foundation of the DataFeed it is a part of."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/DataFeedItem> "Data Feed Item"@en)
 SubClassOf(<https://schema.org/DataFeedItem> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <https://schema.org/ImageObject> (Image Object)
+# Class: <https://schema.org/ImageObject> (ImageObject)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/ImageObject> "In the context of the Culture Ontology (CTO), an image object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an image location."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "Image Object"@en)
 SubClassOf(<https://schema.org/ImageObject> <https://schema.org/MediaObject>)
 
-# Class: <https://schema.org/MediaObject> (Media Object)
+# Class: <https://schema.org/LandmarksOrHistoricalBuildings> (LandmarksOrHistoricalBuildings)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/LandmarksOrHistoricalBuildings> "A Landmark or Historical Building is an object and a material structure or site of significant historical, cultural, architectural, or social importance, typically recognized or preserved due to its relevance to heritage, identity, or public memory."@en)
+AnnotationAssertion(rdfs:label <https://schema.org/LandmarksOrHistoricalBuildings> "LandmarksOrHistoricalBuildings"@en)
+SubClassOf(<https://schema.org/LandmarksOrHistoricalBuildings> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: <https://schema.org/MediaObject> (MediaObject)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "In the context of the Culture Ontology (CTO), a media object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and a file location. In the NFDI4Culture Research Data Graph, a instance of a media object is usually an ARK-ID."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "Media Object"@en)
 SubClassOf(<https://schema.org/MediaObject> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <https://schema.org/Sculpture> (Sculpture)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Sculpture> "A sculpture is a an object and a three-dimensional material entity that is intentionally created by a human agent through artistic processes such as carving, modeling, assembling, or casting, typically for the purpose of aesthetic, cultural, or symbolic expression."@en)
+AnnotationAssertion(rdfs:label <https://schema.org/Sculpture> "Sculpture"@en)
+SubClassOf(<https://schema.org/Sculpture> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: <https://schema.org/SheetMusic> (SheetMusic)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/SheetMusic> "Sheet music is a an object and a material entity that contains a visual representation of musical notation, typically printed or handwritten on paper or another medium, and intended to guide the performance or study of a musical composition."@en)
+AnnotationAssertion(rdfs:label <https://schema.org/SheetMusic> "SheetMusic"@en)
+SubClassOf(<https://schema.org/SheetMusic> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: <https://schema.org/TheaterEvent> (TheaterEvent)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/TheaterEvent> "A Theater Event is an event and thus, an occurrent. Instances of theater events are individual performances."@en)
+AnnotationAssertion(rdfs:label <https://schema.org/TheaterEvent> "TheaterEvent"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://schema.org/TheaterEvent> "<https://slod.fiz-karlsruhe.de/labw-2-2599390.html> is a theater event, which took place on March 11, 1923."@en)
+SubClassOf(<https://schema.org/TheaterEvent> nfdicore:NFDI_0000131)
 
 
 ############################
 #   Named Individuals
 ############################
 
-# Individual: <https://nfdi4culture.de/ontology/CTO_0001034> (3D Model)
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001034> (3D model)
 
-AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001034> "3D Model"@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001034> "3D model"@en)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001034>)
+
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001043> (audio object)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001043> "audio object"@en)
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001043>)
+
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001044> (image object)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001044> "image object"@en)
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001044>)
+
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001045> (media object)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001045> "media object"@en)
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001045>)
+
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001046> (sheet music)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001046> "sheet music"@en)
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001046>)
+
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001047> (text object)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001047> "text object"@en)
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001047>)
+
+# Individual: <https://nfdi4culture.de/ontology/CTO_0001048> (video object)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001048> "video object"@en)
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001048>)
 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CTO_0000000> "root node"@en)

@@ -1,4 +1,4 @@
-Prefix(:=<https://nfdi4culture.de/ontology/imports/schema_import.owl#>)
+Prefix(:=<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,15 +6,20 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://nfdi4culture.de/ontology/imports/schema_import.owl>
-<https://nfdi4culture.de/ontology/3.0.0/imports/schema_import.owl>
-Annotation(owl:versionInfo "3.0.0")
+Ontology(<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-28/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-03-28")
 
 Declaration(Class(<https://schema.org/AudioObject>))
+Declaration(Class(<https://schema.org/Book>))
 Declaration(Class(<https://schema.org/DataFeed>))
 Declaration(Class(<https://schema.org/DataFeedItem>))
 Declaration(Class(<https://schema.org/ImageObject>))
+Declaration(Class(<https://schema.org/LandmarksOrHistoricalBuildings>))
 Declaration(Class(<https://schema.org/MediaObject>))
+Declaration(Class(<https://schema.org/Sculpture>))
+Declaration(Class(<https://schema.org/SheetMusic>))
+Declaration(Class(<https://schema.org/TheaterEvent>))
 Declaration(ObjectProperty(<https://schema.org/associatedMedia>))
 Declaration(ObjectProperty(<https://schema.org/dataFeedElement>))
 Declaration(ObjectProperty(<https://schema.org/item>))
@@ -64,6 +69,12 @@ AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/AudioObject> <https://s
 AnnotationAssertion(rdfs:label <https://schema.org/AudioObject> "AudioObject"@en)
 SubClassOf(<https://schema.org/AudioObject> <https://schema.org/MediaObject>)
 
+# Class: <https://schema.org/Book> (Book)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Book> "A book."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Book> <https://schema.org/Book>)
+AnnotationAssertion(rdfs:label <https://schema.org/Book> "Book"@en)
+
 # Class: <https://schema.org/DataFeed> (DataFeed)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/DataFeed> "A single feed providing structured information about one or more entities or topics."@en)
@@ -83,11 +94,35 @@ AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ImageObject> <https://s
 AnnotationAssertion(rdfs:label <https://schema.org/ImageObject> "ImageObject"@en)
 SubClassOf(<https://schema.org/ImageObject> <https://schema.org/MediaObject>)
 
+# Class: <https://schema.org/LandmarksOrHistoricalBuildings> (LandmarksOrHistoricalBuildings)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/LandmarksOrHistoricalBuildings> "An historical landmark or building."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/LandmarksOrHistoricalBuildings> <https://schema.org/LandmarksOrHistoricalBuildings>)
+AnnotationAssertion(rdfs:label <https://schema.org/LandmarksOrHistoricalBuildings> "LandmarksOrHistoricalBuildings"@en)
+
 # Class: <https://schema.org/MediaObject> (MediaObject)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's)."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/MediaObject> <https://schema.org/MediaObject>)
 AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "MediaObject"@en)
+
+# Class: <https://schema.org/Sculpture> (Sculpture)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Sculpture> "A piece of sculpture."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Sculpture> <https://schema.org/Sculpture>)
+AnnotationAssertion(rdfs:label <https://schema.org/Sculpture> "Sculpture"@en)
+
+# Class: <https://schema.org/SheetMusic> (SheetMusic)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/SheetMusic> "Printed music, as opposed to performed or recorded music."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/SheetMusic> <https://pending.schema.org/SheetMusic>)
+AnnotationAssertion(rdfs:label <https://schema.org/SheetMusic> "SheetMusic"@en)
+
+# Class: <https://schema.org/TheaterEvent> (TheaterEvent)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/TheaterEvent> "Event type: Theater performance."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/TheaterEvent> <https://schema.org/TheaterEvent>)
+AnnotationAssertion(rdfs:label <https://schema.org/TheaterEvent> "TheaterEvent"@en)
 
 
 )

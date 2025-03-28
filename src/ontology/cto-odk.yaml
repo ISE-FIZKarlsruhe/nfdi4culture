@@ -22,13 +22,6 @@ import_group:
     #  module_type_slme: SUBSET
     #  slme_individuals: exclude
 
-    - id: dcterms
-      mirror_from:  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
-      module_type: custom
-    #  module_type: slme
-    #  module_type_slme: SUBSET
-    #  slme_individuals: exclude
-
     - id: skos
       mirror_from:  "http://www.w3.org/TR/skos-reference/skos.rdf"
     #  module_type: custom

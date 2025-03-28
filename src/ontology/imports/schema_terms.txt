@@ -9,3 +9,8 @@ https://schema.org/license
 https://schema.org/dateCreated
 https://schema.org/dateModified
 https://schema.org/associatedMedia 
+https://schema.org/Sculpture
+https://schema.org/TheaterEvent
+https://schema.org/Book
+https://schema.org/LandmarksOrHistoricalBuildings
+https://schema.org/SheetMusic

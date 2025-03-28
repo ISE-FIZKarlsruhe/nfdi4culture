@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                54fb155357e1ff9f5d25c7ed13696031762f10d7e18309adf8e52440c1f03d81
+CONFIG_HASH=                ac6d4d8c5106493b34d9c9853b25ae71f9f7e6a51738c204ad5e22bf3a2cc2bf
 
 
 # ----------------------------------------
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  nfdicore schema dcterms skos
+IMPORTS =  nfdicore schema skos
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -379,10 +379,6 @@ $(IMPORTDIR)/nfdicore_import.owl: $(MIRRORDIR)/nfdicore.owl $(IMPORTDIR)/nfdicor
 
 $(IMPORTDIR)/schema_import.owl: $(MIRRORDIR)/schema.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in cto.Makefile!" && false
-## Module for ontology: dcterms
-
-$(IMPORTDIR)/dcterms_import.owl: $(MIRRORDIR)/dcterms.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in cto.Makefile!" && false
 ## Module for ontology: skos
 
 $(IMPORTDIR)/skos_import.owl: $(MIRRORDIR)/skos.owl $(IMPORTDIR)/skos_terms_combined.txt
@@ -435,13 +431,6 @@ mirror-nfdicore: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/schema.owl
 mirror-schema: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl -o $(TMPDIR)/$@.owl
-
-
-## ONTOLOGY: dcterms
-.PHONY: mirror-dcterms
-.PRECIOUS: $(MIRRORDIR)/dcterms.owl
-mirror-dcterms: | $(TMPDIR)
-	$(ROBOT) convert -I https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: skos

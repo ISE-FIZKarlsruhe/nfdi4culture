@@ -18,7 +18,6 @@ These are the current imports in CTO
 | ------ | --- | ---- |
 | nfdicore | https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl | mirror |
 | schema | https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl | custom |
-| dcterms | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl | custom |
 | skos | http://www.w3.org/TR/skos-reference/skos.rdf | slme |
 
 ## Components

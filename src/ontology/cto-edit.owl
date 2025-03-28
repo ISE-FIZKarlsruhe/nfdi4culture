@@ -59,6 +59,7 @@ Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001028>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001049>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001065>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001066>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001069>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001000>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001021>))
@@ -70,6 +71,13 @@ Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001062>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001063>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001064>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001067>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001068>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001070>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001071>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001072>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001073>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001074>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001075>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001034>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001043>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001044>))
@@ -245,6 +253,11 @@ SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001066> nfdicore:NFDI
 ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001066> <https://nfdi4culture.de/ontology/CTO_0001024>)
 ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001066> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001069> (has holding organization)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001069> "Links an item to the organization (such as a library, archive, museum, or other institution) that currently holds, owns, or is responsible for the item. This property identifies the custodial or curatorial institution associated with the object."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001069> "has holding organization"@en)
+
 # Object Property: <https://schema.org/associatedMedia> (associatedMedia)
 
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
@@ -357,6 +370,54 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001067> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001067> "has lyrics text"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001067> "\"So sei gegrüßt viel tausendmal, holder, (holder) Frühling! grüßen wir dich froh mit Sang und Schall, mit Sang und Schall. Du kommst, und froh ist alle Welt, holder, (holder) Frühling! Es freut sich Wiese, Wald und Feld, holder, (holder) Frühling!\"@de"@de)
 DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001067> <https://nfdi4culture.de/ontology/CTO_0001002>)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001068> (has shelf mark)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001068> "Associates a cataloged item with its shelf mark, expressed as a string. A shelf mark is an alphanumeric code assigned by a library, archive, or institution to indicate the item's physical location or classification within a collection."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001068> "has shelf mark"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001068> "\"Rar. Libr. Ven. 369/372#372\""@en)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001070> (has temporal coverage)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001070> "A generic property to relate an a cto source item to its broad temporal attributes, e.g. the period of its existence, the dates of the creation, destruction, and approximate dates. To be used on vague and ambiguous time references in the data. For precise temporal references, refer to bfo: one-dimensional temporal region or bfo: zero-dimensional temporal region."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001070> "has temporal coverage"@en)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001070> rdfs:Literal)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001071> (has approximate period)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001071> "Relates a cto:source item to the approximate timeh. It often links to time periods/dates containing temporal constraints, e.g. during, before, after to approximate the time. The property should only be used to express an estimated or imprecise date associated with an item when the exact date is uncertain or not precisely known. For precise temporal references, refer to bfo: one-dimensional temporal region or bfo: zero-dimensional temporal region."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001071> "has approximate period"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001071> <https://nfdi4culture.de/ontology/CTO_0001070>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001071> rdfs:Literal)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001072> (has creation date)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001072> "Relates an item to the date when the item was created or came into existence."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001072> "has creation date"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001072> <https://nfdi4culture.de/ontology/CTO_0001070>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001072> xsd:dateTime)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001073> (has creation period)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001073> "Relates an item to the approximate time period that indicates the time span during which the item was created, e.g. 18th-19th century."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001073> "has creation period"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001073> <https://nfdi4culture.de/ontology/CTO_0001070>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001073> rdfs:Literal)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001074> (has destruction date)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001074> "Relates a cto:source item to the date on which the item ceases to exist or is intentionally terminated, discarded, or removed."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001074> "has destruction date"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001074> <https://nfdi4culture.de/ontology/CTO_0001070>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001074> xsd:dateTime)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001075> (has existence period)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001075> "Relates a cto:source item to the time period that indicates the time span during which the item existed. The property should only be used when the use of cto:creationDate and cto:distructionDate is not possible."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001075> "has existence period"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001075> "1890s"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001075> <https://nfdi4culture.de/ontology/CTO_0001070>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001075> rdfs:Literal)
 
 
 

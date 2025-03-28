@@ -57,11 +57,19 @@ Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001025>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001026>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001028>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001049>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001065>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001066>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001000>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001021>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001022>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001023>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001060>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001061>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001062>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001063>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001064>))
+Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001067>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001034>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001043>))
 Declaration(NamedIndividual(<https://nfdi4culture.de/ontology/CTO_0001044>))
@@ -221,6 +229,22 @@ SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001049> <http://purl.
 ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001049> <http://purl.obolibrary.org/obo/IAO_0000030>)
 ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001049> <http://www.w3.org/2004/02/skos/core#Concept>)
 
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001065> (has incipit)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001065> "Relates a cto: source item to its incipit, an identifier that represents the opening portion of a musical work, typically notated in musical symbols, and used to identify or distinguish the work in catalogs, manuscripts, or databases."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001065> "has incipit"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001065> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001065> <https://nfdi4culture.de/ontology/CTO_0001066>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001065> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001065> <https://nfdi4culture.de/ontology/CTO_0001024>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001066> (is incipit of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001066> "is incipit of"@en)
+SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001066> nfdicore:NFDI_0000226)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001066> <https://nfdi4culture.de/ontology/CTO_0001024>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001066> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
 # Object Property: <https://schema.org/associatedMedia> (associatedMedia)
 
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
@@ -290,6 +314,49 @@ DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001022> rdfs:Literal)
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001023> "Relates an instance of incipit to its literal representation, which includes the key signature, the incipit pattern, the key, clef value, key signature and time signature."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001023> "has incipit value"@en)
 DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001023> <https://nfdi4culture.de/ontology/CTO_0001024>)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001060> (has time signature)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001060> "Associates an incipit with the musical time signature it begins in, expressed as a string (e.g., \"4/4\", \"3/8\"). This property captures the rhythmic meter of the notated passage."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001060> "has time signature"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001060> "\"3/4\""@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001060> <https://nfdi4culture.de/ontology/CTO_0001023>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001060> rdfs:Literal)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001061> (has clef)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001061> "Specifies the musical clef used at the beginning of the incipit (e.g., \"G\", \"F\", \"C clef\"). This property indicates the pitch reference point for interpreting the staff notation."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001061> "has clef"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001061> "“G-2”"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001061> <https://nfdi4culture.de/ontology/CTO_0001023>)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001062> (has key signature)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001062> "Associates an incipit with its written key signature, expressed as a string (e.g., \"2 sharps\", \"Bb, Eb\"). This reflects the accidentals present at the beginning of the staff."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001062> "has key signature"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001062> "“xF”"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001062> <https://nfdi4culture.de/ontology/CTO_0001023>)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001063> (has incipit pattern)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001063> "Provides a simplified textual or symbolic representation of the melodic or rhythmic pattern of the incipit."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001063> "has incipit pattern"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001063> "“4'D/8.6GB4AG/8.6''EC2'A/4.''D8'BAG/4BA”"@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001063> <https://nfdi4culture.de/ontology/CTO_0001023>)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001064> (has key)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001064> "Indicates the tonal key in which the incipit is set, such as \"C major\" or \"A minor\". Unlike the key signature, this represents the actual tonality of the passage, which may differ due to modality or historical notation conventions."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001064> "has key"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001064> "\"G major\""@en)
+SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001064> <https://nfdi4culture.de/ontology/CTO_0001023>)
+
+# Data Property: <https://nfdi4culture.de/ontology/CTO_0001067> (has lyrics text)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001067> "Relates the textual entity cto:lyrics to its text string."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001067> "has lyrics text"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001067> "\"So sei gegrüßt viel tausendmal, holder, (holder) Frühling! grüßen wir dich froh mit Sang und Schall, mit Sang und Schall. Du kommst, und froh ist alle Welt, holder, (holder) Frühling! Es freut sich Wiese, Wald und Feld, holder, (holder) Frühling!\"@de"@de)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001067> <https://nfdi4culture.de/ontology/CTO_0001002>)
 
 
 

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto/imports/nfdicore_import.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-27/imports/nfdicore_import.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-28/imports/nfdicore_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://nfdi.fiz-karlsruhe.de/ontology/3.0.1>)
-Annotation(owl:versionInfo "2025-03-27")
+Annotation(owl:versionInfo "2025-03-28")
 
 Declaration(Class(<http://edamontology.org/format_2197>))
 Declaration(Class(<http://edamontology.org/format_2376>))
@@ -2845,9 +2845,8 @@ AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_00
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> "organization"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> "An organization of some kind, e.g. research organization or business organization"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> "University Library in Leipzig, Museums of City Cologne")
-EquivalentClasses(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)))
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 
@@ -3213,7 +3212,7 @@ SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000190> <https://nfdi.f
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193> "A role inherent in an agent that is realized when the bearer participates in the publishing of the document."@en)
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193> "publisher role"@en)
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193> ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000014>)))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198> (software)
 
@@ -3691,7 +3690,7 @@ SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001057> <https://nfdi.f
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058> "A role inherent in an agent that is realized when shareing the role of representing an organization, group, or initiative, typically communicating its views, policies, or findings to the public.")
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058> "co spokesperson role"@en)
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001058> ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001059> (collaboration partner role)
 
@@ -3718,7 +3717,7 @@ SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001061> <https://nfdi.f
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062> "A role inherent in an agent that is realized when delivers presentations, lectures, or speeches at events, conferences, or public gatherings.")
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062> "speaker role"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062> "invited speakers at scientific symposiums, keynote presenters at technology expos, and guest lecturers at universities")
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001062> ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063> (artificial intelligence)
 

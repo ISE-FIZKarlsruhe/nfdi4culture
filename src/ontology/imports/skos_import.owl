@@ -1,0 +1,56 @@
+Prefix(:=<https://nfdi4culture.de/ontology/cto/imports/skos_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://nfdi4culture.de/ontology/cto/imports/skos_import.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-28/imports/skos_import.owl>
+Annotation(owl:versionInfo "2025-03-28")
+
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNote>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#definition> (definition)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#definition> "definition"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#definition> "A statement or formal explanation of the meaning of a concept."@en)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#editorialNote> (editorial note)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#editorialNote> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#editorialNote> "editorial note"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#editorialNote> "A note for an editor, translator or maintainer of the vocabulary."@en)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#example> (example)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#example> "example"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#example> "An example of the use of a concept."@en)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.w3.org/2004/02/skos/core#Concept> (Concept)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#Concept> "Concept"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#Concept> "An idea or notion; a unit of thought."@en)
+
+
+)

@@ -6,8 +6,9 @@
 
 <uri name="https://nfdi4culture.de/ontology/cto/imports/schema_import.owl" uri="imports/schema_import.owl"/>  
 
+<uri name="https://nfdi4culture.de/ontology/cto/imports/dcterms_import.owl" uri="imports/dcterms_import.owl"/> 
 
-
+<uri name="https://nfdi4culture.de/ontology/cto/imports/skos_import.owl" uri="imports/skos_import.owl"/> 
   
   
 

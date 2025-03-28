@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                7c54420c44a9b84346435890cdeb23c52dff93924ec747f196a3861800df1f2c
+CONFIG_HASH=                2fd02c067aef2d806efe4ebc535151785217b9e4404ecbf06c827ca70af96d41
 
 
 # ----------------------------------------
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  nfdicore schema
+IMPORTS =  nfdicore schema dcterms skos
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -379,6 +379,18 @@ $(IMPORTDIR)/nfdicore_import.owl: $(MIRRORDIR)/nfdicore.owl $(IMPORTDIR)/nfdicor
 
 $(IMPORTDIR)/schema_import.owl: $(MIRRORDIR)/schema.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in cto.Makefile!" && false
+## Module for ontology: dcterms
+
+$(IMPORTDIR)/dcterms_import.owl: $(MIRRORDIR)/dcterms.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in cto.Makefile!" && false
+## Module for ontology: skos
+
+$(IMPORTDIR)/skos_import.owl: $(MIRRORDIR)/skos.owl $(IMPORTDIR)/skos_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/skos_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method SUBSET \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -415,7 +427,7 @@ ifeq ($(strip $(MIR)),true)
 .PHONY: mirror-nfdicore
 .PRECIOUS: $(MIRRORDIR)/nfdicore.owl
 mirror-nfdicore: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/heads/main/nfdicore.ttl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: schema
@@ -423,6 +435,20 @@ mirror-nfdicore: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/schema.owl
 mirror-schema: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: dcterms
+.PHONY: mirror-dcterms
+.PRECIOUS: $(MIRRORDIR)/dcterms.owl
+mirror-dcterms: | $(TMPDIR)
+	$(ROBOT) convert -I https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: skos
+.PHONY: mirror-skos
+.PRECIOUS: $(MIRRORDIR)/skos.owl
+mirror-skos: | $(TMPDIR)
+	$(ROBOT) convert -I http://www.w3.org/TR/skos-reference/skos.rdf -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

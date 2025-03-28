@@ -1,4 +1,4 @@
-Prefix(:=<https://nfdi4culture.de/ontology/cto/imports/dcterms_import.owl#>)
+Prefix(:=<https://nfdi4culture.de/ontology/imports/dcterms_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://nfdi4culture.de/ontology/cto/imports/dcterms_import.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-28/imports/dcterms_import.owl>
-Annotation(owl:versionInfo "2025-03-28")
+Ontology(<https://nfdi4culture.de/ontology/imports/dcterms_import.owl>
+<https://nfdi4culture.de/ontology/3.0.0/imports/dcterms_import.owl>
+Annotation(owl:versionInfo "3.0.0")
 
 
 

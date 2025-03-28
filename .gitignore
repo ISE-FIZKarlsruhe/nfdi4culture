@@ -5,3 +5,9 @@ src/.DS_Store
 /src/ontology/tmp
 src/ontology/cto.owl
 src/ontology/cto-full.owl
+src/ontology/imports/.DS_Store
+src/metadata/cto.md
+src/metadata/cto.yml
+src/metadata/README.md
+src/ontology/imports/nfdicore_terms_combined.txt
+/src/ontology/target

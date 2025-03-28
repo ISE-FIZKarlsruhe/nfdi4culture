@@ -12,6 +12,8 @@ import_group:
     - id: nfdicore
       mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl
       module_type: mirror
+      #module_type: slme
+      #module_type_slme: BOT
 
     - id: schema
       mirror_from:  "https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl"

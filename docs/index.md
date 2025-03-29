@@ -8,6 +8,12 @@ CTO represents the research data of the NFDI4Culture community within a research
 The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)  
 A generated list of resources via Widoco is available at: [https://nfdi4culture.de/ontology](https://nfdi4culture.de/ontology) 
 
+## Ontology Scope
+...index   
+...subject areas   
+...related entities   
+...external vocabularies   
+
 ## Ontology Metadata
 
 - **Title:** NFDI4Culture Ontology

@@ -8,8 +8,8 @@ The NFDI4Culture Ontology (CTO) is a domain ontology developed within the Task A
 
 # Modular Ontology Design 
 
-![Modularization]()
-
+![Modularization](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/f4178eb6a7878856d41a5e35c0df07c8729480bc)
+[Modularization](docs/assets/nfdi-modules.png)
 
 ## Information Graph
 

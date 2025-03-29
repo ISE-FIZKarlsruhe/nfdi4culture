@@ -7,6 +7,10 @@ theme:
 nav:
   - Introduction: index.md
   - Ontology: /4culture/ontology/
+  - NFDI Context: nfdi-context.md
+  - Ontology Structure: structure.md
+  -  
+  
 #  - Sample Applications: rdg.md
 #  - Sample Queries: queries.md
 #  - Tools:

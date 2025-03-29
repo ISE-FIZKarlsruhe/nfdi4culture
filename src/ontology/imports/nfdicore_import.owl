@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi4culture.de/ontology/cto/imports/nfdicore_import.owl>
-<https://nfdi4culture.de/ontology/cto/releases/2025-03-28/imports/nfdicore_import.owl>
+<https://nfdi4culture.de/ontology/cto/releases/2025-03-29/imports/nfdicore_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://nfdi.fiz-karlsruhe.de/ontology/3.0.1>)
-Annotation(owl:versionInfo "2025-03-28")
+Annotation(owl:versionInfo "2025-03-29")
 
 Declaration(Class(<http://edamontology.org/format_2197>))
 Declaration(Class(<http://edamontology.org/format_2376>))

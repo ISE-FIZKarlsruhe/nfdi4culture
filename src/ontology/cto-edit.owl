@@ -60,6 +60,8 @@ Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001049>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001065>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001066>))
 Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001069>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001077>))
+Declaration(ObjectProperty(<https://nfdi4culture.de/ontology/CTO_0001078>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001000>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001007>))
 Declaration(DataProperty(<https://nfdi4culture.de/ontology/CTO_0001021>))
@@ -130,11 +132,15 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001006> <https://sche
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001008> (has related entity)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001008> "Relates a cto:source item to an entity referenced by the source provider. This property serves the ontology's indexing purposes and is further specialized through subproperties that relate a cto:source item to more specific categories: events, items, persons, locations, and organizations.
+While detailed relationships and roles may be present in the source data, cto:has related entity and its subproperties are intended to capture only the existence of a relationship, without specifying its nature. The range of this property and its subproperties is characterized by centrally registered identifiers, such as those from GND, VIAF, or GeoNames, to ensure semantic interoperability and consistent referencing across datasets."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001008> "has related entity"@en)
 InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001008> <https://nfdi4culture.de/ontology/CTO_0001014>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001008> <https://nfdi4culture.de/ontology/CTO_0001005>)
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001009> (has related person)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001009> "Relates a cto:source item to persons referenced by the source provider in any role, such as composers, spouses, or supervisors. While detailed roles or relationships may be described within the source itself, this property serves the purpose of creating a research data index by identifying persons related to the source item, without specifying the nature of the relationship."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001009> "has related person"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001009> <https://nfdi4culture.de/ontology/CTO_0001008>)
 ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001009> <https://nfdi4culture.de/ontology/CTO_0001005>)
@@ -142,6 +148,7 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001009> nfdicore:NFDI
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001010> (has related organization)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001010> "Relates a cto:source item to organizations mentioned by the source provider, such as publishers, ensembles, universities, or religious institutions. This property enables the identification of organizational entities relevant to the source item for indexing purposes, without detailing their exact role or involvement."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001010> "has related organization"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001010> <https://nfdi4culture.de/ontology/CTO_0001008>)
 InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001010> <https://nfdi4culture.de/ontology/CTO_0001018>)
@@ -150,6 +157,7 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001010> nfdicore:NFDI
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001011> (has related location)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001011> "Relates a cto:source item to geographic locations mentioned or referenced by the source provider, such as places of birth, performance venues, or locations of events. This property supports the indexing of related places in a research data context, without expressing the specific nature of their connection to the source item."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001011> "has related location"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001011> <https://nfdi4culture.de/ontology/CTO_0001008>)
 InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001011> <https://nfdi4culture.de/ontology/CTO_0001017>)
@@ -158,6 +166,7 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001011> nfdicore:NFDI
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001012> (has related event)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001012> "Relates a cto:source item to events referenced by the source provider, such as concerts, premieres, festivals, or historical occurrences. This property is used to index events connected to the source item, without specifying the exact nature of the relationship."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001012> "has related event"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001012> <https://nfdi4culture.de/ontology/CTO_0001008>)
 InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001012> <https://nfdi4culture.de/ontology/CTO_0001016>)
@@ -197,6 +206,7 @@ SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001018> <https://nfdi
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001019> (has related item)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001019> "Relates a cto:source item to another item mentioned or associated by the source provider, such as co-signed documents or related manuscripts. This property is intended for use in a research data index to signal associations between source items, without defining their specific relationship."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001019> "has related item"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001019> <https://nfdi4culture.de/ontology/CTO_0001008>)
 InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001019> <https://nfdi4culture.de/ontology/CTO_0001020>)
@@ -232,6 +242,7 @@ ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001028> <https://nfd
 
 # Object Property: <https://nfdi4culture.de/ontology/CTO_0001049> (has data concept)
 
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001049> "Manifests an isabout relation between the source item and a skos Concept, representing how the data was made available by the provider in general overarching categories. Example: a provider URI is about a sculpture in the real world and made available as a 3D Model by the provider). This is part of a conceptual module to facilitate the NFDI4Culture Data Search."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001049> "has data concept"@en)
 SubObjectPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001049> <http://purl.obolibrary.org/obo/IAO_0000136>)
 ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001049> <http://purl.obolibrary.org/obo/IAO_0000030>)
@@ -257,9 +268,25 @@ ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001066> <http://purl.
 
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001069> "Links an item to the organization (such as a library, archive, museum, or other institution) that currently holds, owns, or is responsible for the item. This property identifies the custodial or curatorial institution associated with the object."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001069> "has holding organization"@en)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001069> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001069> nfdicore:NFDI_0000003)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001077> (has lyrics)
+
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001077> "Relates a cto:source item to a textual entity that represents the lyrics associated with a musical work. This property is used when the source item includes or references a verbal component such as sung text."@en)
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001077> "has lyrics"@en)
+InverseObjectProperties(<https://nfdi4culture.de/ontology/CTO_0001077> <https://nfdi4culture.de/ontology/CTO_0001078>)
+ObjectPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001077> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001077> <https://nfdi4culture.de/ontology/CTO_0001002>)
+
+# Object Property: <https://nfdi4culture.de/ontology/CTO_0001078> (is lyrics of)
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001078> "is lyrics of"@en)
 
 # Object Property: <https://schema.org/associatedMedia> (associatedMedia)
 
+AnnotationAssertion(rdfs:comment <https://schema.org/associatedMedia> "Relates a cto:source item to its associated media as provided by the source provider. Associated media may include images and audio objects.
+Each media object linked via this property must be accompanied by a license statement and a cto:content url indicating the location of the media file. This property supports the integration of multimedia resources within the research data index."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/associatedMedia> "has associated media"@en)
 ObjectPropertyDomain(<https://schema.org/associatedMedia> <https://nfdi4culture.de/ontology/CTO_0001005>)
 ObjectPropertyRange(<https://schema.org/associatedMedia> <https://schema.org/MediaObject>)
@@ -279,6 +306,7 @@ ObjectPropertyRange(<https://schema.org/item> <https://nfdi4culture.de/ontology/
 
 # Object Property: <https://schema.org/license> (license)
 
+AnnotationAssertion(rdfs:comment <https://schema.org/license> "If possible, nfdicore:has license should be the preferred usage for license information. Use only if the license itself is ambiguous or cannot be properly typed. schema:license should be used on CreativeWorks."@en)
 AnnotationAssertion(rdfs:comment <https://schema.org/license> "license"@en)
 AnnotationAssertion(rdfs:label <https://schema.org/license> "license"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://schema.org/license> "license"@en)
@@ -298,7 +326,7 @@ DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001000> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001007> (has license statement)
 
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001007> "A natural language text description of a license (permissions, reuse conditions, or usage terms.). This applies for example to media objects connected to source items in the NFDI4Culture research data graph."@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001007> "A natural language text description of a license (permissions, reuse conditions, or usage terms.). This applies for example to media objects connected to source items in the research data index."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001007> "has license statement"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001007> "The photograph is licensed under CC-BY-1.0"@en)
 SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001007> <https://nfdi4culture.de/ontology/CTO_0001000>)
@@ -327,6 +355,7 @@ DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001022> rdfs:Literal)
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001023> "Relates an instance of incipit to its literal representation, which includes the key signature, the incipit pattern, the key, clef value, key signature and time signature."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001023> "has incipit value"@en)
 DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001023> <https://nfdi4culture.de/ontology/CTO_0001024>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001023> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001060> (has time signature)
 
@@ -334,6 +363,7 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001060> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001060> "has time signature"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001060> "\"3/4\""@en)
 SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001060> <https://nfdi4culture.de/ontology/CTO_0001023>)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001060> <https://nfdi4culture.de/ontology/CTO_0001024>)
 DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001060> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001061> (has clef)
@@ -342,6 +372,8 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001061> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001061> "has clef"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001061> "“G-2”"@en)
 SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001061> <https://nfdi4culture.de/ontology/CTO_0001023>)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001061> <https://nfdi4culture.de/ontology/CTO_0001024>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001061> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001062> (has key signature)
 
@@ -349,6 +381,8 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001062> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001062> "has key signature"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001062> "“xF”"@en)
 SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001062> <https://nfdi4culture.de/ontology/CTO_0001023>)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001062> <https://nfdi4culture.de/ontology/CTO_0001024>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001062> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001063> (has incipit pattern)
 
@@ -356,6 +390,8 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001063> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001063> "has incipit pattern"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001063> "“4'D/8.6GB4AG/8.6''EC2'A/4.''D8'BAG/4BA”"@en)
 SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001063> <https://nfdi4culture.de/ontology/CTO_0001023>)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001063> <https://nfdi4culture.de/ontology/CTO_0001024>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001063> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001064> (has key)
 
@@ -363,6 +399,8 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001064> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001064> "has key"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001064> "\"G major\""@en)
 SubDataPropertyOf(<https://nfdi4culture.de/ontology/CTO_0001064> <https://nfdi4culture.de/ontology/CTO_0001023>)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001064> <https://nfdi4culture.de/ontology/CTO_0001024>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001064> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001067> (has lyrics text)
 
@@ -370,12 +408,15 @@ AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001067> 
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001067> "has lyrics text"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001067> "\"So sei gegrüßt viel tausendmal, holder, (holder) Frühling! grüßen wir dich froh mit Sang und Schall, mit Sang und Schall. Du kommst, und froh ist alle Welt, holder, (holder) Frühling! Es freut sich Wiese, Wald und Feld, holder, (holder) Frühling!\"@de"@de)
 DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001067> <https://nfdi4culture.de/ontology/CTO_0001002>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001067> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001068> (has shelf mark)
 
 AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001068> "Associates a cataloged item with its shelf mark, expressed as a string. A shelf mark is an alphanumeric code assigned by a library, archive, or institution to indicate the item's physical location or classification within a collection."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001068> "has shelf mark"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001068> "\"Rar. Libr. Ven. 369/372#372\""@en)
+DataPropertyDomain(<https://nfdi4culture.de/ontology/CTO_0001068> <https://nfdi4culture.de/ontology/CTO_0001005>)
+DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001068> rdfs:Literal)
 
 # Data Property: <https://nfdi4culture.de/ontology/CTO_0001070> (has temporal coverage)
 
@@ -427,14 +468,14 @@ DataPropertyRange(<https://nfdi4culture.de/ontology/CTO_0001075> rdfs:Literal)
 
 # Class: <https://nfdi4culture.de/ontology/CTO_0001002> (lyrics)
 
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001002> "Lyrics is an information content entity that consists of a structured sequence of linguistic expressions intended to be performed as part of a musical composition, typically corresponding to the vocal component of a song."@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001002> "A textual entity and thus, information content entity that consists of a structured sequence of linguistic expressions intended to be performed as part of a musical composition, typically corresponding to the vocal component of a song."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001002> "lyrics"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://nfdi4culture.de/ontology/CTO_0001002> "[TT:] Previously, the music ontology (mo) was used to represent lyrics, their text etc. However, while importing the music ontology, it became clear that the music ontology has not been maintained for 12 years and some ontologies mo imports are not available anymore. This made the re-use of mo not anymore possible for cto."@en)
 SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001002> <http://purl.obolibrary.org/obo/IAO_0000300>)
 
 # Class: <https://nfdi4culture.de/ontology/CTO_0001005> (source item)
 
-AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001005> "A bfo:entity that serves as the source of information represented in a data feed. It is an entity about which a data feed element conveys information. Each source item is identifiable by a unique URI within the context of the feed."@en)
+AnnotationAssertion(rdfs:comment <https://nfdi4culture.de/ontology/CTO_0001005> "An information content entity that serves as the source of information represented in a data feed. It is an entity about which a data feed element conveys information. Each source item is identifiable by a unique URI within the context of the feed."@en)
 AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001005> "source item"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi4culture.de/ontology/CTO_0001005> "<https://corpusvitrearum.de/id/F5414> is a source item within the data feed Corpus Vitrearum Germany."@en)
 SubClassOf(<https://nfdi4culture.de/ontology/CTO_0001005> <http://purl.obolibrary.org/obo/IAO_0000030>)

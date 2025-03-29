@@ -2,10 +2,11 @@
 
 [NFDI4Culture](https://nfdi4culture.de/) is the Consortium for Research Data on Material and Immaterial Cultural Heritage. Within NFDI4Culture, a [Knowledge Graph](https://nfdi4culture.de/resources/knowledge-graph.html) has been developed and integrated with the [Culture Information Portal](https://nfdi4culture.de/) with the goal to aggregate heterogeneous and isolated data from the research landscape focused on by NFDI4Culture and thereby increase the discoverability, interoperability and reusability of cultural heritage data. 
 
-This repository provides the NFDI4Culture Ontology (CTO), a domain-specific ontology module developed within the Task Area 5 of the NFDI4Culture initiative. CTO builds upon the NFDIcore mid-level ontology and is aligned with the Basic Formal Ontology (BFO) 2020 to ensure semantic interoperability and ontological rigor.
+This repository provides the NFDI4Culture Ontology (CTO) and its documentation. CTO is a domain-specific ontology module developed within the Task Area 5 of the NFDI4Culture initiative. The ontology builds upon the NFDIcore mid-level ontology and is aligned with the Basic Formal Ontology (BFO) 2020 to ensure semantic interoperability and ontological rigor.
 CTO represents the research data of the NFDI4Culture community within a research data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of the most relevant metadata from the main subject areas of NFDI4Culture: architecture, art history, performing arts, musicology, and media studies. These metadata are harvested using a dedicated [ETL pipeline](https://nfdi4culture.de/id/E5877) and integrated into the NFDI4Culture Knowledge Graph using CTO. 
 
-The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)
+The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)  
+A generated list of resources via Widoco is available at: [https://nfdi4culture.de/ontology](https://nfdi4culture.de/ontology) 
 
 ## Ontology Metadata
 

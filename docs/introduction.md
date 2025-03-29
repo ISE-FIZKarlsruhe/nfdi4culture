@@ -4,6 +4,13 @@
 
 Within NFDI4Culture, a [Knowledge Graph](https://nfdi4culture.de/resources/knowledge-graph.html) has been developed and integrated with the [Culture Information Portal](https://nfdi4culture.de/) with the goal to aggregate heterogeneous and isolated data from the research landscape focused on by NFDI4Culture and thereby increase the discoverability, interoperability and reusability of cultural heritage data. The NFDI4Culture Knowledge Graph acts as a single point of access to decentralized cultural heritage research resources. 
 
+The NFDI4Culture Ontology (CTO) is a domain ontology developed within the Task Area 5 of the NFDI4Culture initiative. It serves as one domain module for the mid-level NFDIcore ontology and is aligned with the Basic Formal Ontology (BFO) 2020. Its key objective is to facilitate the integration of cultural heritage research data into the NFDI4Culture Knowledge Graph, which is made available by means of the Culture Information Portal. 
+
+# Modular Ontology Design 
+
+![Modularization]()
+
+
 ## Information Graph
 
 The Information Graph (IG) contains the general information about the consortium, based on the [LOD extension](https://github.com/digicademy/lod) for TYPO3 developed by the [Digital Academy in Mainz](https://www.adwmainz.de/digitalitaet/digitale-akademie.html).

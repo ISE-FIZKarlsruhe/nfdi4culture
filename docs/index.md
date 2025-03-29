@@ -1,16 +1,26 @@
 # NFDI4Culture Ontology (CTO)
 
-## Introduction
+[NFDI4Culture](https://nfdi4culture.de/) is the Consortium for Research Data on Material and Immaterial Cultural Heritage. Within NFDI4Culture, a [Knowledge Graph](https://nfdi4culture.de/resources/knowledge-graph.html) has been developed and integrated with the [Culture Information Portal](https://nfdi4culture.de/) with the goal to aggregate heterogeneous and isolated data from the research landscape focused on by NFDI4Culture and thereby increase the discoverability, interoperability and reusability of cultural heritage data. 
 
-The NFDI4Culture ontology (CTO) is a domain module and is developed compliant with the NFDIcore as a mid-level ontology and the Basic Formal Ontology 2020 as a foundational ontology. 
-This is where we document the ongoing development work on CTO and test ideas and do development work on the [knowledge graph of the NFDI4Culture consortium](https://nfdi4culture.de/resources/knowledge-graph.html)
+This repository provides the NFDI4Culture Ontology (CTO), a domain-specific ontology module developed within the Task Area 5 of the NFDI4Culture initiative. CTO builds upon the NFDIcore mid-level ontology and is aligned with the Basic Formal Ontology (BFO) 2020 to ensure semantic interoperability and ontological rigor.
+CTO represents the research data of the NFDI4Culture community within a research data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of the most relevant metadata from the main subject areas of NFDI4Culture: architecture, art history, performing arts, musicology, and media studies. These metadata are harvested using a dedicated [ETL pipeline](https://nfdi4culture.de/id/E5877) and integrated into the NFDI4Culture Knowledge Graph using CTO. 
 
-This is a feeding ground for what eventually ends up in the [Culture Knowledge Graph Kitchen](https://gitlab.rlp.net/adwmainz/nfdi4culture/knowledge-graph/culture-kg-kitchen/)
+The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)
 
-## Information Graph
+## Ontology Metadata
 
-The Information Graph (IG) contains the general information about the consortium, based on the [LOD extension](https://github.com/digicademy/lod) for TYPO3 developed by the [Digital Academy in Mainz](https://www.adwmainz.de/digitalitaet/digitale-akademie.html).
+- **Title:** NFDI4Culture Ontology
+- **Abbreviation:** cto
+- **Namespace:** https://nfdi4culture.de/ontology
+- **Prefix:** cto
+- **Language:** OWL
+- **Repository:** [https://github.com/ISE-FIZKarlsruhe/nfdi4culture](https://github.com/ISE-FIZKarlsruhe/nfdi4culture)
+- **Previous version:** [CTO v2.0.0](https://gitlab.rlp.net/adwmainz/nfdi4culture/knowledge-graph/culture-ontology/tree/v2.0), February 08, 2024
+- **Creators:** Tabea Tietz, Jörg Waitelonis, Oleksandra Bruns, Etienne Posthumus, Harald Sack
+- **Contributors:** Linnaea Söhn, Jonatan Jalle Steller, Torsten Schrade
+- **Related project:** NFDI4Culture
+- **Funding:** Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – project number 441958017
+- **License:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Citation:** Tabea Tietz, Jörg Waitelonis, Oleksandra Bruns, Etienne Posthumus, Harald Sack. *NFDI4Culture Ontology (cto)*. Revision: v3.0.0. Retrieved from: [https://github.com/ISE-FIZKarlsruhe/nfdi4culture](https://github.com/ISE-FIZKarlsruhe/nfdi4culture)
 
-## Research Data Graph
 
-The Research Data Graph (RDG) is the bulk research data as contributed by the [various datafeeds](https://nfdi4culture.de/go/sparql-data-portals) from the consortium participants that functions as an index of culture research data.

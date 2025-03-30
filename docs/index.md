@@ -8,13 +8,6 @@ CTO represents the research data of the NFDI4Culture community within a research
 The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)  
 A generated list of resources via Widoco is available at: [https://nfdi4culture.de/ontology](https://nfdi4culture.de/ontology) 
 
-## Ontology Scope
-The main focus of CTO is the creation of a light-weight index of cultural heritage research data provided by the culture community. This includes but is not limited to the subject areas musicology, performing arts, media studies, architecture, and art history. The key aspects of CTO concern:
-
-- **The consortium and its infrastructure:** persons and organizations involved in research processes, services, guidelines, standards, and events
-- **The content of cultural heritage research data:** cultural heritage objects, persons, locations and events referenced in the provided data, associated media, references to external vocabularies used for the identification and classification of the provided research data
-- **Access and reuse:** legal statements, contact persons, standards, and export formats 
-
 ## Ontology Metadata
 
 - **Title:** NFDI4Culture Ontology

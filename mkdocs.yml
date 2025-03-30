@@ -5,10 +5,11 @@ theme:
   name: material
   custom_dir: docs/overrides
 nav:
-  - Introduction: index.md
-  - Ontology: /4culture/ontology/
+  - Intro and Metadata: index.md
+  - Widoco Documentation: /4culture/ontology/
   - NFDI Context: nfdi-context.md
-  - Ontology Structure: structure.md  
+  - Scope and Structure: structure.md  
+  - Domain Examples: domain-examples.md
   
 #  - Sample Applications: rdg.md
 #  - Sample Queries: queries.md

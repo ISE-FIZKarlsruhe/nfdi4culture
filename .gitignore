@@ -11,3 +11,6 @@ src/metadata/cto.yml
 src/metadata/README.md
 src/ontology/imports/nfdicore_terms_combined.txt
 /src/ontology/target
+src/ontology/imports/schema_terms_combined.txt
+.gitignore
+.gitignore

@@ -1,4 +1,4 @@
-# CTO in the Context of NFDI4Culture
+# CTO in the Context of NFDI
 
 [NFDI4Culture](https://nfdi4culture.de/) is the Consortium for Research Data on Material and Immaterial Cultural Heritage. As a consortium within the framework of the German national research data infrastructure programme [NFDI](https://www.nfdi.de) the goal of NFDI4Culture is the establishment of a information infrastructure for cultural heritage research data. This primarily concerns the subject areas architecture, art history, performing arts, musicology, and media sciences. 
 

@@ -1,4 +1,4 @@
-Prefix(:=<https://nfdi4culture.de/ontology#>)
+Prefix(:=<https://nfdi4culture.de/ontology/>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(mo:=<http://purl.org/ontology/mo/>)
 Prefix(n4c:=<https://nfdi4culture.de/id/>)
@@ -16,9 +16,20 @@ Ontology(<https://nfdi4culture.de/ontology/cto-edit.owl>
 Import(<https://nfdi4culture.de/ontology/cto/imports/nfdicore_import.owl>)
 Import(<https://nfdi4culture.de/ontology/cto/imports/schema_import.owl>)
 Import(<https://nfdi4culture.de/ontology/cto/imports/skos_import.owl>)
-Annotation(dcterms:description "The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.")
+Annotation(dcterms:creator <https://nfdi4culture.de/id/E1925>)
+Annotation(dcterms:creator <https://nfdi4culture.de/id/E2415>)
+Annotation(dcterms:creator <https://nfdi4culture.de/id/E2416>)
+Annotation(dcterms:creator <https://nfdi4culture.de/id/E3095>)
+Annotation(dcterms:creator <https://orcid.org/0000-0001-7192-7143>)
+Annotation(dcterms:contributor <https://nfdi4culture.de/id/E1873>)
+Annotation(dcterms:contributor <https://nfdi4culture.de/id/E2381>)
+Annotation(dcterms:contributor <https://nfdi4culture.de/id/E3715>)
+Annotation(dcterms:description "The NFDI4Culture Ontology (CTO) models cultural heritage research resources with the goal of enabling a research data index. CTO is a domain-specific module built on top of the mid-level NFDIcore Ontology v.3 (https://ise-fizkarlsruhe.github.io/nfdicore/) and is aligned with the Basic Formal Ontology (BFO) 2020.
+It describes and interlinks the diverse entities that exist within the communitys research (meta)data, including connections between persons, organizations, places and events, media objects, legal statements, external vocabulary references, musical incipits, and more.
+Further infomration can be found at in the detailed documentation: https://nfdi.fiz-karlsruhe.de/4culture/"@en)
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
+Annotation(<http://purl.org/vocab/vann/preferredNamespaceUri> <https://nfdi4culture.de/ontology/>)
 
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001002>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001005>))
@@ -674,7 +685,19 @@ AnnotationAssertion(rdfs:label <https://nfdi4culture.de/ontology/CTO_0001048> "v
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://nfdi4culture.de/ontology/CTO_0001048>)
 
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CTO_0000000> "root node"@en)
+
 AnnotationAssertion(rdfs:comment <https://schema.org/AudioObject> "In the context of the Culture Ontology (CTO), an audio object is an information content entity and connected to a cto:SourceItem. It can have a license statement (string) and an audio file location."@en)
 AnnotationAssertion(rdfs:label <https://schema.org/AudioObject> "Audio Object"@en)
+
+
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E1925> "Harald Sack")
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E2415> "Tabea Tietz")
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E2416> "Oleksandra Bruns")
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E3095> "Etienne Posthumus")
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-7192-7143> "Jörg Waitelonis")
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E1873> "Torsten Schrade")
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E2381> "Linnaea Söhn")
+AnnotationAssertion(rdfs:label <https://nfdi4culture.de/id/E3715> "Jonatan Jalle Steller")
+
+
 )

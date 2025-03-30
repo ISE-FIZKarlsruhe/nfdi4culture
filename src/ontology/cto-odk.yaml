@@ -32,13 +32,13 @@ import_group:
     
 
 release_artefacts:
-#  - base
+  - base
   - full
 #  - simple
 
 export_formats:
   - owl
-#  - ttl
+  - ttl
 
 
 robot_java_args: '-Xmx4G'

@@ -30,14 +30,38 @@ $(IMPORTDIR)/skos_import.owl: $(MIRRORDIR)/skos.owl $(IMPORTDIR)/skos_terms_comb
 		$(ANNOTATE_CONVERT_FILE); fi
 
 
+#################################################################
+## release modifications
+#################################################################
+
+
+#################################################################
+## release base version (modification)
+#################################################################
+
+## here we need "remove --base-iri $(URIBASE)/""  instead of "remove --base-iri $(URIBASE)/NFDICORE"  as suggested in the generated main file
+
+# base: A version of the ontology that does not include any externally imported axioms.
+$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural --annotate-inferred-axioms False \
+	relax \
+	reduce -r ELK \
+	remove --base-iri $(URIBASE)/ --axioms external --preserve-structure false --trim false \
+	$(SHARED_ROBOT_COMMANDS) \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
+
 
 
 
 #############################################################################
-# lets add some additional annotations to the release artefacts
+# additional annotations to the release artefacts
 #############################################################################
 
-CITATION="'Jörg Waitelonis, Oleksandra Bruns, Tabea Tietz, Etienne Posthumus, Hossein Beygi Nasrabadi, Harald Sack. NFDI4culture Ontology. Revision: v$(VERSION). Retrieved from: https://nfdi4culture.de/ontology/$(VERSION)'"
+CITATION="'Tabea Tietz, Jörg Waitelonis, Oleksandra Bruns, Etienne Posthumus, Harald Sack. NFDI4culture Ontology. Revision: v$(VERSION). Retrieved from: https://nfdi4culture.de/ontology/$(VERSION)'"
 
 ALL_ANNOTATIONS=--ontology-iri https://nfdi4culture.de/ontology -V https://nfdi4culture.de/ontology/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
@@ -46,7 +70,12 @@ ALL_ANNOTATIONS=--ontology-iri https://nfdi4culture.de/ontology -V https://nfdi4
 
 update-ontology-annotations: 
 	$(ROBOT) annotate --input ../../cto.owl $(ALL_ANNOTATIONS) --output ../../cto.owl && \
-	$(ROBOT) annotate --input ../../cto-full.owl $(ALL_ANNOTATIONS) --output ../../cto-full.owl 
+	$(ROBOT) annotate --input ../../cto.ttl $(ALL_ANNOTATIONS) --output ../../cto.ttl && \
+	$(ROBOT) annotate --input ../../cto-full.owl $(ALL_ANNOTATIONS) --output ../../cto-full.owl && \
+	$(ROBOT) annotate --input ../../cto-full.owl $(ALL_ANNOTATIONS) --output ../../cto-full.ttl && \
+	$(ROBOT) annotate --input ../../cto-base.owl $(ALL_ANNOTATIONS) --output ../../nfdicore-base.owl && \
+	$(ROBOT) annotate --input ../../cto-base.ttl $(ALL_ANNOTATIONS) --output ../../cto-base.ttl 
+
 
 
 

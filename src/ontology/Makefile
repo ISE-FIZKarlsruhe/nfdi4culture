@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ac6d4d8c5106493b34d9c9853b25ae71f9f7e6a51738c204ad5e22bf3a2cc2bf
+CONFIG_HASH=                0acc00c345099121252f4b4195577c15ff8ff846902163e3dcc825957fc1a87e
 
 
 # ----------------------------------------
@@ -58,9 +58,9 @@ OTHER_SRC =
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
-FORMATS = $(sort  owl owl)
+FORMATS = $(sort  owl ttl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-full )
+RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full )
 
 ifeq ($(ODK_DEBUG),yes)
 ODK_DEBUG_FILE = debug.log
@@ -464,6 +464,9 @@ $(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
 .PRECIOUS: $(SUBSETDIR)/%.owl
 
 
+$(SUBSETDIR)/%.ttl: $(SUBSETDIR)/%.owl
+	$(ROBOT) convert --input $< --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
+
 
 # ---------------------------------------------
 # Sparql queries: Table exports / Query Reports
@@ -483,6 +486,12 @@ endif
 # ----------------------------------------
 
 
+$(ONT)-base.ttl: $(ONT)-base.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
+$(ONT)-full.ttl: $(ONT)-full.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
 # ----------------------------------------
 # Release artefacts: main release artefacts
 # ----------------------------------------
@@ -491,6 +500,9 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
+$(ONT).ttl: $(ONT).owl
+	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f ttl -o $@.tmp.ttl && mv $@.tmp.ttl $@
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
@@ -505,6 +517,17 @@ ROBOT_RELEASE_IMPORT_MODE=$(ROBOT) merge --input $<
 # ROBOT pipeline that removes imports, then merges components. This is for release artefacts that start from "base"
 ROBOT_RELEASE_IMPORT_MODE_BASE=$(ROBOT) remove --input $< --select imports --trim false merge $(patsubst %, -i %, $(OTHER_SRC)) 
 
+# base: A version of the ontology that does not include any externally imported axioms.
+$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural --annotate-inferred-axioms False \
+	relax \
+	reduce -r ELK \
+	remove --base-iri $(URIBASE)/CTO --axioms external --preserve-structure false --trim false \
+	$(SHARED_ROBOT_COMMANDS) \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 # Full: The full artefacts with imports merged, reasoned.
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \

@@ -1,6 +1,8 @@
 
 ![Build Status](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/actions/workflows/qc.yml/badge.svg)
 [![Documentation](https://img.shields.io/badge/docs-site-blue)](https://nfdi.fiz-karlsruhe.de/4culture/)
+[![Verification](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/actions/workflows/verification.yml/badge.svg)](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/actions/workflows/verification.yml)
+
 
 # NFDI4Culture Ontology (CTO)
 

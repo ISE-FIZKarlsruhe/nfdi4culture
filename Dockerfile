@@ -8,7 +8,6 @@ RUN java -jar widoco-1.4.25-jar-with-dependencies_JDK-11.jar -ontFile /data/onto
 
 FROM ghcr.io/epoz/shmarql:latest
 
-COPY data /data
 COPY docs /src/docs
 COPY mkdocs.yml a.yml
 RUN python -m shmarql docs_build -f a.yml

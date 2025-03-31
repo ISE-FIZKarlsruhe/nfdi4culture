@@ -75,6 +75,7 @@ Declaration(ObjectProperty(:CTO_0001066))
 Declaration(ObjectProperty(:CTO_0001069))
 Declaration(ObjectProperty(:CTO_0001077))
 Declaration(ObjectProperty(:CTO_0001078))
+Declaration(ObjectProperty(:CTO_0001081))
 Declaration(DataProperty(:CTO_0001000))
 Declaration(DataProperty(:CTO_0001007))
 Declaration(DataProperty(:CTO_0001021))
@@ -158,6 +159,7 @@ ObjectPropertyDomain(:CTO_0001008 :CTO_0001005)
 AnnotationAssertion(rdfs:comment :CTO_0001009 "Relates a cto:source item to persons referenced by the source provider in any role, such as composers, spouses, or supervisors. While detailed roles or relationships may be described within the source itself, this property serves the purpose of creating a research data index by identifying persons related to the source item, without specifying the nature of the relationship."@en)
 AnnotationAssertion(rdfs:label :CTO_0001009 "has related person"@en)
 SubObjectPropertyOf(:CTO_0001009 :CTO_0001008)
+InverseObjectProperties(:CTO_0001009 :CTO_0001015)
 ObjectPropertyDomain(:CTO_0001009 :CTO_0001005)
 ObjectPropertyRange(:CTO_0001009 nfdicore:NFDI_0000004)
 
@@ -283,6 +285,7 @@ ObjectPropertyRange(:CTO_0001066 <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 AnnotationAssertion(rdfs:comment :CTO_0001069 "Links an item to the organization (such as a library, archive, museum, or other institution) that currently holds, owns, or is responsible for the item. This property identifies the custodial or curatorial institution associated with the object."@en)
 AnnotationAssertion(rdfs:label :CTO_0001069 "has holding organization"@en)
+InverseObjectProperties(:CTO_0001069 :CTO_0001081)
 ObjectPropertyDomain(:CTO_0001069 :CTO_0001005)
 ObjectPropertyRange(:CTO_0001069 nfdicore:NFDI_0000003)
 
@@ -297,6 +300,12 @@ ObjectPropertyRange(:CTO_0001077 :CTO_0001002)
 # Object Property: :CTO_0001078 (is lyrics of)
 
 AnnotationAssertion(rdfs:label :CTO_0001078 "is lyrics of"@en)
+
+# Object Property: :CTO_0001081 (is holding organization of)
+
+AnnotationAssertion(rdfs:label :CTO_0001081 "is holding organization of"@en)
+ObjectPropertyDomain(:CTO_0001081 nfdicore:NFDI_0000003)
+ObjectPropertyRange(:CTO_0001081 :CTO_0001005)
 
 # Object Property: <https://schema.org/associatedMedia> (associatedMedia)
 

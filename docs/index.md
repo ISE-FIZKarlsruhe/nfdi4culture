@@ -6,7 +6,7 @@ This repository provides the NFDI4Culture Ontology (CTO) and its documentation. 
 CTO represents the research data of the NFDI4Culture community within a research data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of research (meta)data, harvested using a dedicated [ETL pipeline](https://nfdi4culture.de/id/E5877). 
 
 The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)  
-A generated list of resources via Widoco is available at: [https://nfdi4culture.de/ontology](https://nfdi4culture.de/ontology) 
+A generated list of resources via Widoco is available at: [https://nfdi.fiz-karlsruhe.de/4culture/ontology/](https://nfdi.fiz-karlsruhe.de/4culture/ontology/) 
 
 ## Ontology Metadata
 

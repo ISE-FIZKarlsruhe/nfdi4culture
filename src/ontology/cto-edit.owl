@@ -372,10 +372,10 @@ AnnotationAssertion(rdfs:label :CTO_0001023 "has incipit value"@en)
 DataPropertyDomain(:CTO_0001023 :CTO_0001024)
 DataPropertyRange(:CTO_0001023 rdfs:Literal)
 
-# Data Property: :CTO_0001060 (has time signature)
+# Data Property: :CTO_0001060 (has incipit time signature)
 
 AnnotationAssertion(rdfs:comment :CTO_0001060 "Associates an incipit with the musical time signature it begins in, expressed as a string (e.g., \"4/4\", \"3/8\"). This property captures the rhythmic meter of the notated passage."@en)
-AnnotationAssertion(rdfs:label :CTO_0001060 "has time signature"@en)
+AnnotationAssertion(rdfs:label :CTO_0001060 "has incipit time signature"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> :CTO_0001060 "\"3/4\""@en)
 SubDataPropertyOf(:CTO_0001060 :CTO_0001023)
 DataPropertyDomain(:CTO_0001060 :CTO_0001024)

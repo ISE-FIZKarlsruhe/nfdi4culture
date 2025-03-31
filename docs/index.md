@@ -16,7 +16,7 @@ A generated list of resources via Widoco is available at: [https://nfdi4culture.
 - **Prefix:** cto
 - **Language:** OWL
 - **Repository:** [https://github.com/ISE-FIZKarlsruhe/nfdi4culture](https://github.com/ISE-FIZKarlsruhe/nfdi4culture)
-- **Previous version:** [CTO v2.0.0](https://gitlab.rlp.net/adwmainz/nfdi4culture/knowledge-graph/culture-ontology/tree/v2.0), February 08, 2024
+- **Previous version:** [CTO v2.2.0](https://gitlab.rlp.net/adwmainz/nfdi4culture/knowledge-graph/culture-ontology/tree/v2.0), February 08, 2024
 - **Creators:** Tabea Tietz, Jörg Waitelonis, Oleksandra Bruns, Etienne Posthumus, Harald Sack
 - **Contributors:** Linnaea Söhn, Jonatan Jalle Steller, Torsten Schrade
 - **Related project:** NFDI4Culture

@@ -1,10 +1,12 @@
 
 ![Build Status](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/actions/workflows/qc.yml/badge.svg)
-[![Docs](https://img.shields.io/badge/docs-site-blue)](https://nfdi.fiz-karlsruhe.de/4culture/)
+[![Documentation](https://img.shields.io/badge/docs-site-blue)](https://nfdi.fiz-karlsruhe.de/4culture/)
 
 # NFDI4Culture Ontology (CTO)
 
 This repository provides the NFDI4Culture Ontology (CTO) and its documentation. CTO is a domain-specific ontology module developed within the Task Area 5 of the NFDI4Culture initiative. The ontology builds upon the NFDIcore mid-level ontology v3 and is aligned with the Basic Formal Ontology (BFO) 2020 to ensure semantic interoperability and ontological rigor.
+
+![NFDI4Culture Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/NFDI4Culture_Logo.png/330px-NFDI4Culture_Logo.png)
 
 ## Scope
 The main scope of CTO is the representation of cultural heritage research data within a data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of research (meta)data harvested through a dedicated ETL pipeline. Its main focus is the creation of a lightweight index of cultural heritage research data provided by the culture community, including but not limited to the subject areas of musicology, performing arts, media studies, architecture, and art history.
@@ -24,7 +26,7 @@ The latest version of the ontology can always be found at: [https://nfdi4culture
 
 ## Documentation
 
-A detailed documentation is available at: [https://nfdi.fiz-karlsruhe.de/4culture/](https://nfdi.fiz-karlsruhe.de/4culture/)
+A detailed documentation is available at: [https://nfdi.fiz-karlsruhe.de/4culture/](https://nfdi.fiz-karlsruhe.de/4culture/)  
 A generated list of resources via Widoco is available at: [https://nfdi4culture.de/ontology](https://nfdi4culture.de/ontology) 
 
 ### Editors' version

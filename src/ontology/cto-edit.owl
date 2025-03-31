@@ -93,6 +93,7 @@ Declaration(DataProperty(:CTO_0001072))
 Declaration(DataProperty(:CTO_0001073))
 Declaration(DataProperty(:CTO_0001074))
 Declaration(DataProperty(:CTO_0001075))
+Declaration(DataProperty(:CTO_0001080))
 Declaration(NamedIndividual(:CTO_0001034))
 Declaration(NamedIndividual(:CTO_0001043))
 Declaration(NamedIndividual(:CTO_0001044))
@@ -473,6 +474,12 @@ AnnotationAssertion(rdfs:label :CTO_0001075 "has existence period"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> :CTO_0001075 "1890s"@en)
 SubDataPropertyOf(:CTO_0001075 :CTO_0001070)
 DataPropertyRange(:CTO_0001075 rdfs:Literal)
+
+# Data Property: :CTO_0001080 (has source file)
+
+AnnotationAssertion(rdfs:comment :CTO_0001080 "Relates a cto:source item to the URL of a data source from which it originates"@en)
+AnnotationAssertion(rdfs:label :CTO_0001080 "has source file"@en)
+SubDataPropertyOf(:CTO_0001080 nfdicore:NFDI_0001008)
 
 
 

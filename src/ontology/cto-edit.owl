@@ -712,7 +712,6 @@ AnnotationAssertion(rdfs:label :CTO_0001048 "video object"@en)
 ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> :CTO_0001048)
 
 
-AnnotationAssertion(rdfs:comment nfdicore:NFDI_0000141 "An information content entity that refers to a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the licence.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> nfdicore:NFDI_0001018 "A textual entity"@en)
 AnnotationAssertion(rdfs:comment nfdicore:NFDI_0001018 "A textual entity that describe some resource."@en)
 AnnotationAssertion(rdfs:label nfdicore:NFDI_0001018 "description"@en)

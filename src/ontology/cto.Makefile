@@ -73,7 +73,7 @@ update-ontology-annotations:
 	$(ROBOT) annotate --input ../../cto.ttl $(ALL_ANNOTATIONS) --output ../../cto.ttl && \
 	$(ROBOT) annotate --input ../../cto-full.owl $(ALL_ANNOTATIONS) --output ../../cto-full.owl && \
 	$(ROBOT) annotate --input ../../cto-full.ttl $(ALL_ANNOTATIONS) --output ../../cto-full.ttl && \
-	$(ROBOT) annotate --input ../../cto-base.owl $(ALL_ANNOTATIONS) --output ../../nfdicore-base.owl && \
+	$(ROBOT) annotate --input ../../cto-base.owl $(ALL_ANNOTATIONS) --output ../../cto-base.owl && \
 	$(ROBOT) annotate --input ../../cto-base.ttl $(ALL_ANNOTATIONS) --output ../../cto-base.ttl 
 
 

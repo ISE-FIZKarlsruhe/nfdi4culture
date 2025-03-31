@@ -1,7 +1,7 @@
 
 
 VERSION=3.0.0
-PRIOR_VERSION=2.0.0
+PRIOR_VERSION=2.2.0
 ONTBASE=https://nfdi4culture.de/ontology
 ANNOTATE_ONTOLOGY_VERSION="annotate -V $ONTBASE/$VERSION/\$@ --annotation owl:versionInfo $VERSION"
 

@@ -9,6 +9,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -16,7 +17,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:nfdicore="https://nfdi.fiz-karlsruhe.de/ontology/">
     <owl:Ontology rdf:about="https://nfdi4culture.de/ontology/cto/cto-base.owl">
-        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-30/cto-base.owl"/>
+        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-03-31/cto-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor rdf:resource="https://nfdi4culture.de/id/E1873"/>
         <dcterms:contributor rdf:resource="https://nfdi4culture.de/id/E2381"/>
@@ -31,8 +32,9 @@ It describes and interlinks the diverse entities that exist within the community
 Further infomration can be found at in the detailed documentation: https://nfdi.fiz-karlsruhe.de/4culture/</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>NFDI4Culture Ontology (CTO)</dcterms:title>
+        <bibo:status xml:lang="en">Ontology Specification</bibo:status>
         <vann:preferredNamespaceUri rdf:resource="https://nfdi4culture.de/ontology/"/>
-        <owl:versionInfo>2025-03-30</owl:versionInfo>
+        <owl:versionInfo>2025-03-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -87,6 +89,12 @@ Further infomration can be found at in the detailed documentation: https://nfdi.
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
     
 
 

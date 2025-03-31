@@ -29,7 +29,11 @@ It describes and interlinks the diverse entities that exist within the community
 Further infomration can be found at in the detailed documentation: https://nfdi.fiz-karlsruhe.de/4culture/"@en)
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
+Annotation(<http://purl.org/ontology/bibo/status> "Ontology Specification"@en)
 Annotation(<http://purl.org/vocab/vann/preferredNamespaceUri> <https://nfdi4culture.de/ontology/>)
+
+Declaration(AnnotationProperty(<http://purl.org/ontology/bibo/status>))
+
 
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001002>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001005>))

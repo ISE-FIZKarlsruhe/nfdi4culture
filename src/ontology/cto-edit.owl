@@ -129,6 +129,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 # Object Property: :CTO_0001003 (is data feed element of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001003 "A dataFeed Element is continuant part of a DataFeed."@en)
 AnnotationAssertion(rdfs:label :CTO_0001003 "is data feed element of"@en)
 SubObjectPropertyOf(:CTO_0001003 <http://purl.obolibrary.org/obo/BFO_0000176>)
 InverseObjectProperties(:CTO_0001003 <https://schema.org/dataFeedElement>)
@@ -192,6 +193,7 @@ ObjectPropertyRange(:CTO_0001012 nfdicore:NFDI_0000131)
 
 # Object Property: :CTO_0001013 (is associated media of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001013 "An image or audio file is associated with a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001013 "is associated media of"@en)
 InverseObjectProperties(:CTO_0001013 <https://schema.org/associatedMedia>)
 ObjectPropertyDomain(:CTO_0001013 <https://schema.org/MediaObject>)
@@ -199,25 +201,30 @@ ObjectPropertyRange(:CTO_0001013 :CTO_0001005)
 
 # Object Property: :CTO_0001014 (is related entity of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001014 "An entity is related to a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001014 "is related entity of"@en)
 
 # Object Property: :CTO_0001015 (is related person of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001015 "A person is related to a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001015 "is related person of"@en)
 SubObjectPropertyOf(:CTO_0001015 :CTO_0001014)
 
 # Object Property: :CTO_0001016 (is related event of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001016 "An event is related to a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001016 "is related event of"@en)
 SubObjectPropertyOf(:CTO_0001016 :CTO_0001014)
 
 # Object Property: :CTO_0001017 (is related location of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001017 "A location is related to a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001017 "is related location of"@en)
 SubObjectPropertyOf(:CTO_0001017 :CTO_0001014)
 
 # Object Property: :CTO_0001018 (is related organization of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001018 "An organization is related to a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001018 "is related organization of"@en)
 SubObjectPropertyOf(:CTO_0001018 :CTO_0001014)
 
@@ -232,6 +239,7 @@ ObjectPropertyRange(:CTO_0001019 <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Object Property: :CTO_0001020 (is related item of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001020 "An item is related to a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001020 "is related item of"@en)
 SubObjectPropertyOf(:CTO_0001020 :CTO_0001014)
 
@@ -253,6 +261,7 @@ ObjectPropertyRange(:CTO_0001026 :CTO_0001027)
 
 # Object Property: :CTO_0001028 (is classified by)
 
+AnnotationAssertion(rdfs:comment :CTO_0001028 "An source item is classified using an external classification system."@en)
 AnnotationAssertion(rdfs:label :CTO_0001028 "is classified by"@en)
 SubObjectPropertyOf(:CTO_0001028 <http://purl.obolibrary.org/obo/IAO_0000219>)
 ObjectPropertyDomain(:CTO_0001028 :CTO_0001027)
@@ -276,6 +285,7 @@ ObjectPropertyRange(:CTO_0001065 :CTO_0001024)
 
 # Object Property: :CTO_0001066 (is incipit of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001066 "A source item has an incipit."@en)
 AnnotationAssertion(rdfs:label :CTO_0001066 "is incipit of"@en)
 SubObjectPropertyOf(:CTO_0001066 nfdicore:NFDI_0000226)
 ObjectPropertyDomain(:CTO_0001066 :CTO_0001024)
@@ -299,10 +309,12 @@ ObjectPropertyRange(:CTO_0001077 :CTO_0001002)
 
 # Object Property: :CTO_0001078 (is lyrics of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001078 "A source item has lyrics."@en)
 AnnotationAssertion(rdfs:label :CTO_0001078 "is lyrics of"@en)
 
 # Object Property: :CTO_0001081 (is holding organization of)
 
+AnnotationAssertion(rdfs:comment :CTO_0001081 "An organization is the rights holder of a source item."@en)
 AnnotationAssertion(rdfs:label :CTO_0001081 "is holding organization of"@en)
 ObjectPropertyDomain(:CTO_0001081 nfdicore:NFDI_0000003)
 ObjectPropertyRange(:CTO_0001081 :CTO_0001005)
@@ -596,8 +608,8 @@ SubClassOf(:CTO_0001057 :CTO_0001027)
 
 # Class: :CTO_0001058 (Wortnetz Kultur classifier)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> :CTO_0001058 "A classifier and information content entity for cultural heritage concepts, developed by the Landschaftsverband Rheinland to support consistent terminology in museums, archives, and cultural institutions."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> :CTO_0001058 "WNK"@en)
+AnnotationAssertion(rdfs:comment :CTO_0001058 "A classifier and information content entity for cultural heritage concepts, developed by the Landschaftsverband Rheinland to support consistent terminology in museums, archives, and cultural institutions."@en)
 AnnotationAssertion(rdfs:label :CTO_0001058 "Wortnetz Kultur classifier"@en)
 SubClassOf(:CTO_0001058 :CTO_0001027)
 

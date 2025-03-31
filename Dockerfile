@@ -13,6 +13,6 @@ COPY mkdocs.yml a.yml
 RUN python -m shmarql docs_build -f a.yml
 
 RUN mkdir /src/site/ontology
-COPY --from=widoco /public /src/site/ontology
+COPY --from=widoco /public/doc /src/site/ontology
 RUN ls -l /src/site/ontology
 RUN cp /src/site/ontology/index-en.html /src/site/ontology/index.html

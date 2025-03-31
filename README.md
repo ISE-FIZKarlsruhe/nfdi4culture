@@ -14,7 +14,7 @@ This repository provides the NFDI4Culture Ontology (CTO) and its documentation. 
 ## Scope
 The main scope of CTO is the representation of cultural heritage research data within a data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of research (meta)data harvested through a dedicated ETL pipeline. Its main focus is the creation of a lightweight index of cultural heritage research data provided by the culture community, including but not limited to the subject areas of musicology, performing arts, media studies, architecture, and art history.
 
-The key aspects of CTO concern:
+The key aspects of CTO are:
 
 - **The consortium and its infrastructure:** persons and organizations involved in research processes, services, guidelines, standards, and events
 - **The content of cultural heritage research data:** cultural heritage objects, persons, locations and events referenced in the provided data, associated media, references to external vocabularies used for the identification and classification of the provided research data

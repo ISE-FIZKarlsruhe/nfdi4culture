@@ -3,10 +3,11 @@
 [NFDI4Culture](https://nfdi4culture.de/) is the Consortium for Research Data on Material and Immaterial Cultural Heritage. Within NFDI4Culture, a [Knowledge Graph](https://nfdi4culture.de/resources/knowledge-graph.html) has been developed and integrated with the [Culture Information Portal](https://nfdi4culture.de/) with the goal to aggregate heterogeneous and isolated data from the research landscape focused on by NFDI4Culture and thereby increase the discoverability, interoperability and reusability of cultural heritage data. 
 
 This repository provides the NFDI4Culture Ontology (CTO) and its documentation. CTO is a domain-specific ontology module developed within the Task Area 5 of the NFDI4Culture initiative. The ontology builds upon the NFDIcore mid-level ontology and is aligned with the Basic Formal Ontology (BFO) 2020 to ensure semantic interoperability and ontological rigor.
-CTO represents the research data of the NFDI4Culture community within a research data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of research (meta)data, harvested using a dedicated [ETL pipeline](https://nfdi4culture.de/id/E5877). 
+CTO represents the research data of the NFDI4Culture community within a research data index, i.e. a single point of access to decentralized cultural heritage research resources. The ontology supports the integration of research metadata, harvested using a dedicated [ETL pipeline](https://nfdi4culture.de/id/E5877). 
 
 The ontology’s latest version is always accessible at: [cto.owl](https://github.com/ISE-FIZKarlsruhe/nfdi4culture/blob/main/cto.owl)  
-A generated list of resources via Widoco is available at: [https://nfdi.fiz-karlsruhe.de/4culture/ontology/](https://nfdi.fiz-karlsruhe.de/4culture/ontology/) 
+A generated list of resources via Widoco is available at:   
+[https://nfdi.fiz-karlsruhe.de/4culture/ontology/](https://nfdi.fiz-karlsruhe.de/4culture/ontology/) 
 
 ## Ontology Metadata
 

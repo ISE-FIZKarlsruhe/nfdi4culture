@@ -5,7 +5,7 @@ The following modeling examples illustrate how research data can be represented 
 ![Legend](assets/legend.png)
 
 
-## Performing Arts
+## The Performing Arts
 ![Performing Arts Example](assets/pa-example.jpg)
 
 ## Musicology

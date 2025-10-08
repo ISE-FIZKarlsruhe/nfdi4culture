@@ -87,8 +87,5 @@ stateDiagram
 
 ```
 
-```d2
+![Incipit pattern](D2/incipit-pattern.d2)
 
-!include D2/incipit-pattern.d2 
-
-```

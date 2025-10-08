@@ -204,6 +204,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 
     <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001009">
         <rdfs:subPropertyOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001008"/>
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001015"/>
         <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
         <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:comment xml:lang="en">Relates a cto:source item to persons referenced by the source provider in any role, such as composers, spouses, or supervisors. While detailed roles or relationships may be described within the source itself, this property serves the purpose of creating a research data index by identifying persons related to the source item, without specifying the nature of the relationship.</rdfs:comment>
@@ -413,6 +414,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
     <!-- https://nfdi4culture.de/ontology/CTO_0001069 -->
 
     <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001069">
+        <owl:inverseOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001081"/>
         <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
         <rdfs:range rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003"/>
         <rdfs:comment xml:lang="en">Links an item to the organization (such as a library, archive, museum, or other institution) that currently holds, owns, or is responsible for the item. This property identifies the custodial or curatorial institution associated with the object.</rdfs:comment>
@@ -437,6 +439,16 @@ While detailed relationships and roles may be present in the source data, cto:ha
 
     <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001078">
         <rdfs:label xml:lang="en">is lyrics of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001081 -->
+
+    <owl:ObjectProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001081">
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003"/>
+        <rdfs:range rdf:resource="https://nfdi4culture.de/ontology/CTO_0001005"/>
+        <rdfs:label xml:lang="en">is holding organization of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -537,7 +549,7 @@ The preferred approach for legal statements is the usage of the object property 
         <rdfs:domain rdf:resource="https://nfdi4culture.de/ontology/CTO_0001024"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Associates an incipit with the musical time signature it begins in, expressed as a string (e.g., &quot;4/4&quot;, &quot;3/8&quot;). This property captures the rhythmic meter of the notated passage.</rdfs:comment>
-        <rdfs:label xml:lang="en">has time signature</rdfs:label>
+        <rdfs:label xml:lang="en">has incipit time signature</rdfs:label>
         <skos:example xml:lang="en">&quot;3/4&quot;</skos:example>
     </owl:DatatypeProperty>
     
@@ -685,6 +697,16 @@ The preferred approach for legal statements is the usage of the object property 
     
 
 
+    <!-- https://nfdi4culture.de/ontology/CTO_0001080 -->
+
+    <owl:DatatypeProperty rdf:about="https://nfdi4culture.de/ontology/CTO_0001080">
+        <rdfs:subPropertyOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008"/>
+        <rdfs:comment xml:lang="en">Relates a cto:source item to the URL of a data source from which it originates</rdfs:comment>
+        <rdfs:label xml:lang="en">has source file</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -802,7 +824,7 @@ The preferred approach for legal statements is the usage of the object property 
     <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001030">
         <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
         <rdfs:comment xml:lang="en">Means to categorize themes, subjects, and motifs in visual artworks. Iconclass provides a structured vocabulary for iconographic analysis and indexing.</rdfs:comment>
-        <rdfs:label xml:lang="en">iconclass classifier</rdfs:label>
+        <rdfs:label xml:lang="en">Iconclass classifier</rdfs:label>
     </owl:Class>
     
 
@@ -845,7 +867,7 @@ The preferred approach for legal statements is the usage of the object property 
         <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
         <obo:IAO_0000118 xml:lang="en">Hornbostel-Sachs Classification</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">A hierarchical classifier and information content entity for musical instruments, organizing them based on sound production mechanisms (e.g., idiophones, chordophones), widely used in ethnomusicology and organology.</rdfs:comment>
-        <rdfs:label xml:lang="en">hornbostel sachs classifier</rdfs:label>
+        <rdfs:label xml:lang="en">Hornbostel Sachs classifier</rdfs:label>
     </owl:Class>
     
 
@@ -855,7 +877,7 @@ The preferred approach for legal statements is the usage of the object property 
     <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001053">
         <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
         <rdfs:comment xml:lang="en">A classifier and information content entity developed for describing and categorizing graphic works and printmaking techniques, supporting consistent metadata and research across graphic art collections.</rdfs:comment>
-        <rdfs:label xml:lang="en">graphikvokabular classifier</rdfs:label>
+        <rdfs:label xml:lang="en">Graphikvokabular classifier</rdfs:label>
     </owl:Class>
     
 
@@ -865,7 +887,7 @@ The preferred approach for legal statements is the usage of the object property 
     <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001054">
         <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
         <rdfs:comment xml:lang="en">A domain-specific classifier and information content entity used to assign categorical descriptors to films based on genre, production attributes, and historical significance within the Filmportal.de system.</rdfs:comment>
-        <rdfs:label xml:lang="en">filmportal category vocabulary classifier</rdfs:label>
+        <rdfs:label xml:lang="en">Filmportal Category Vocabulary classifier</rdfs:label>
     </owl:Class>
     
 
@@ -908,7 +930,7 @@ The preferred approach for legal statements is the usage of the object property 
         <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
         <obo:IAO_0000118 xml:lang="en">A classifier and information content entity for cultural heritage concepts, developed by the Landschaftsverband Rheinland to support consistent terminology in museums, archives, and cultural institutions.</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">WNK</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">wortnetz kultur classifier</rdfs:label>
+        <rdfs:label xml:lang="en">Wortnetz Kultur classifier</rdfs:label>
     </owl:Class>
     
 
@@ -918,7 +940,19 @@ The preferred approach for legal statements is the usage of the object property 
     <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001059">
         <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
         <rdfs:comment xml:lang="en">A domain-focused classifier and information content entity designed to describe objects and concepts in material culture studies, developed for the humanities and museum sector, and in the process of integration with the Getty AAT.</rdfs:comment>
-        <rdfs:label xml:lang="en">material culture thesaurus classifier</rdfs:label>
+        <rdfs:label xml:lang="en">Material Culture Thesaurus classifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi4culture.de/ontology/CTO_0001079 -->
+
+    <owl:Class rdf:about="https://nfdi4culture.de/ontology/CTO_0001079">
+        <rdfs:subClassOf rdf:resource="https://nfdi4culture.de/ontology/CTO_0001027"/>
+        <rdfs:comment xml:lang="en">An information content entity to classify entities within cultural heritage research datasets. It enables semantic enrichment by linking local data to the broader knowledge graph of Wikidata, facilitating interoperability, disambiguation, and enhanced contextual understanding.
+To be used only for classification, not identification. Example: to classify an item about the Mona Lisa painting, use this class to classify the item 
+as Q1133779 (renaissance art). Don&apos;t use this class to identify the painting with Q12418 (Mona Lisa).</rdfs:comment>
+        <rdfs:label xml:lang="en">Wikidata classifier</rdfs:label>
     </owl:Class>
     
 

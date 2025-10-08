@@ -86,3 +86,9 @@ stateDiagram
   state "xF" as keysig_xF 
 
 ```
+
+```d2
+
+x -> x 
+
+```

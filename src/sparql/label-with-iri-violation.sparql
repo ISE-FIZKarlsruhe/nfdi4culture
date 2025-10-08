@@ -6,4 +6,3 @@ WHERE {
   FILTER (REGEX(?value, "http[s]?[:]"))
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://nfdi4culture.de/ontology/CTO_")))
 }
-

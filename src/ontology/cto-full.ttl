@@ -1749,6 +1749,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 ###  https://nfdi4culture.de/ontology/CTO_0001009
 <https://nfdi4culture.de/ontology/CTO_0001009> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <https://nfdi4culture.de/ontology/CTO_0001008> ;
+                                               owl:inverseOf <https://nfdi4culture.de/ontology/CTO_0001015> ;
                                                rdfs:domain <https://nfdi4culture.de/ontology/CTO_0001005> ;
                                                rdfs:range nfdicore:NFDI_0000004 ;
                                                rdfs:comment "Relates a cto:source item to persons referenced by the source provider in any role, such as composers, spouses, or supervisors. While detailed roles or relationships may be described within the source itself, this property serves the purpose of creating a research data index by identifying persons related to the source item, without specifying the nature of the relationship."@en ;
@@ -1901,6 +1902,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 
 ###  https://nfdi4culture.de/ontology/CTO_0001069
 <https://nfdi4culture.de/ontology/CTO_0001069> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <https://nfdi4culture.de/ontology/CTO_0001081> ;
                                                rdfs:domain <https://nfdi4culture.de/ontology/CTO_0001005> ;
                                                rdfs:range nfdicore:NFDI_0000003 ;
                                                rdfs:comment "Links an item to the organization (such as a library, archive, museum, or other institution) that currently holds, owns, or is responsible for the item. This property identifies the custodial or curatorial institution associated with the object."@en ;
@@ -1919,6 +1921,13 @@ While detailed relationships and roles may be present in the source data, cto:ha
 ###  https://nfdi4culture.de/ontology/CTO_0001078
 <https://nfdi4culture.de/ontology/CTO_0001078> rdf:type owl:ObjectProperty ;
                                                rdfs:label "is lyrics of"@en .
+
+
+###  https://nfdi4culture.de/ontology/CTO_0001081
+<https://nfdi4culture.de/ontology/CTO_0001081> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain nfdicore:NFDI_0000003 ;
+                                               rdfs:range <https://nfdi4culture.de/ontology/CTO_0001005> ;
+                                               rdfs:label "is holding organization of"@en .
 
 
 ###  https://schema.org/associatedMedia
@@ -2083,7 +2092,7 @@ The preferred approach for legal statements is the usage of the object property 
                                                rdfs:domain <https://nfdi4culture.de/ontology/CTO_0001024> ;
                                                rdfs:range rdfs:Literal ;
                                                rdfs:comment "Associates an incipit with the musical time signature it begins in, expressed as a string (e.g., \"4/4\", \"3/8\"). This property captures the rhythmic meter of the notated passage."@en ;
-                                               rdfs:label "has time signature"@en ;
+                                               rdfs:label "has incipit time signature"@en ;
                                                skos:example "\"3/4\""@en .
 
 
@@ -2191,6 +2200,13 @@ The preferred approach for legal statements is the usage of the object property 
                                                rdfs:comment "Relates a cto:source item to the time period that indicates the time span during which the item existed. The property should only be used when the use of cto:creationDate and cto:distructionDate is not possible."@en ;
                                                rdfs:label "has existence period"@en ;
                                                skos:example "1890s"@en .
+
+
+###  https://nfdi4culture.de/ontology/CTO_0001080
+<https://nfdi4culture.de/ontology/CTO_0001080> rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf nfdicore:NFDI_0001008 ;
+                                               rdfs:comment "Relates a cto:source item to the URL of a data source from which it originates"@en ;
+                                               rdfs:label "has source file"@en .
 
 
 #################################################################
@@ -5510,7 +5526,7 @@ nfdicore:NFDI_0010041 rdf:type owl:Class ;
 <https://nfdi4culture.de/ontology/CTO_0001030> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
                                                rdfs:comment "Means to categorize themes, subjects, and motifs in visual artworks. Iconclass provides a structured vocabulary for iconographic analysis and indexing."@en ;
-                                               rdfs:label "iconclass classifier"@en .
+                                               rdfs:label "Iconclass classifier"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001031
@@ -5541,21 +5557,21 @@ nfdicore:NFDI_0010041 rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
                                                obo:IAO_0000118 "Hornbostel-Sachs Classification"@en ;
                                                rdfs:comment "A hierarchical classifier and information content entity for musical instruments, organizing them based on sound production mechanisms (e.g., idiophones, chordophones), widely used in ethnomusicology and organology."@en ;
-                                               rdfs:label "hornbostel sachs classifier"@en .
+                                               rdfs:label "Hornbostel Sachs classifier"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001053
 <https://nfdi4culture.de/ontology/CTO_0001053> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
                                                rdfs:comment "A classifier and information content entity developed for describing and categorizing graphic works and printmaking techniques, supporting consistent metadata and research across graphic art collections."@en ;
-                                               rdfs:label "graphikvokabular classifier"@en .
+                                               rdfs:label "Graphikvokabular classifier"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001054
 <https://nfdi4culture.de/ontology/CTO_0001054> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
                                                rdfs:comment "A domain-specific classifier and information content entity used to assign categorical descriptors to films based on genre, production attributes, and historical significance within the Filmportal.de system."@en ;
-                                               rdfs:label "filmportal category vocabulary classifier"@en .
+                                               rdfs:label "Filmportal Category Vocabulary classifier"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001055
@@ -5586,14 +5602,23 @@ nfdicore:NFDI_0010041 rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
                                                obo:IAO_0000118 "A classifier and information content entity for cultural heritage concepts, developed by the Landschaftsverband Rheinland to support consistent terminology in museums, archives, and cultural institutions."@en ,
                                                                "WNK"@en ;
-                                               rdfs:label "wortnetz kultur classifier"@en .
+                                               rdfs:label "Wortnetz Kultur classifier"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001059
 <https://nfdi4culture.de/ontology/CTO_0001059> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
                                                rdfs:comment "A domain-focused classifier and information content entity designed to describe objects and concepts in material culture studies, developed for the humanities and museum sector, and in the process of integration with the Getty AAT."@en ;
-                                               rdfs:label "material culture thesaurus classifier"@en .
+                                               rdfs:label "Material Culture Thesaurus classifier"@en .
+
+
+###  https://nfdi4culture.de/ontology/CTO_0001079
+<https://nfdi4culture.de/ontology/CTO_0001079> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
+                                               rdfs:comment """An information content entity to classify entities within cultural heritage research datasets. It enables semantic enrichment by linking local data to the broader knowledge graph of Wikidata, facilitating interoperability, disambiguation, and enhanced contextual understanding.
+To be used only for classification, not identification. Example: to classify an item about the Mona Lisa painting, use this class to classify the item 
+as Q1133779 (renaissance art). Don't use this class to identify the painting with Q12418 (Mona Lisa)."""@en ;
+                                               rdfs:label "Wikidata classifier"@en .
 
 
 ###  https://schema.org/AudioObject

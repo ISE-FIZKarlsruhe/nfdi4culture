@@ -18,4 +18,3 @@ WHERE {
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://nfdi4culture.de/ontology/CTO_")))
   FILTER (!isIRI(?value))
 }
-

@@ -101,13 +101,13 @@ edge_other: {
 cto_SourceItem.class: cto 
 cto_SourceItem {
     label: Source Item \n cto:CTO_0001005
-    link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/#CTO_0001005
+    link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/\#CTO_0001005
 }
 
 cto_Incipit.class: cto 
 cto_Incipit {
   label: Incipit \n cto:CTO_0001024
-  link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/#CTO_0001024
+  link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/\#CTO_0001024
 }
 
 # Schema  
@@ -160,6 +160,7 @@ INC.class: entity
 
 FEED {
     label: E5313
+    link: https://nfdi4culture.de/resource/E5313/about.html 
   }
 FEED.class: entity
 
@@ -270,10 +271,10 @@ INC -> KEY:  {
     class: edge_other
   }
 INC -> CLEF: {
-    label: CTO_ \n 0001061 \n has clef
+    label: has clef \n CTO_\n 0001061 
     class: edge_other
   }
 INC -> TS:  {
-    label: CTO_ \n 0001060 \n has incipit \n time signature
+    label:has incipit \n time signature \n CTO_ \n 0001060
     class: edge_other
   }

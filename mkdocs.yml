@@ -4,6 +4,10 @@ repo_url: https://github.com/ISE-FIZKarlsruhe/nfdi4culture
 theme:
   name: material
   custom_dir: docs/overrides
+  features:
+    - navigation.tabs
+  hide:
+    - toc
 nav:
   - Intro and Metadata: index.md
   - Widoco Documentation: /4culture/ontology/

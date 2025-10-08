@@ -89,3 +89,5 @@ stateDiagram
 
 ![Incipit pattern](D2/incipit-pattern.d2)
 
+Pattern TTL 
+SPARQL Query 

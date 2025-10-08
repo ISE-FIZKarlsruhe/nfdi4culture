@@ -89,6 +89,6 @@ stateDiagram
 
 ```d2
 
-x -> x 
+!include D2/incipit-pattern.d2 
 
 ```

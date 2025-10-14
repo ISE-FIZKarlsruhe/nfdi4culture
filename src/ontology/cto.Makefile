@@ -3,9 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-MIR ?= true
-IMP ?= false
-PAT ?= false
 
 #################################################################
 ## import entire nfdicore

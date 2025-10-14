@@ -13,6 +13,7 @@ nav:
   - Widoco Documentation: /4culture/ontology/
   - NFDI Context: nfdi-context.md
   - Scope and Structure: structure.md
+  #- Patterns: patterns.md
   - Domain Examples: domain-examples.md
   - References: references.md
 

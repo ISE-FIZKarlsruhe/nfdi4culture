@@ -3,6 +3,15 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+MIR ?= true
+IMP ?= false
+PAT ?= false
+ROBOT_ENV ?= ROBOT_JAVA_ARGS=-Xmx8G
+.EXPORT_ALL_VARIABLES:
+
+$(MIRRORDIR)/schema.owl:
+	@mkdir -p $(MIRRORDIR)
+	curl -L -o $@ https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl
 
 #################################################################
 ## import entire nfdicore

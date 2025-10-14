@@ -53,6 +53,5 @@ robot_report:
   report_on:
     - edit
 
-ci:
-  - github_actions
+
 

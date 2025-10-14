@@ -32,6 +32,7 @@ Annotation(dcterms:title "NFDI4Culture Ontology (CTO)")
 Annotation(<http://purl.org/ontology/bibo/status> "Ontology Specification"@en)
 Annotation(<http://purl.org/vocab/vann/preferredNamespaceUri> <https://nfdi4culture.de/ontology/>)
 
+Declaration(Class(nfdicore:NFDI_0000003))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001002>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001005>))
 Declaration(Class(<https://nfdi4culture.de/ontology/CTO_0001024>))

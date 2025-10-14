@@ -17,7 +17,7 @@
 @base <https://nfdi4culture.de/ontology/cto/cto-base.ttl> .
 
 <https://nfdi4culture.de/ontology/cto/cto-base.ttl> rdf:type owl:Ontology ;
-                                                     owl:versionIRI <https://nfdi4culture.de/ontology/cto/releases/2025-03-31/cto-base.ttl> ;
+                                                     owl:versionIRI <https://nfdi4culture.de/ontology/cto/releases/2025-10-14/cto-base.ttl> ;
                                                      dc:type obo:IAO_8000001 ;
                                                      dcterms:contributor n4c:E1873 ,
                                                                          n4c:E2381 ,
@@ -34,7 +34,7 @@ Further infomration can be found at in the detailed documentation: https://nfdi.
                                                      dcterms:title "NFDI4Culture Ontology (CTO)" ;
                                                      bibo:status "Ontology Specification"@en ;
                                                      vann:preferredNamespaceUri <https://nfdi4culture.de/ontology/> ;
-                                                     owl:versionInfo "2025-03-31" .
+                                                     owl:versionInfo "2025-10-14" .
 
 #################################################################
 #    Annotation properties
@@ -112,6 +112,7 @@ nfdicore:NFDI_0000226 rdf:type owl:ObjectProperty .
 <https://nfdi4culture.de/ontology/CTO_0001003> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf obo:BFO_0000176 ;
                                                owl:inverseOf <https://schema.org/dataFeedElement> ;
+                                               rdfs:comment "A dataFeed Element is continuant part of a DataFeed."@en ;
                                                rdfs:label "is data feed element of"@en .
 
 
@@ -184,35 +185,41 @@ While detailed relationships and roles may be present in the source data, cto:ha
                                                owl:inverseOf <https://schema.org/associatedMedia> ;
                                                rdfs:domain <https://schema.org/MediaObject> ;
                                                rdfs:range <https://nfdi4culture.de/ontology/CTO_0001005> ;
+                                               rdfs:comment "An image or audio file is associated with a source item."@en ;
                                                rdfs:label "is associated media of"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001014
 <https://nfdi4culture.de/ontology/CTO_0001014> rdf:type owl:ObjectProperty ;
+                                               rdfs:comment "An entity is related to a source item."@en ;
                                                rdfs:label "is related entity of"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001015
 <https://nfdi4culture.de/ontology/CTO_0001015> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <https://nfdi4culture.de/ontology/CTO_0001014> ;
+                                               rdfs:comment "A person is related to a source item."@en ;
                                                rdfs:label "is related person of"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001016
 <https://nfdi4culture.de/ontology/CTO_0001016> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <https://nfdi4culture.de/ontology/CTO_0001014> ;
+                                               rdfs:comment "An event is related to a source item."@en ;
                                                rdfs:label "is related event of"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001017
 <https://nfdi4culture.de/ontology/CTO_0001017> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <https://nfdi4culture.de/ontology/CTO_0001014> ;
+                                               rdfs:comment "A location is related to a source item."@en ;
                                                rdfs:label "is related location of"@en .
 
 
 ###  https://nfdi4culture.de/ontology/CTO_0001018
 <https://nfdi4culture.de/ontology/CTO_0001018> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <https://nfdi4culture.de/ontology/CTO_0001014> ;
+                                               rdfs:comment "An organization is related to a source item."@en ;
                                                rdfs:label "is related organization of"@en .
 
 
@@ -229,6 +236,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 ###  https://nfdi4culture.de/ontology/CTO_0001020
 <https://nfdi4culture.de/ontology/CTO_0001020> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf <https://nfdi4culture.de/ontology/CTO_0001014> ;
+                                               rdfs:comment "An item is related to a source item."@en ;
                                                rdfs:label "is related item of"@en .
 
 
@@ -263,6 +271,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 <https://nfdi4culture.de/ontology/CTO_0001028> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf obo:IAO_0000219 ;
                                                rdfs:domain <https://nfdi4culture.de/ontology/CTO_0001027> ;
+                                               rdfs:comment "An source item is classified using an external classification system."@en ;
                                                rdfs:label "is classified by"@en .
 
 
@@ -290,6 +299,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
                                                rdfs:subPropertyOf nfdicore:NFDI_0000226 ;
                                                rdfs:domain <https://nfdi4culture.de/ontology/CTO_0001024> ;
                                                rdfs:range obo:IAO_0000030 ;
+                                               rdfs:comment "A source item has an incipit."@en ;
                                                rdfs:label "is incipit of"@en .
 
 
@@ -313,6 +323,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 
 ###  https://nfdi4culture.de/ontology/CTO_0001078
 <https://nfdi4culture.de/ontology/CTO_0001078> rdf:type owl:ObjectProperty ;
+                                               rdfs:comment "A source item has lyrics."@en ;
                                                rdfs:label "is lyrics of"@en .
 
 
@@ -320,6 +331,7 @@ While detailed relationships and roles may be present in the source data, cto:ha
 <https://nfdi4culture.de/ontology/CTO_0001081> rdf:type owl:ObjectProperty ;
                                                rdfs:domain nfdicore:NFDI_0000003 ;
                                                rdfs:range <https://nfdi4culture.de/ontology/CTO_0001005> ;
+                                               rdfs:comment "An organization is the rights holder of a source item."@en ;
                                                rdfs:label "is holding organization of"@en .
 
 
@@ -659,8 +671,8 @@ nfdicore:NFDI_0000131 rdf:type owl:Class .
 ###  https://nfdi4culture.de/ontology/CTO_0001058
 <https://nfdi4culture.de/ontology/CTO_0001058> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://nfdi4culture.de/ontology/CTO_0001027> ;
-                                               obo:IAO_0000118 "A classifier and information content entity for cultural heritage concepts, developed by the Landschaftsverband Rheinland to support consistent terminology in museums, archives, and cultural institutions."@en ,
-                                                               "WNK"@en ;
+                                               obo:IAO_0000118 "WNK"@en ;
+                                               rdfs:comment "A classifier and information content entity for cultural heritage concepts, developed by the Landschaftsverband Rheinland to support consistent terminology in museums, archives, and cultural institutions."@en ;
                                                rdfs:label "Wortnetz Kultur classifier"@en .
 
 

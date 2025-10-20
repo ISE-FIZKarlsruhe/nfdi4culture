@@ -4,7 +4,7 @@ github_org: ISE-FIZKarlsruhe
 repo: nfdi4culture
 uribase: https://nfdi4culture.de/ontology
 description: >
-  The CTO ontology models cultural heritage research data and builds upon the NFDIcore ontology.
+  The NFDI4Culture ontology (CTO) represents cultural heritage research data and builds upon the NFDIcore ontology.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 
 import_group:

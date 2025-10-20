@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                1180d4bb6692a9db65f87398f652ba7af52d9561bb287f43627199682f77f76c
+CONFIG_HASH=                5a4f96348b717a46ed97886974168c2b8c894fb73dc7a206804d93d1f731feef
 
 
 # ----------------------------------------
@@ -429,24 +429,11 @@ $(IMPORTDIR)/schema_import.owl: $(MIRRORDIR)/schema.owl
 	@echo "       This rule needs to be overwritten in cto.Makefile!"
 	@false
 
-## Module for ontology: skos (slme)
-$(IMPORTDIR)/skos_import.owl: $(MIRRORDIR)/skos.owl $(IMPORTDIR)/skos_terms.txt $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --add-source true \
-		 extract --term-file $(IMPORTDIR)/skos_terms.txt $(T_IMPORTSEED) \
-		         --copy-ontology-annotations true --force true \
-		         --individuals exclude \
-		         --method SUBSET \
-		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
-		        --term rdfs:label \
-		        --term IAO:0000115 \
-		        --term OMO:0002000 \
-		        --term-file $(IMPORTDIR)/skos_terms.txt $(T_IMPORTSEED) \
-		        --select complement --select annotation-properties \
-		 odk:normalize --base-iri https://nfdi4culture.de/ontology \
-		               --subset-decls true --synonym-decls true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
+## Module for ontology: skos (custom)
+$(IMPORTDIR)/skos_import.owl: $(MIRRORDIR)/skos.owl
+	@echo "ERROR: You have configured skos as a custom module;"
+	@echo "       This rule needs to be overwritten in cto.Makefile!"
+	@false
 
 endif # IMP=true
 

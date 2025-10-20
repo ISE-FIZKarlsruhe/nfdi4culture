@@ -16,8 +16,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNote>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
 ############################
 #   Annotation Properties
 ############################
@@ -27,18 +25,6 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#definition> "definition"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#definition> "A statement or formal explanation of the meaning of a concept."@en)
-
-# Annotation Property: <http://www.w3.org/2004/02/skos/core#editorialNote> (editorial note)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#editorialNote> <http://www.w3.org/2004/02/skos/core>)
-AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#editorialNote> "editorial note"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#editorialNote> "A note for an editor, translator or maintainer of the vocabulary."@en)
-
-# Annotation Property: <http://www.w3.org/2004/02/skos/core#example> (example)
-
-AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2004/02/skos/core>)
-AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#example> "example"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#example> "An example of the use of a concept."@en)
 
 
 

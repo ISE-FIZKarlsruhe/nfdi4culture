@@ -518,17 +518,11 @@ skos:definition rdf:type owl:AnnotationProperty ;
 
 
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
-skos:editorialNote rdf:type owl:AnnotationProperty ;
-                   rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-                   rdfs:label "editorial note"@en ;
-                   skos:definition "A note for an editor, translator or maintainer of the vocabulary."@en .
+skos:editorialNote rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty ;
-             rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-             rdfs:label "example"@en ;
-             skos:definition "An example of the use of a concept."@en .
+skos:example rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel

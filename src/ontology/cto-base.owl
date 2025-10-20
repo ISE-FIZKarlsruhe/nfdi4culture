@@ -17,7 +17,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:nfdicore="https://nfdi.fiz-karlsruhe.de/ontology/">
     <owl:Ontology rdf:about="https://nfdi4culture.de/ontology/cto/cto-base.owl">
-        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-10-14/cto-base.owl"/>
+        <owl:versionIRI rdf:resource="https://nfdi4culture.de/ontology/cto/releases/2025-10-20/cto-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor rdf:resource="https://nfdi4culture.de/id/E1873"/>
         <dcterms:contributor rdf:resource="https://nfdi4culture.de/id/E2381"/>
@@ -34,7 +34,7 @@ Further infomration can be found at in the detailed documentation: https://nfdi.
         <dcterms:title>NFDI4Culture Ontology (CTO)</dcterms:title>
         <bibo:status xml:lang="en">Ontology Specification</bibo:status>
         <vann:preferredNamespaceUri rdf:resource="https://nfdi4culture.de/ontology/"/>
-        <owl:versionInfo>2025-10-14</owl:versionInfo>
+        <owl:versionInfo>2025-10-20</owl:versionInfo>
     </owl:Ontology>
     
 

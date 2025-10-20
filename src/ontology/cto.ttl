@@ -24,7 +24,7 @@
 @base <https://nfdi4culture.de/ontology/cto.ttl> .
 
 <https://nfdi4culture.de/ontology/cto.ttl> rdf:type owl:Ontology ;
-                                            owl:versionIRI <https://nfdi4culture.de/ontology/cto/releases/2025-10-14/cto.ttl> ;
+                                            owl:versionIRI <https://nfdi4culture.de/ontology/cto/releases/2025-10-20/cto.ttl> ;
                                             dcterms:contributor n4c:E1873 ,
                                                                 n4c:E2381 ,
                                                                 n4c:E3715 ;
@@ -40,7 +40,7 @@ Further infomration can be found at in the detailed documentation: https://nfdi.
                                             dcterms:title "NFDI4Culture Ontology (CTO)" ;
                                             bibo:status "Ontology Specification"@en ;
                                             vann:preferredNamespaceUri <https://nfdi4culture.de/ontology/> ;
-                                            owl:versionInfo "2025-10-14" .
+                                            owl:versionInfo "2025-10-20" .
 
 #################################################################
 #    Annotation properties

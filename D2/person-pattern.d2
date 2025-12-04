@@ -1,0 +1,156 @@
+# direction: down | right | up | left
+direction: up 
+
+...@"style.d2"
+
+###### CLASSES
+
+# CTO
+cto_SourceItem.class: cto 
+
+# NFDIcore
+nfdicore_Person.class: nfdicore
+nfdicore_Identifier.class: nfdicore
+nfdicore_RISM-Identifier.class: nfdicore
+
+# IAO / BFO ladder on the right
+iao_CentrallyRegisteredIdentifier.class: iao
+iao_InformationContentEntity.class: iao
+bfo_GenericallyDependentContinuant.class: bfo
+#bfo_Continuant.class: bfo
+bfo_IndependentContinuant.class: bfo
+
+###### NODES
+
+cto_SourceItem {
+    label: Source Item \n cto:CTO_0001005
+    link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/\#CTO_0001005
+}
+
+nfdicore_Person {
+  label: person \n nfdicore:NFDI_0000004
+  link: https://nfdi.fiz-karlsruhe.de/ontology/\#NFDI_0000004
+}
+
+nfdicore_RISM-Identifier {
+    label: rism identifier \n nfdicore:NFDI_0001016
+    link: https://nfdi.fiz-karlsruhe.de/ontology/\#NFDI_0001016
+}
+
+nfdicore_Identifier {
+  label: identifier \n nfdicore:NFDI_0000015
+  link: https://nfdi.fiz-karlsruhe.de/ontology/\#NFDI_0000015
+}
+
+iao_CentrallyRegisteredIdentifier {
+  label: centrally registered identifier \n iao:IAO_0020029
+  link: http://purl.obolibrary.org/obo/IAO_0020029
+}
+
+iao_InformationContentEntity {
+  label: information content entity \n iao:IAO_0000030
+  link: http://purl.obolibrary.org/obo/IAO_0000030
+}
+
+bfo_GenericallyDependentContinuant {
+  label: generically dependent continuant \n bfo:BFO_0000031
+  link: http://purl.obolibrary.org/obo/BFO_0000031
+}
+
+#bfo_Continuant {
+#  label: continuant \n bfo:BFO_0000002
+#  link: http://purl.obolibrary.org/obo/BFO_0000002
+#}
+
+bfo_IndependentContinuant {
+  label: independent continuant \n bfo:BFO_0000004
+  link: http://purl.obolibrary.org/obo/BFO_0000004
+}
+
+###### EDGES
+
+# Taxonomy breadcrumbs for identifiers
+nfdicore_Identifier -> iao_CentrallyRegisteredIdentifier: {
+  label: rdfs:subClassOf
+  class: edge_subclass 
+}
+
+iao_CentrallyRegisteredIdentifier -> iao_InformationContentEntity: {
+  label: rdfs:subClassOf
+  class: edge_subclass 
+}
+
+iao_InformationContentEntity -> bfo_GenericallyDependentContinuant: {
+  label: rdfs:subClassOf
+  class: edge_subclass 
+}
+
+#bfo_GenericallyDependentContinuant -> bfo_Continuant: {
+#  label: rdfs:subClassOf
+#  class: edge_subclass 
+#}
+
+# Person breadcrumb to BFO
+nfdicore_Person -> bfo_IndependentContinuant: {
+  label: rdfs:subClassOf
+  class: edge_subclass 
+}
+
+#bfo_IndependentContinuant -> bfo_Continuant: {
+#    label: rdfs:subClassOf
+#    class: edge_subclass 
+#  }
+
+  nfdicore_RISM-Identifier -> nfdicore_Identifier: { 
+    label: rdfs:subClassOf
+    class: edge_subclass 
+}
+
+# Optional exemplar nodes
+ARK_PERSON.class: entity
+ARK_PERSON {
+  label: ARK ID \n Schumann, Robert
+}
+
+RISM_URI.class: entity
+RISM_URI {
+  label: <https://rism.online/people/131206>
+  link: https://rism.online/people/131206
+}
+
+SI {
+    label: <https://rism.online/sources/201001959>
+  }
+SI.class: entity
+
+# Instance edges
+ARK_PERSON -> nfdicore_Person: { 
+    label: rdf:type  
+    class: edge_other 
+}
+
+ARK_PERSON -> RISM_URI: { 
+    label: has external identifier \n nfdicore:NFDI_0001006  
+    class: edge_other 
+}
+
+RISM_URI   -> nfdicore_RISM-Identifier: { 
+    label: rdf:type  
+    class: edge_other 
+}
+
+SI -> cto_SourceItem: {
+    label: rdf:type 
+    class: edge_type
+}
+
+SI -> ARK_PERSON {
+    label: cto:has related person 
+    class: edge_other 
+}
+
+cto_SourceItem -> iao_InformationContentEntity {
+    label: rdfs:subClassOf
+    class: edge_subclass
+}
+

@@ -1,0 +1,918 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ISE-FIZKarlsruhe.github.io/nfdi4culture/rdg/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Research Data Graph - NFDI4Culture Ontology (CTO)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#research-data-graph" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="NFDI4Culture Ontology (CTO)" class="md-header__button md-logo" aria-label="NFDI4Culture Ontology (CTO)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NFDI4Culture Ontology (CTO)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Research Data Graph
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISE-FIZKarlsruhe/nfdi4culture/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="NFDI4Culture Ontology (CTO)" class="md-nav__button md-logo" aria-label="NFDI4Culture Ontology (CTO)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NFDI4Culture Ontology (CTO)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISE-FIZKarlsruhe/nfdi4culture/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageAutomatedTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ontology-sample-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ontology Sample Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#art-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Art History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media studies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#musicology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Musicology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performing-arts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performing Arts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="research-data-graph">Research Data Graph</h1>
+<h2 id="ontology-sample-applications">Ontology Sample Applications</h2>
+<p>Some examples of applying the RDG Ontology to items from architecture, art history, musicology, media studies and the performing arts.</p>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<div id="svgContainer" style="width: 100%; height: 40vh; overflow: hidden; border: 1px solid #ddd" ></div>
+<div class="text-end" style="color: #777; font-size: 80%; font-style: italic">zoom in/out with mouse scrollwheel or pinch-zoom</div>
+<script src="overview_script.js"></script>
+
+<h2 id="architecture">Architecture</h2>
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">cto:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/ontology#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">n4c:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/id/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nv">&lt;http://schema.org/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">nfdicore:</span><span class="w"> </span><span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/ontology/&gt;</span><span class="w"> </span><span class="p">.</span>
+
+<span class="c">###  https://nfdi.fiz-karlsruhe.de/id/ark:/60538/14384775308556492773</span>
+<span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/id/ark:/60538/14384775308556492773&gt;</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">NamedIndividual</span> <span class="p">,</span>
+                                                                            <span class="nn">cto</span><span class="p">:</span><span class="nt">Item</span> <span class="p">;</span>
+                                                                   <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">license</span> <span class="nv">&lt;https://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">publisher</span> <span class="nn">n4c</span><span class="p">:</span><span class="nt">E1876</span> <span class="p">;</span>
+                                                                   <span class="nn">schema</span><span class="p">:</span><span class="nt">image</span> <span class="nv">&lt;http://fotothek.biblhertz.it/bh/2048px/bh003277.jpg&gt;</span> <span class="p">,</span>
+                                                                                             <span class="nv">&lt;http://fotothek.biblhertz.it/bh/2048px/bh590824.jpg&gt;</span> <span class="p">,</span>
+                                                                                             <span class="nv">&lt;http://fotothek.biblhertz.it/bh/2048px/bh590962.jpg&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">schema</span><span class="p">:</span><span class="nt">url</span> <span class="nv">&lt;http://foto.biblhertz.it/obj08016650&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">cto</span><span class="p">:</span><span class="nt">gnd</span> <span class="nv">&lt;http://d-nb.info/gnd/129657379&gt;</span> <span class="p">,</span>
+                                                                           <span class="nv">&lt;http://d-nb.info/gnd/4045895-7&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">cto</span><span class="p">:</span><span class="nt">itemType</span> <span class="nv">&lt;http://d-nb.info/gnd/4045895-7&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">cto</span><span class="p">:</span><span class="nt">relatedPerson</span> <span class="nv">&lt;http://d-nb.info/gnd/129657379&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">cto</span><span class="p">:</span><span class="nt">sourceFile</span> <span class="nv">&lt;https://api.deutsche-digitale-bibliothek.de/items/7YR6M735EGBHOOGHMZDE6HS4DUDOVEW2/source/record&gt;</span> <span class="p">;</span>
+                                                                   <span class="nn">cto</span><span class="p">:</span><span class="nt">itemTypeLiteral</span> <span class="s">&quot;Grabmal&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">;</span>
+                                                                   <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Grabmonument des Kardinals Alano Coetivy&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">.</span>
+</code></pre></div>
+<h2 id="art-history">Art History</h2>
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">cto:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/ontology#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">n4c:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/id/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nv">&lt;http://schema.org/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">nfdicore:</span><span class="w"> </span><span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/ontology/&gt;</span><span class="w"> </span><span class="p">.</span>
+
+<span class="c">###  https://corpusvitrearum.de/id/F4485</span>
+<span class="nv">&lt;https://corpusvitrearum.de/id/F4485&gt;</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">NamedIndividual</span> <span class="p">,</span>
+                                               <span class="nn">cto</span><span class="p">:</span><span class="nt">Item</span> <span class="p">;</span>
+                                      <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">license</span> <span class="nv">&lt;https://creativecommons.org/licenses/by-nc/4.0/&gt;</span> <span class="p">;</span>
+                                      <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">publisher</span> <span class="nn">n4c</span><span class="p">:</span><span class="nt">E1834</span> <span class="p">;</span>
+                                      <span class="nn">schema</span><span class="p">:</span><span class="nt">image</span> <span class="nv">&lt;https://corpusvitrearum.de/typo3temp/cvma/_processed_/pics/medium/4485.jpg&gt;</span> <span class="p">;</span>
+                                      <span class="nn">schema</span><span class="p">:</span><span class="nt">url</span> <span class="nv">&lt;https://corpusvitrearum.de/id/F4485&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">aat</span> <span class="nv">&lt;http://vocab.getty.edu/page/aat/300263722&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">geonames</span> <span class="nv">&lt;http://sws.geonames.org/11427995&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">iconclass</span> <span class="nv">&lt;https://iconclass.org/11G21&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">itemType</span> <span class="nv">&lt;http://vocab.getty.edu/page/aat/300263722&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">relatedLocation</span> <span class="nv">&lt;http://sws.geonames.org/11427995&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">subjectConcept</span> <span class="nv">&lt;https://iconclass.org/11G21&gt;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">approximatePeriod</span> <span class="s">&quot;vor 1397&quot;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">creationPeriod</span> <span class="s">&quot;1380-01-01T00:00:00/1400-12-31T23:59:59&quot;</span> <span class="p">;</span>
+                                      <span class="nn">cto</span><span class="p">:</span><span class="nt">itemTypeLiteral</span> <span class="s">&quot;Glaskunst (Objektgattung)&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">;</span>
+                                      <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Engel mit Dudelsack&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">.</span>
+</code></pre></div>
+<h2 id="media-studies">Media studies</h2>
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">cto:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/ontology#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">n4c:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/id/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nv">&lt;http://schema.org/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">nfdicore:</span><span class="w"> </span><span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/ontology/&gt;</span><span class="w"> </span><span class="p">.</span>
+
+<span class="c">###  https://nfdi.fiz-karlsruhe.de/id/ark:/60538/6077816772506314614</span>
+<span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/id/ark:/60538/6077816772506314614&gt;</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">NamedIndividual</span> <span class="p">,</span>
+                                                                           <span class="nn">schema</span><span class="p">:</span><span class="nt">MediaObject</span> <span class="p">,</span>
+                                                                           <span class="nn">cto</span><span class="p">:</span><span class="nt">Item</span> <span class="p">;</span>
+                                                                  <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">publisher</span> <span class="nv">&lt;https://d-nb.info/gnd/2002498-8&gt;</span> <span class="p">,</span>
+                                                                                     <span class="nn">n4c</span><span class="p">:</span><span class="nt">E1979</span> <span class="p">;</span>
+                                                                  <span class="nn">schema</span><span class="p">:</span><span class="nt">image</span> <span class="nv">&lt;https://heidicon.ub.uni-heidelberg.de/api/v1/objects/uuid/a135cff7-832f-42d0-9385-8306bb297568/file/id/200688/file_version/name/small/disposition/inline&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">schema</span><span class="p">:</span><span class="nt">url</span> <span class="nv">&lt;https://heidicon.ub.uni-heidelberg.de/detail/729667&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">gnd</span> <span class="nv">&lt;https://d-nb.info/gnd/127825118&gt;</span> <span class="p">,</span>
+                                                                          <span class="nv">&lt;https://d-nb.info/gnd/4021845-4&gt;</span> <span class="p">,</span>
+                                                                          <span class="nv">&lt;https://d-nb.info/gnd/4029670-2&gt;</span> <span class="p">,</span>
+                                                                          <span class="nv">&lt;https://d-nb.info/gnd/4127793-4&gt;</span> <span class="p">,</span>
+                                                                          <span class="nv">&lt;https://d-nb.info/gnd/4135144-7&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">iiifImageAPI</span> <span class="nv">&lt;https://heidicon.ub.uni-heidelberg.de/iiif/2/%3A200688&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">itemType</span> <span class="nv">&lt;https://d-nb.info/gnd/4021845-4&gt;</span> <span class="p">,</span>
+                                                                               <span class="nv">&lt;https://d-nb.info/gnd/4029670-2&gt;</span> <span class="p">,</span>
+                                                                               <span class="nv">&lt;https://d-nb.info/gnd/4135144-7&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">relatedLocation</span> <span class="nv">&lt;https://d-nb.info/gnd/4127793-4&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">relatedPerson</span> <span class="nv">&lt;https://d-nb.info/gnd/127825118&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">sourceFile</span> <span class="nv">&lt;https://heidicon.ub.uni-heidelberg.de/api/v1/plugin/base/oai/oai?verb=GetRecord&amp;metadataPrefix=lido&amp;identifier=oai:heidicon.ub.uni-heidelberg.de:a135cff7-832f-42d0-9385-8306bb297568&gt;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">creationPeriod</span> <span class="s">&quot;1888&quot;</span> <span class="p">;</span>
+                                                                  <span class="nn">cto</span><span class="p">:</span><span class="nt">itemTypeLiteral</span> <span class="s">&quot;Fliegende Blätter&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">;</span>
+                                                                  <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Gedichte eines Kleinstädters&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">.</span>
+</code></pre></div>
+<h2 id="musicology">Musicology</h2>
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">cto:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/ontology#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">n4c:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/id/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nv">&lt;http://schema.org/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">nfdicore:</span><span class="w"> </span><span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/ontology/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">mo:</span><span class="w"> </span><span class="nv">&lt;http://purl.org/ontology/mo/&gt;</span><span class="w"> </span><span class="p">.</span>
+
+<span class="c">###  https://rism.online/sources/201001959</span>
+<span class="nv">&lt;https://rism.online/sources/201001959&gt;</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">NamedIndividual</span> <span class="p">,</span>
+                                                 <span class="nn">cto</span><span class="p">:</span><span class="nt">Item</span> <span class="p">,</span>
+                                                 <span class="nn">schema</span><span class="p">:</span><span class="nt">MusicComposition</span> <span class="p">;</span>
+                                        <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">license</span> <span class="nv">&lt;http://creativecommons.org/licenses/by/3.0/de&gt;</span> <span class="p">;</span>
+                                        <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">publisher</span> <span class="nv">&lt;https://rism.online/&gt;</span> <span class="p">;</span>
+                                        <span class="nn">mo</span><span class="p">:</span><span class="nt">lyrics</span> <span class="nn">cto</span><span class="p">:</span><span class="nt">So_sei_gegrüßt_viel_tausendmal</span> <span class="p">;</span>
+                                        <span class="nn">schema</span><span class="p">:</span><span class="nt">url</span> <span class="nv">&lt;https://rism.online/sources/201001959&gt;</span> <span class="p">;</span>
+                                        <span class="nn">cto</span><span class="p">:</span><span class="nt">itemType</span> <span class="nv">&lt;https://rism.online/subjects/25227&gt;</span> <span class="p">,</span>
+                                                     <span class="nv">&lt;https://rism.online/subjects/25460&gt;</span> <span class="p">;</span>
+                                        <span class="nn">cto</span><span class="p">:</span><span class="nt">relatedPerson</span> <span class="nv">&lt;https://rism.online/people/131206&gt;</span> <span class="p">;</span>
+                                        <span class="nn">cto</span><span class="p">:</span><span class="nt">rism</span> <span class="nv">&lt;https://rism.online/people/131206&gt;</span> <span class="p">,</span>
+                                                 <span class="nv">&lt;https://rism.online/subjects/25227&gt;</span> <span class="p">,</span>
+                                                 <span class="nv">&lt;https://rism.online/subjects/25460&gt;</span> <span class="p">;</span>
+                                        <span class="nn">cto</span><span class="p">:</span><span class="nt">approximatePeriod</span> <span class="s">&quot;1890-1910 (19/20)&quot;</span> <span class="p">;</span>
+                                        <span class="nn">cto</span><span class="p">:</span><span class="nt">creationPeriod</span> <span class="s">&quot;1890-1910 (19/20)&quot;</span> <span class="p">;</span>
+                                        <span class="nn">cto</span><span class="p">:</span><span class="nt">subjectConceptLiteral</span> <span class="s">&quot;Coro&quot;</span> <span class="p">,</span>
+                                                                  <span class="s">&quot;Coro S (2), Coro T, Coro B&quot;</span> <span class="p">;</span>
+                                        <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Frühlingsgruß&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">.</span>
+
+
+<span class="c">###  https://rism.online/sources/201001959/incipits/1.1.1</span>
+<span class="nv">&lt;https://rism.online/sources/201001959/incipits/1.1.1&gt;</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">NamedIndividual</span> <span class="p">,</span>
+                                                                <span class="nn">cto</span><span class="p">:</span><span class="nt">Incipit</span> <span class="p">;</span>
+                                                       <span class="nn">cto</span><span class="p">:</span><span class="nt">incipitOf</span> <span class="nv">&lt;https://rism.online/sources/201001959&gt;</span> <span class="p">;</span>
+                                                       <span class="nn">cto</span><span class="p">:</span><span class="nt">clef</span> <span class="s">&quot;G-2&quot;</span> <span class="p">;</span>
+                                                       <span class="nn">cto</span><span class="p">:</span><span class="nt">keySignature</span> <span class="s">&quot;xF&quot;</span> <span class="p">;</span>
+                                                       <span class="nn">cto</span><span class="p">:</span><span class="nt">pattern</span> <span class="s">&quot;4&#39;D/8.6GB4AG/8.6&#39;&#39;EC2&#39;A/4.&#39;&#39;D8&#39;BAG/4BA&quot;</span> <span class="p">;</span>
+                                                       <span class="nn">cto</span><span class="p">:</span><span class="nt">timeSignature</span> <span class="s">&quot;3/4&quot;</span> <span class="p">.</span>
+</code></pre></div>
+<h2 id="performing-arts">Performing Arts</h2>
+<div class="highlight"><pre><span></span><code><span class="k">@prefix</span><span class="w"> </span><span class="nn">cto:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/ontology#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">n4c:</span><span class="w"> </span><span class="nv">&lt;https://nfdi4culture.de/id/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nv">&lt;http://schema.org/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">nfdicore:</span><span class="w"> </span><span class="nv">&lt;https://nfdi.fiz-karlsruhe.de/ontology/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+
+<span class="c">###  http://slod.fiz-karlsruhe.de/labw-2-2599390</span>
+<span class="nv">&lt;http://slod.fiz-karlsruhe.de/labw-2-2599390&gt;</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">NamedIndividual</span> <span class="p">,</span>
+                                                       <span class="nn">cto</span><span class="p">:</span><span class="nt">Item</span> <span class="p">;</span>
+                                              <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">license</span> <span class="nv">&lt;https://creativecommons.org/licenses/by/2.0/&gt;</span> <span class="p">;</span>
+                                              <span class="nn">nfdicore</span><span class="p">:</span><span class="nt">publisher</span> <span class="nv">&lt;http://slod.fiz-karlsruhe.de/labw-2-2599390&gt;</span> <span class="p">;</span>
+                                              <span class="nn">schema</span><span class="p">:</span><span class="nt">image</span> <span class="nv">&lt;http://slod.fiz-karlsruhe.de/images/slod/2-2599390-1.jpg&gt;</span> <span class="p">,</span>
+                                                                        <span class="nv">&lt;http://slod.fiz-karlsruhe.de/images/slod/2-2599390-2.jpg&gt;</span> <span class="p">,</span>
+                                                                        <span class="nv">&lt;http://slod.fiz-karlsruhe.de/images/slod/2-2599390-3.jpg&gt;</span> <span class="p">;</span>
+                                              <span class="nn">schema</span><span class="p">:</span><span class="nt">url</span> <span class="nv">&lt;https://slod.fiz-karlsruhe.de/labw-2-2599390&gt;</span> <span class="p">;</span>
+                                              <span class="nn">cto</span><span class="p">:</span><span class="nt">gnd</span> <span class="nv">&lt;http://d-nb.info/gnd/4316770-6&gt;</span> <span class="p">,</span>
+                                                      <span class="nv">&lt;https://d-nb.info/gnd/116463619&gt;</span> <span class="p">,</span>
+                                                      <span class="nv">&lt;https://d-nb.info/gnd/118613723&gt;</span> <span class="p">;</span>
+                                              <span class="nn">cto</span><span class="p">:</span><span class="nt">relatedPerson</span> <span class="nv">&lt;http://www.wikidata.org/entity/Q55638867&gt;</span> <span class="p">,</span>
+                                                                <span class="nv">&lt;http://www.wikidata.org/entity/Q692&gt;</span> <span class="p">,</span>
+                                                                <span class="nv">&lt;https://d-nb.info/gnd/116463619&gt;</span> <span class="p">,</span>
+                                                                <span class="nv">&lt;https://d-nb.info/gnd/118613723&gt;</span> <span class="p">;</span>
+                                              <span class="nn">cto</span><span class="p">:</span><span class="nt">subjectConcept</span> <span class="nv">&lt;http://d-nb.info/gnd/4316770-6&gt;</span> <span class="p">,</span>
+                                                                 <span class="nv">&lt;http://www.wikidata.org/entity/Q221211&gt;</span> <span class="p">;</span>
+                                              <span class="nn">cto</span><span class="p">:</span><span class="nt">wikidata</span> <span class="nv">&lt;http://www.wikidata.org/entity/Q221211&gt;</span> <span class="p">,</span>
+                                                           <span class="nv">&lt;http://www.wikidata.org/entity/Q55638867&gt;</span> <span class="p">,</span>
+                                                           <span class="nv">&lt;http://www.wikidata.org/entity/Q692&gt;</span> <span class="p">;</span>
+                                              <span class="nn">cto</span><span class="p">:</span><span class="nt">creationDate</span> <span class="s">&quot;1923-03-11&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">date</span> <span class="p">;</span>
+                                              <span class="nn">cto</span><span class="p">:</span><span class="nt">subjectConceptLiteral</span> <span class="s">&quot;Schauspiel&quot;</span><span class="o">@</span><span class="ge">de</span> <span class="p">;</span>
+                                              <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;Was ihr wollt (William Shakespeare)&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">.</span>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

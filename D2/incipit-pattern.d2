@@ -1,0 +1,188 @@
+# direction: down | right | up | left
+direction: up
+
+...@"style.d2"
+
+###### CLASSES
+
+#CTO 
+cto_SourceItem.class: cto 
+cto_SourceItem {
+    label: Source Item \n cto:CTO_0001005
+    link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/\#CTO_0001005
+}
+
+cto_Incipit.class: cto 
+cto_Incipit {
+  label: Incipit \n cto:CTO_0001024
+  link: https://nfdi.fiz-karlsruhe.de/4culture/ontology/\#CTO_0001024
+}
+
+# Schema  
+schema_DataFeed.class: schema
+schema_DataFeed {
+  label: schema:DataFeed
+}
+
+# BFO 
+bfo_IC.class: bfo 
+bfo_IC {
+  label: Independent Continuant \n bfo:BFO_0000004
+}
+
+#NFDIcore 
+nfdicore_Organization.class: nfdicore 
+nfdicore_Organization {
+  label: Organization \n nfdicore:NFDI_0000003 
+}
+
+nfdicore_Identifier.class: nfdicore 
+nfdicore_Identifier { 
+  label: Identifier \n nfdicore:NFDI_0000015 
+}
+
+#IAO
+iao_ICE.class: iao  
+iao_ICE {
+  label: Information Content Entity \n iao:IAO_0000030    
+}
+
+
+###### INSTANCES
+
+ORG.class: entity 
+ORG {
+    label: RISM Online 
+  }
+
+SI {
+    label: <https://rism.online/sources/201001959>
+  }
+SI.class: entity
+
+INC {
+    label: <https://rism.online/sources/201001959/incipits/1.1.1>
+    width: 900 
+  }
+INC.class: entity
+
+FEED {
+    label: E5313
+    link: https://nfdi4culture.de/resource/E5313/about.html 
+  }
+FEED.class: entity
+
+###### LITERALS
+
+PAT.class: literal 
+PAT {
+  label: A''C/'B''D'BA/2G4BA/G-B''D/G4-2-/
+}
+
+KEY.class: literal 
+KEY {
+  label: G
+  width: 150
+}
+
+CLEF.class: literal 
+CLEF {
+  label: C-1
+  width: 200
+}
+
+KS.class: literal 
+KS {
+  label: xF
+  width: 150
+}
+
+TS.class: literal 
+TS {
+  label: C/
+  width: 200
+}
+
+###### PROPERTIES
+
+# rdf:type 
+SI -> cto_SourceItem: {
+  label: rdf:type
+  class: edge_type
+}
+INC -> cto_Incipit: {
+  label: rdf:type
+  class: edge_type
+}
+
+ORG -> nfdicore_Organization: {
+  label: rdf:type
+  class: edge_type
+}
+
+FEED -> schema_DataFeed: {
+  label: rdf:type
+  class: edge_type
+}
+
+
+# SubClass relationships
+cto_SourceItem -> iao_ICE: {
+  label: rdfs:subClassOf
+  class: edge_subclass
+}
+
+cto_Incipit -> nfdicore_Identifier: {
+  label: rdfs:subClassOf
+  class: edge_subclass
+}
+
+nfdicore_Identifier -> iao_ICE: {
+  label: rdfs:subClassOf
+  class: edge_subclass
+}
+
+schema_DataFeed -> iao_ICE: {
+  label: rdfs:subClassOf
+  class: edge_subclass
+}
+
+nfdicore_Organization -> bfo_IC: {
+  label: rdfs:subClassOf
+  class: edge_subclass
+}
+
+
+# Other relations
+SI -> INC: {
+    label: has incipit \n CTO_0001065
+    class: edge_other
+  }
+SI -> ORG: {
+    label: published by \n NFDI_0000191
+    class: edge_other
+  }
+SI -> FEED: {
+    label: is referenced in \n CTO_0001006
+    class: edge_other
+  }
+INC -> PAT:  {
+    label: has incipit pattern \n CTO_0001063
+    class: edge_other
+  }
+INC -> KS:  {
+    label: has key signature \n CTO_0001062
+    class: edge_other
+  }
+INC -> KEY:  {
+    label: has key \n CTO_0001064
+    class: edge_other
+  }
+INC -> CLEF: {
+    label: has clef \n CTO_\n 0001061 
+    class: edge_other
+  }
+INC -> TS:  {
+    label:has incipit \n time signature \n CTO_ \n 0001060
+    class: edge_other
+  }

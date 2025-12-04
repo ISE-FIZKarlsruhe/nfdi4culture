@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: NFDI4Culture Ontology (CTO)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: Ontology
+authors:
+  - given-names: Tabea
+    family-names: Tietz
+  - given-names: Jörg
+    family-names: Waitelonis
+  - given-names: Oleksandra
+    family-names: Bruns
+  - given-names: Etienne
+    family-names: Posthumus
+  - given-names: Harald
+    family-names: Sack
+Related publication: 'https://doi.org/10.5281/zenodo.17519868'
+license: CC-BY-4.0
+version: 3.0.0
+date-released: '2025-03-31'
